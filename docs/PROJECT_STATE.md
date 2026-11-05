@@ -2,6 +2,8 @@
 Updated: 2026-11-05
 
 ## Current phase
+**2026-11-06 transition:** The bounded engineering-preparation workstream is closed for planning purposes; the owner authorized a creative screenplay-adaptation phase. See [engineering closure and creative handoff](ENGINEERING_PREPARATION_CLOSURE.md). [Nine-ending English screenplay draft v0.1](../screenplay/ZERO_SUM_SCREENPLAY_DRAFT_EN_V0.1.md) has been authored and is **pending owner editorial review**; new dialogue is not final canon or integrated into the playable experience. No merge/release.
+
 M1 is **accepted as a working prototype**. M2’s **three-beat, text-led Ending C is accepted by the owner as the interim presentation** on 2026-11-05, on `dev/graphic-novel-foundation`. This accepts the current playable presentation, not final artwork, the complete canonical screenplay, accessibility certification, or release. No merge, public release, deployment, or portal changes.
 
 ## Approved intent and sources
@@ -38,3 +40,6 @@ The [single owner-review package](PRE_RELEASE_REVIEW.md) is the current entry po
 Additional source recovered on 2026-11-06: [detailed conversation-derived narrative treatment](DETAILED_NARRATIVE_TREATMENT.md) preserves all nine branches with character motivation, staging, and story-world distinctions beyond the condensed runtime. This is **not** the original verbatim dialogue or timed shooting screenplay; those remain NOT RECOVERED. Keep the runtime unchanged pending a separate editorial adaptation/reconciliation.
 
 Next owner input for final narrative consolidation: an accessible copy of the original approved full screenplay. Do not invent missing content, restart sphere experiments, or expand visual production while waiting. All independent authorized tasks are completed or explicitly limited in the package. No merge, deployment, paid services or Possibility changes.
+
+## Creative phase source-of-truth note (2026-11-06)
+The [detailed narrative treatment](DETAILED_NARRATIVE_TREATMENT.md) and [English screenplay adaptation v0.1](../screenplay/ZERO_SUM_SCREENPLAY_DRAFT_EN_V0.1.md) are now available. Existing statements that the *original verbatim* screenplay is NOT RECOVERED remain accurate; the new draft is newly written and not yet owner-approved. Avoid reverting or overwriting the runtime until a separate content integration is approved.
