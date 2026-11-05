@@ -5,7 +5,7 @@
 ## Approval ledger
 
 - English branching screenplay **v0.2 accepted by owner in the Zero Sum creative conversation on 2026-11-06**. The approval covers its dramatic adaptation, including new dialogue and two-vehicle staging, **not** new illustrations, runtime integration, a final shot list or public release.
-- Traditional Chinese branching screenplay **v0.2 newly authored and pending owner editorial approval**. This is a dramatic adaptation rather than a recovered verbatim bilingual original.
+- Traditional Chinese branching screenplay **v0.2 approved by owner on 2026-11-06**; this approval covers dramatic language, not its final in-app panelization or release. This is a dramatic adaptation rather than a recovered verbatim bilingual original.
 - English source: [EN v0.2](../screenplay/ZERO_SUM_SCREENPLAY_DRAFT_EN_V0.2.md)
 - Translation: [zh-TW v0.2](../screenplay/ZERO_SUM_SCREENPLAY_DRAFT_ZH-TW_V0.2.md)
 - Original v0.1 remains unchanged and available for creative comparison.
@@ -23,7 +23,7 @@ Read both stored manuscript files from the same development branch after transla
 
 Both documents retain the same choice routes, five main characters, and established facts: Jacque and Pete switch team assignments as a result of Alex's first choice; Misaki is simultaneously professional and emotionally affected; Pete's fate depends on the branch; Karl's 'rebirth' is ideological; the sphere is a sharply bounded white matter-erasure volume stopping before Downtown; no ending is morally rated.
 
-**Verification limits:** this is a document-level editorial/structural comparison, not browser, screen-reader, subtitle, native-speaker performance or finalized voice-direction testing. This inspection does not certify every translation nuance. Owner approval of the dramatic zh-TW dialogue remains outstanding.
+**Verification limits:** this is a document-level editorial/structural comparison, not browser, screen-reader, subtitle, native-speaker performance or finalized voice-direction testing. This inspection does not certify every translation nuance. Owner approval of the dramatic zh-TW dialogue has now been granted; real-world performance and player reading usability remain unverified.
 
 ## Translation conventions and open editorial matters
 
@@ -36,4 +36,4 @@ Both documents retain the same choice routes, five main characters, and establis
 
 ## Next safe stage
 
-Owner may review the zh-TW manuscript in manageable sections. If approved, create a **separate, scoped content-integration offer** for Codex mapping the two scripts to existing stable narrative IDs, preserving nine endings and rollback. Do **not** integrate automatically, merge, deploy, generate new artwork or infer asset licenses from manuscript acceptance.
+Owner approved both screenplay v0.2 versions and separately authorized [M4 bilingual content integration](M4_BILINGUAL_SCREENPLAY_INTEGRATION.md) on 2026-11-06. Codex may implement the approved manuscripts into the **development-branch** graphic novel, preserving stable narrative IDs and rollback, with bounded autonomous tests and review. Do **not** merge, deploy, generate unapproved artwork, or infer asset licenses from manuscript acceptance.
