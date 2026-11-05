@@ -99,9 +99,9 @@ try {
    if(width===390 || width===1440) await capture(p,`after-${width}-${language}-beat${beat+1}`);
    if(beat<2) await click(p.locator('.m2-next'));
   }
-  const frame=await p.locator('.frame').screenshot();
+  const frame=await p.locator('.frame').screenshot({animations:'disabled'});
   await p.emulateMedia({reducedMotion:'reduce'});
-  assert.ok(frame.equals(await p.locator('.frame').screenshot()),'final panel is identical with reduced motion');
+  assert.ok(frame.equals(await p.locator('.frame').screenshot({animations:'disabled'})),'final panel is identical with reduced motion');
   await click(p.locator('.back')); assert.equal(await p.locator('main').getAttribute('data-beat'),'1');
   await click(p.locator('.back')); assert.equal(await p.locator('main').getAttribute('data-beat'),'0');
   await click(p.locator('.back')); await current(p,'tower');

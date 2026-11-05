@@ -1,0 +1,36 @@
+{
+  "browser": "155.0.8059.79",
+  "viewports": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "languages": [
+    "en",
+    "zh-Hant"
+  ],
+  "routes": 72,
+  "audits": 90,
+  "screenshots": [
+    "after-390-en-beat1.jpg",
+    "after-390-en-beat2.jpg",
+    "after-390-en-beat3.jpg",
+    "after-390-zh-beat1.jpg",
+    "after-390-zh-beat2.jpg",
+    "after-390-zh-beat3.jpg",
+    "after-1440-en-beat1.jpg",
+    "after-1440-en-beat2.jpg",
+    "after-1440-en-beat3.jpg",
+    "after-1440-zh-beat1.jpg",
+    "after-1440-zh-beat2.jpg",
+    "after-1440-zh-beat3.jpg"
+  ],
+  "errors": [],
+  "incompleteAuditRules": [
+    "color-contrast"
+  ],
+  "checks": [
+    "All nine routes at four widths in both languages; replay; live switch; focus; restart confirm/cancel/Escape; back; optional storage; keyboard-only Ending C; Ending C beat back/advance, live beat switching and reduced-motion pixel parity; image load; overflow; target size."
+  ]
+}

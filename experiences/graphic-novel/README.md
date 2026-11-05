@@ -25,7 +25,7 @@ AXE_PATH=/tmp/zero-sum-qa/node_modules/axe-core/axe.min.js \
 CHROMIUM_PATH=/usr/bin/chromium npm run test:browser
 ```
 
-Run with the static server above active. `BASE_URL` can override its address. The suite uses installed Chromium, exercises all ending routes at 320/390/768/1440px in both languages, checks keyboard and emulated touch, audits all rendered nodes at desktop/mobile widths, and overwrites `docs/evidence/` with the current run. Browser/OS versions can affect font rendering; see the recorded evidence. In managed cloud environments the server and browser may require the supported execution permission beyond the restricted command sandbox.
+Run with the static server above active. `BASE_URL` can override its address. The suite uses installed Chromium, exercises all ending routes at 320/390/768/1440px in both languages, checks keyboard and emulated touch, audits all rendered nodes at desktop/mobile widths, and writes current M2 results to `docs/m2-evidence/` while preserving the accepted M1 evidence in `docs/evidence/`. Browser/OS versions can affect font rendering; see the recorded evidence. In managed cloud environments the server and browser may require the supported execution permission beyond the restricted command sandbox.
 
 ## Structure and provisional status
 
@@ -37,3 +37,7 @@ Run with the static server above active. `BASE_URL` can override its address. Th
 - `tests/`: graph/session and actual-browser verification.
 
 No shared engine or other adaptation was introduced. Source and artwork provenance/limitations: [SOURCE_ARCHIVE.md](docs/SOURCE_ARCHIVE.md). Results, screenshots, visual assessment and unverified acceptance: [QA.md](docs/QA.md). Approved intent remains in the root `docs/` directory.
+
+## M2 Ending C (proposed adaptation)
+
+Ending C has three reader-paced presentation panels inside its existing story node. The original graph and story data are unchanged. The ascent reuses a close crop of the existing illustration; activation and the Downtown limit are explicitly labeled illustration-pending cards. The attempted sphere composite was rejected for composition and removed from the runtime. See [beat sheet and exact art alternative](../../docs/M2_ENDING_C_BEATS.md) and [M2 QA / before-after screenshots](docs/M2_QA.md). This does not reopen M1 acceptance or claim faithful sphere artwork is complete.
