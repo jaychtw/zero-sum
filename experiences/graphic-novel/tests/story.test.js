@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { existsSync } from 'node:fs';
 import { scenes, validateStory } from '../story.js';
 import { createSession } from '../session.js';
+import { endingC } from '../ending-c.js';
 import { ui } from '../presentation.js';
 const expected = {
  opening:['junction'], junction:['jacque','misaki'], jacque:['abandon','rescue'], abandon:['sniper','endingD'],
@@ -40,3 +41,8 @@ for (const [mutate,message] of [
 ]) { const data=structuredClone(scenes); mutate(data); assert.ok(validateStory(data).some(e=>e.includes(message))); }
 assert.deepEqual(Object.keys(ui.en).sort(),Object.keys(ui.zh).sort());
 console.log('PASS: 19 bilingual nodes, 8 exact decisions, all 9 ending routes; assets, invalid graph cases, session navigation/replay/reset');
+
+assert.equal(endingC.en.beats.length,3);
+assert.deepEqual(endingC.en.beats.map(b=>b.kind),endingC.zh.beats.map(b=>b.kind));
+for(const language of ['en','zh']) for(const beat of endingC[language].beats) for(const field of (beat.kind === 'ascent' ? ['title','text','alt'] : ['title','text','panelTitle','panelNote'])) assert.ok(beat[field]?.trim(),`Missing ${language} ${field}`);
+console.log('PASS: Ending C three-panel localization completeness and matched panel ordering');
