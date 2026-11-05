@@ -1,16 +1,16 @@
 import assert from 'node:assert/strict';
 import { createRequire } from 'node:module';
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, writeFile, readFile } from 'node:fs/promises';
 import { scenes } from '../story.js';
 const require = createRequire(import.meta.url);
 let chromium;
 try { ({chromium} = require('playwright')); } catch { ({chromium} = require('playwright-core')); }
 const axePath = process.env.AXE_PATH || require.resolve('axe-core/axe.min.js');
 const base = process.env.BASE_URL || 'http://127.0.0.1:8000';
-const out = new URL('../docs/m2-evidence/',import.meta.url);
+const out = new URL(process.env.EVIDENCE_DIR || '../docs/readiness-evidence/',import.meta.url);
 await mkdir(out,{recursive:true});
 const browser = await chromium.launch({executablePath:process.env.CHROMIUM_PATH || '/usr/bin/chromium',headless:true,args:['--no-sandbox']});
-const report = {browser:browser.version(),viewports:[320,390,768,1440],languages:['en','zh-Hant'],routes:0,audits:0,screenshots:[],errors:[],incompleteAuditRules:[],checks:[]};
+const report = {status:'failed',suite:'autonomous-readiness-1',browser:browser.version(),viewports:[320,390,768,1440],languages:['en','zh-Hant'],routes:0,audits:0,appearanceComparisons:0,screenshots:[],errors:[],incompleteAuditRules:[],checks:[]};
 const paths=[];
 function walk(id,path=[]) {
  const s=scenes[id];
@@ -31,6 +31,18 @@ async function audit(p) {
  await p.addScriptTag({path:axePath});
  const result=await p.evaluate(async()=>axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa']}}));
  assert.deepEqual(result.violations.map(v=>({id:v.id,impact:v.impact,nodes:v.nodes.map(n=>n.target)})),[],'axe violations'); report.audits++; for(const item of result.incomplete) if(!report.incompleteAuditRules.includes(item.id)) report.incompleteAuditRules.push(item.id);
+}
+// Historical phone captures can retain different toolbar hover states.
+// Compare exact decoded pixels below that interactive toolbar, not JPEG file bytes.
+async function acceptedAppearance(p, current, baseline) {
+ const top=Math.ceil((await p.locator('.masthead').boundingBox()).height);
+ return p.evaluate(async ({a,b,top})=>{
+  const decode=async base64=>{const img=new Image();img.src='data:image/jpeg;base64,'+base64;await img.decode();return img;};
+  const [left,right]=await Promise.all([decode(a),decode(b)]);
+  if(left.width!==right.width || left.height!==right.height)return false;
+  const pixels=img=>{const c=document.createElement('canvas');c.width=img.width;c.height=img.height-top;const ctx=c.getContext('2d');ctx.drawImage(img,0,-top);return ctx.getImageData(0,0,c.width,c.height).data;};
+  const x=pixels(left),y=pixels(right);return x.every((value,i)=>value===y[i]);
+ },{a:current.toString('base64'),b:baseline.toString('base64'),top});
 }
 async function capture(p,name) {
  await p.evaluate(()=>document.fonts.ready); await p.waitForTimeout(400);
@@ -54,6 +66,13 @@ try {
    if(width===320) assert.equal(await p.locator('.scene-art').evaluateAll(nodes=>nodes.every(n=>getComputedStyle(n).animationName==='none')),true);
   };
   await check('title');
+  if(width===390 || width===1440) {
+   await capture(p,`${width}-${language}-title`);
+   if(language==='en') {
+    assert.ok(await acceptedAppearance(p,await readFile(new URL(`${width}-${language}-title.jpg`,out)),await readFile(new URL(`../docs/evidence/${width}-${language}-title.jpg`,import.meta.url))),'accepted title appearance');
+    report.appearanceComparisons++;
+   }
+  }
 
   // Every original route, using rendered controls and emulated touch on phones.
   for(const path of paths) {
@@ -70,12 +89,13 @@ try {
    }
    while(await p.locator('.m2-next').count()) {await click(p.locator('.m2-next'));await check('endingC');}
    assert.ok(await p.locator('.closing').isVisible()); report.routes++;
+   if(width===390 && language==='en') await capture(p,`390-en-ending-${scenes[path.at(-1)].ending}`);
    await click(p.locator('.primary')); await current(p,'opening');
   }
-  // Selected C route: screenshots at narrative, sniper decision, ending; switch language in place.
+  // Representative accepted flow and all three interim Ending C panels.
   await click(p.locator('#restart')); await click(p.locator('#confirm-reset')); await p.waitForFunction(()=>document.querySelector('main').dataset.scene==='title');
   await click(p.locator('.primary'));
-
+  if(width===390 || width===1440) await capture(p,`${width}-${language}-narrative`);
   await click(p.locator('#actions button')); // junction
   await click(p.locator('#actions button').nth(0)); // jacque
   await click(p.locator('#actions button').nth(0)); // abandon
@@ -86,6 +106,7 @@ try {
   assert.equal(await p.evaluate(()=>document.activeElement.id),'lang');
   await click(p.locator('#lang')); assert.equal(await p.locator('.prose').textContent(),before);
 
+  if(width===390 || width===1440) await capture(p,`${width}-${language}-decision`);
   await click(p.locator('#actions button').nth(1)); await current(p,'tower');
   assert.equal(await p.locator('.scene-art').count(),0,'no premature ending illustration');
   await click(p.locator('#actions button').nth(1)); await current(p,'endingC');
@@ -96,7 +117,12 @@ try {
    assert.equal(await p.locator('main').getAttribute('data-beat'),String(beat),'live switch preserves beat');
    assert.notEqual(await p.locator('.prose').textContent(),text);
    await click(p.locator('#lang'));
-   if(width===390 || width===1440) await capture(p,`after-${width}-${language}-beat${beat+1}`);
+   if(width===390 || width===1440) {
+    const name=`after-${width}-${language}-beat${beat+1}.jpg`;
+    await capture(p,name.slice(0,-4));
+    assert.ok(await acceptedAppearance(p,await readFile(new URL(name,out)),await readFile(new URL(`../docs/m2-evidence/${name}`,import.meta.url))),'accepted Ending C appearance');
+    report.appearanceComparisons++;
+   }
    if(beat<2) await click(p.locator('.m2-next'));
   }
   const frame=await p.locator('.frame').screenshot({animations:'disabled'});
@@ -125,6 +151,7 @@ try {
  await p.keyboard.press('1');await current(p,'opening'); await c.close();
  report.checks.push('All nine routes at four widths in both languages; replay; live switch; focus; restart confirm/cancel/Escape; back; optional storage; keyboard-only Ending C; Ending C beat back/advance, live beat switching and reduced-motion pixel parity; image load; overflow; target size.');
  assert.deepEqual(report.errors,[]);
+ report.status='passed';
  console.log(`PASS: ${report.routes} browser routes, ${report.audits} axe audits, ${report.screenshots.length} screenshots; no browser or asset errors`);
 } finally {
  await writeFile(new URL('browser-results.json',out),JSON.stringify(report,null,2)+'\n'); await browser.close();

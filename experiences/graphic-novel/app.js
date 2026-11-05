@@ -18,6 +18,26 @@ function button(text, action, cls = '') {
   const n = el('button', cls, text); n.type = 'button';
   n.addEventListener('click', action); return n;
 }
+// Failed decorative/reference art must not interrupt the accepted story flow.
+function watchIllustration(image, frame, t, cover = false) {
+  image.addEventListener('error', () => {
+    frame.dataset.artFallback = 'true';
+    if (cover) {
+      image.remove();
+      const note = el('p', 'control-note', `${t.artUnavailable}. ${t.artFallback}`);
+      note.setAttribute('role', 'status');
+      frame.querySelector('.cover-copy').append(note);
+      return;
+    }
+    frame.replaceChildren();
+    frame.classList.add('temporary');
+    frame.removeAttribute('role'); frame.removeAttribute('aria-label');
+    const panel = el('div', 'temporary-copy');
+    panel.setAttribute('role', 'status');
+    panel.append(el('p','eyebrow',t.artUnavailable),el('p','',t.artFallback));
+    frame.append(panel);
+  }, { once: true });
+}
 function render(focus = false) {
   const t = ui[language], id = session.current, s = scenes[id];
   if (id !== displayedScene) { endingCBeat = 0; displayedScene = id; }
@@ -42,6 +62,7 @@ function render(focus = false) {
     title.append(el('span','','ZERO'),el('span','','SUM')); title.tabIndex = -1;
     copy.append(el('p','eyebrow',`ZERO SUM / 01 — ${t.edition}`),title,el('p','tagline',t.tag),el('p','intro',t.intro));
     copy.append(button(t.begin,()=>{session.begin();render(true);},'primary'),el('p','control-note',t.controls));
+    watchIllustration(img,cover,t,true);
     cover.append(img,copy,el('span','cover-code','ZS / 001')); main.append(cover);
   } else {
     const strip = el('div','scene-strip');
@@ -54,7 +75,7 @@ function render(focus = false) {
         frame.setAttribute('role', 'img'); frame.setAttribute('aria-label', beat.alt);
         const crop = el('img', 'ending-c-crop');
         crop.src = 'assets/wmd.webp'; crop.alt = ''; crop.width = 1280; crop.height = 720;
-        frame.append(crop);
+        watchIllustration(crop,frame,t); frame.append(crop);
       } else {
         // Rejected the flat disk/city composite; no claim of faithful finished art.
         frame.classList.add('temporary');
@@ -67,7 +88,7 @@ function render(focus = false) {
       panel.append(el('p','eyebrow',t.temporary),el('p','tower-title',t.tower),el('p','',t.towerNote)); frame.append(panel);
     } else {
       const img = el('img','scene-art'); img.src = `assets/${s.image}.webp`; img.alt = t.alts[s.image];
-      img.width = 1280; img.height = 720; frame.append(img);
+      img.width = 1280; img.height = 720; watchIllustration(img,frame,t); frame.append(img);
     }
     frame.append(el('figcaption','art-label',c ? c.label : id === 'tower' ? t.temporary : t.art));
     const reader = el('section','reader'), caption = el('div','caption');

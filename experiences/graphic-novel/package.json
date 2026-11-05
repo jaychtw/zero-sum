@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "test": "node tests/story.test.js",
-    "test:browser": "node tests/browser.test.js"
+    "test:browser": "node tests/browser.test.js",
+    "test:narrative": "node ../../scripts/narrative.test.mjs",
+    "test:resilience": "node tests/resilience.test.js"
   }
 }
