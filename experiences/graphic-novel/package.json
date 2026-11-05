@@ -4,9 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node tests/story.test.js",
+    "test": "node tests/story.test.js && node ../../scripts/screenplay.test.mjs",
     "test:browser": "node tests/browser.test.js",
     "test:narrative": "node ../../scripts/narrative.test.mjs",
-    "test:resilience": "node tests/resilience.test.js"
+    "test:resilience": "node tests/resilience.test.js",
+    "build:screenplay": "node ../../scripts/build-screenplay.mjs"
   }
 }

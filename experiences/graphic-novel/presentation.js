@@ -1,12 +1,13 @@
 // Presentation/localization metadata, separate from the unchanged narrative.
 export const ui = {
  en: {
+  panel:'Panel',nextPanel:'Next panel',textLed:'TEXT-LED PANEL / ILLUSTRATION PENDING',ascentAlt:'Alex approaches the upper tower exterior by jetpack, with the city below.',phases:{1:'The last approach',2:'Activation',3:'The boundary'},
   skip:'Skip to story', home:'Zero Sum — title screen', restart:'Restart', edition:'AN INTERACTIVE GRAPHIC NOVEL',
   tag:'One choice. One life.\nNo perfect ending.', intro:'Every choice closes a door. You live only the life you choose.',
   begin:'Enter the story', next:'Continue', replay:'Begin again', back:'Previous panel', narrator:'Narrator',
   decision:'DECISION POINT', scene:'STORY PANEL', ending:'ENDING', opening:'OPENING', conclusion:'The road ends here.',
   closing:'Another choice is another life. It cannot change this one.', hint:'Choose with 1 / 2, or select an option.',
-  controls:'Mouse · Touch · Keyboard', provisional:'M1 PROTOTYPE / PROVISIONAL ART & TEXT', art:'Provisional reference illustration',
+  controls:'Mouse · Touch · Keyboard', provisional:'GRAPHIC NOVEL PREVIEW / ART PROVISIONAL', art:'Provisional reference illustration',
   artUnavailable:'ILLUSTRATION UNAVAILABLE',artFallback:'The story can continue below.',
   temporary:'TEMPORARY PANEL / ILLUSTRATION PENDING', tower:'GALAXICAL TOWER', towerNote:'Uptown · Exterior approach',
   confirmKicker:'RETURN TO THE BEGINNING', confirmTitle:'Leave this timeline?',
@@ -17,12 +18,13 @@ export const ui = {
   alts:{chase:'Alex and his squad pursue a cult convoy through neon-lit streets.',junction:'The pursuit divides at a city junction.',jacque:'Alex and Jacque during the pursuit at a damaged bridge.',sniper:'Alex aims at Karl near the hangar as civilians pass behind the target.',tackle:'Alex intercepts Karl near the tower.',misaki:'Misaki during the Downtown pursuit.',hospital:'Alex and Misaki at the Downtown hospital.',wmd:'Alex approaches Karl outside the tower, beside a brilliant white device. Provisional art; the device depiction is not final canon.'}
  },
  zh: {
+  panel:'畫面',nextPanel:'下一幕',textLed:'文字敘事畫面／插畫待製作',ascentAlt:'艾力克斯以噴射背包接近塔樓頂部外緣，下方是城市街道。',phases:{1:'最後的接近',2:'啟動',3:'邊界'},
   skip:'跳至故事',home:'Zero Sum — 標題畫面',restart:'重新開始',edition:'互動圖像小說',
   tag:'一次選擇。一段人生。\n沒有完美結局。',intro:'每次選擇，都關上一扇門。你只能活過自己選擇的人生。',
   begin:'進入故事',next:'繼續',replay:'再次啟程',back:'上一幕',narrator:'旁白',
   decision:'抉擇時刻',scene:'故事畫面',ending:'結局',opening:'序幕',conclusion:'這條路，走到了盡頭。',
   closing:'另一個選擇，是另一段人生。卻無法改變這一段。',hint:'按 1／2，或選取一個選項。',
-  controls:'滑鼠 · 觸控 · 鍵盤',provisional:'M1 原型／美術與文字尚未定稿',art:'暫用參考插畫',
+  controls:'滑鼠 · 觸控 · 鍵盤',provisional:'圖像小說預覽／美術尚未定稿',art:'暫用參考插畫',
   artUnavailable:'插畫暫時無法顯示',artFallback:'仍可在下方繼續故事。',
   temporary:'暫用畫面／插畫待製作',tower:'銀河塔',towerNote:'上城區 · 塔外',
   confirmKicker:'回到起點',confirmTitle:'離開這條時間線？',

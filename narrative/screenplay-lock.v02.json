@@ -1,0 +1,15 @@
+{
+  "version": "0.2",
+  "approvalDate": "2026-11-06",
+  "authority": "docs/BILINGUAL_SCREENPLAY_REVIEW_V02.md and docs/M4_BILINGUAL_SCREENPLAY_INTEGRATION.md at 4ed8b9c",
+  "sources": {
+    "en": {
+      "path": "screenplay/ZERO_SUM_SCREENPLAY_DRAFT_EN_V0.2.md",
+      "sha256": "b6e9ef475d9cba2ecf4bc4e07bd6414503fd4ea28cbf68a6db640f82845a0d75"
+    },
+    "zh": {
+      "path": "screenplay/ZERO_SUM_SCREENPLAY_DRAFT_ZH-TW_V0.2.md",
+      "sha256": "ace66fe6c879441d705b14f8324126a2d8a94bb915d99af2bf33a947289673f1"
+    }
+  }
+}
