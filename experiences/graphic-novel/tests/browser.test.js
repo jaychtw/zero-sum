@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import {createRequire} from 'node:module';
 import {mkdir,writeFile} from 'node:fs/promises';
+import {runtimeHash} from '../../../scripts/m4-evidence.mjs';
 import {manuscript} from '../manuscript.js';
 const require=createRequire(import.meta.url);
 let chromium;try{({chromium}=require('playwright'));}catch{({chromium}=require('playwright-core'));}
@@ -8,14 +9,18 @@ const axe=process.env.AXE_PATH||require.resolve('axe-core/axe.min.js');
 const base=process.env.BASE_URL||'http://127.0.0.1:8000';
 const out=new URL(process.env.EVIDENCE_DIR||'../docs/m4-evidence/',import.meta.url);await mkdir(out,{recursive:true});
 const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',args:['--no-sandbox']});
-const report={status:'failed',screenplayVersion:manuscript.screenplayVersion,browser:browser.version(),widths:[320,390,768,1440],languages:['en','zh-Hant'],routes:0,panelsChecked:0,audits:0,languageSwitches:0,screenshots:[],errors:[],incompleteAuditRules:[],checks:[]};
+const widths=(process.env.TEST_WIDTHS||'320,390,768,1440').split(',').map(Number),languages=(process.env.TEST_LANGUAGES||'en,zh').split(',');
+assert.ok(widths.every(w=>[320,390,768,1440].includes(w))&&languages.every(l=>['en','zh'].includes(l)));
+const reportName=process.env.REPORT_NAME||'browser-results.json';assert.ok(/^[A-Za-z0-9_-]+\.json$/.test(reportName));
+const report={status:'running',runGroup:process.env.M4_RUN_GROUP||'standalone',sourceBundleSha256:runtimeHash(),screenplayVersion:manuscript.screenplayVersion,browser:browser.version(),widths,languages:languages.map(l=>l==='zh'?'zh-Hant':'en'),routes:0,panelsChecked:0,audits:0,languageSwitches:0,screenshots:[],errors:[],incompleteAuditRules:[],checks:[]};
+await writeFile(new URL(reportName,out),JSON.stringify(report,null,2)+'\n');
 const paths=[];function walk(id,path=[]){const s=manuscript.scenes[id];if(s.ending){paths.push([...path,id]);return;}for(const next of s.choices?.map(c=>c.target)??[s.next])walk(next,[...path,id]);}walk('opening');
 async function position(p,id,index){assert.equal(await p.locator('main').getAttribute('data-scene'),id);assert.equal(await p.locator('main').getAttribute('data-panel'),String(index));}
 async function audit(p){await p.addScriptTag({path:axe});const r=await p.evaluate(async()=>axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa']}}));assert.deepEqual(r.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)})),[]);report.audits++;for(const i of r.incomplete)if(!report.incompleteAuditRules.includes(i.id))report.incompleteAuditRules.push(i.id);}
 async function capture(p,name){await p.evaluate(()=>document.fonts.ready);await p.screenshot({path:new URL(name+'.jpg',out).pathname,fullPage:true,type:'jpeg',quality:90,animations:'disabled'});report.screenshots.push(name+'.jpg');}
 async function layout(p){assert.ok(await p.evaluate(()=>document.documentElement.scrollWidth)<=p.viewportSize().width,'horizontal overflow');for(const n of await p.locator('button:visible').all()){const b=await n.boundingBox();assert.ok(b.height>=44&&b.width>=44,'44px controls');assert.ok(b.x>=0&&b.x+b.width<=p.viewportSize().width+1,'clipped control');}for(const i of await p.locator('img').all()){await i.evaluate(img=>img.complete?Promise.resolve():new Promise(resolve=>{img.addEventListener('load',resolve,{once:true});img.addEventListener('error',resolve,{once:true});}));assert.ok(await i.evaluate(img=>img.naturalWidth>0),'normal image failed');}}
 try {
- for(const width of report.widths)for(const language of ['en','zh']) {
+ for(const width of widths)for(const language of languages) {
   const context=await browser.newContext({viewport:{width,height:width<768?844:1000},isMobile:width<768,hasTouch:width<768,reducedMotion:width===320?'reduce':'no-preference'});
   const p=await context.newPage(),seen=new Set(),shots=new Set();
   p.on('pageerror',e=>report.errors.push(e.message));p.on('response',r=>{if(r.status()>=400)report.errors.push(r.status()+' '+r.url());});
@@ -49,7 +54,11 @@ try {
    const other=language==='en'?'zh':'en';
    assert.deepEqual(await p.locator('.manuscript-copy .prose,.manuscript-copy .source-stage').allTextContents(),panel.content.flatMap(u=>u[other]).map(b=>b.text));
    assert.equal(await p.evaluate(()=>document.activeElement.id),'lang');
-   await click(p.locator('#lang'));report.languageSwitches++;
+   await click(p.locator('#lang'));
+   await p.waitForFunction(expected=>document.documentElement.lang===expected,language==='en'?'en':'zh-Hant');
+   await position(p,id,index);
+   assert.deepEqual(await p.locator('.manuscript-copy .prose,.manuscript-copy .source-stage').allTextContents(),blocks.map(b=>b.text),'restored language settled');
+   report.languageSwitches++;
   };
   for(const path of paths) {
    if(await p.locator('main').getAttribute('data-scene')!=='title') {
@@ -88,13 +97,15 @@ try {
   await p.reload();assert.equal(await p.locator('html').getAttribute('lang'),language==='en'?'en':'zh-Hant');
   await context.close();console.log(`PASS ${width}/${language}: all 70 panels, 9 endings, source text, live switching, backtracking`);
  }
- // Keyboard-only Ending C with optional storage denied.
+ // Keyboard-only Ending C runs once in the full set or the 1440/en shard.
+ if(widths.includes(1440)&&languages.includes('en')) {
  const c=await browser.newContext({viewport:{width:1440,height:1000},reducedMotion:'reduce'}),p=await c.newPage();
  await p.addInitScript(()=>Object.defineProperty(window,'localStorage',{get(){throw Error('blocked')}}));await p.goto(base);
  await p.keyboard.press('Tab');assert.equal(await p.evaluate(()=>document.activeElement.id),'skip');await p.keyboard.press('Enter');await p.keyboard.press('Tab');assert.ok(await p.locator('.primary').evaluate(n=>n===document.activeElement));await p.keyboard.press('Enter');
  const path=paths.find(p=>p.at(-1)==='endingC');
  for(let i=0;i<path.length;i++) {const id=path[i];for(let n=1;n<manuscript.scenes[id].panels.length;n++)await p.keyboard.press('1');if(i<path.length-1){const s=manuscript.scenes[id],index=s.choices?.findIndex(ch=>ch.target===path[i+1])??0;await p.keyboard.press(String(index+1));}}
  await position(p,'endingC',4);const normal=await p.locator('.frame').screenshot({animations:'disabled'});await p.emulateMedia({reducedMotion:'no-preference'});assert.ok(normal.equals(await p.locator('.frame').screenshot({animations:'disabled'})),'static boundary in reduced motion');await p.keyboard.press('1');await position(p,'opening',0);await c.close();
+ }
  assert.deepEqual(report.errors,[]);report.status='passed';report.checks.push('All 70 paired panels exact source text/attribution and live switch at every width/language; all choices/routes; within/cross-scene back; alternate branch revisit; replay/reset/dialog; keyboard-only C; storage denied; reduced motion/static C boundary; image loads; 44px controls; no overflow.');
  console.log(`PASS M4: ${report.routes} routes, ${report.panelsChecked} panel checks, ${report.audits} axe audits, ${report.screenshots.length} screenshots`);
-}finally{await writeFile(new URL('browser-results.json',out),JSON.stringify(report,null,2)+'\n');await browser.close();}
+}finally{if(report.status!=='passed')report.status='failed';await writeFile(new URL(reportName,out),JSON.stringify(report,null,2)+'\n');await browser.close();}
