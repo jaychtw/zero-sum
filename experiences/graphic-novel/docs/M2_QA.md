@@ -45,6 +45,14 @@ Agent inspection of the rendered ascent and two temporary cards at desktop/mobil
 
 The M1 image-overlay contrast manual limit persists: axe reports `color-contrast` incomplete for the title image overlay. Incomplete checks are not counted as passes. Existing palette/visual contrast review is in [M1 QA](QA.md); no new image-text overlay was added for the temporary cards. Physical-device, screen-reader, independent first-time-player, other browser engines, low-end performance and production accessibility certification remain **not verified**. No deployment or live public behavior is claimed.
 
-## Owner review and continuation
+## Owner review and continuation (historical, superseded below)
 
 Smallest decision: keep this three-beat, text-led interim Ending C while the single faithful city illustration is pending, or defer the pacing change until that plate is available. No broad art production is authorized by this review. M1 remains accepted. Reproduce with the experience README commands; browser results now go to `docs/m2-evidence/`. The bounded experiment demonstrated that geometric correctness alone is insufficient for illustration integration; do not repeat the white-disk overlay or hide its issues with effects.
+
+## Owner interim acceptance — 2026-11-05
+
+The owner accepted the three-beat, text-led Ending C as the **interim presentation**. Preserve this report, its test results and before/after screenshots. This is not final artwork approval, complete screenplay approval, accessibility certification, or release approval. The original assessment and review question above describe the pre-acceptance checkpoint and are retained as historical evidence. No tests were rerun for this documentation-only acceptance record.
+
+The rejected sphere composite remains rejected and is not shipped. The accurate city illustration remains a **deferred production-art requirement, not an immediate blocker**. Do not start another sphere experiment or expand visual production.
+
+The next proposed cycle is M3 — Narrative Consolidation: a complete canonical screenplay and consistent shared branch identifiers, with no change to the accepted playable experience. See [current project state](../../../docs/PROJECT_STATE.md). No merge or deployment.

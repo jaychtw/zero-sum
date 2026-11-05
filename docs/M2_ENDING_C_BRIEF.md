@@ -1,6 +1,6 @@
 # Zero Sum — M2 Bounded Offer: Ending C Narrative and Canonical Sphere
 
-**Status:** Proposed bounded next cycle following owner acceptance of M1 prototype on 2026-11-05. **No automatic implementation/deployment authority beyond the owner's earlier bounded continuation.** Prioritize smallest useful demonstration and ask for review before significant art production.
+**Current status (2026-11-05):** Owner accepted the three-beat, text-led Ending C as the interim presentation. Final sphere artwork is deferred production art, not an immediate blocker; the rejected composite stays rejected. No further sphere experiment or visual-production expansion is authorized. See [recorded owner decision](M2_ENDING_C_BEATS.md#owner-decision--2026-11-05). The original bounded offer below is retained as historical context, not a new work instruction.
 
 ## Source of truth
 - Latest `docs/ZERO_SUM_CANON.md` and owner-approved full branching script in the Zero Sum project conversation.

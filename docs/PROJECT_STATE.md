@@ -2,7 +2,7 @@
 Updated: 2026-11-05
 
 ## Current phase
-M1 Interactive Graphic Novel **accepted by owner as a working prototype** on `dev/graphic-novel-foundation`. No merge, public release, deployment, or portal changes. Owner reports no issues in the M1 experience. This is prototype acceptance, not final artwork, screenplay, accessibility certification, or release acceptance.
+M1 is **accepted as a working prototype**. M2’s **three-beat, text-led Ending C is accepted by the owner as the interim presentation** on 2026-11-05, on `dev/graphic-novel-foundation`. This accepts the current playable presentation, not final artwork, the complete canonical screenplay, accessibility certification, or release. No merge, public release, deployment, or portal changes.
 
 ## Approved intent and sources
 - [M1 brief](M1_BRIEF.md), [visual identity](VISUAL_IDENTITY.md), [canon](ZERO_SUM_CANON.md).
@@ -17,12 +17,18 @@ M1 Interactive Graphic Novel **accepted by owner as a working prototype** on `de
 - [Source import and asset provenance](../experiences/graphic-novel/docs/SOURCE_ARCHIVE.md). The original ZIP is recovered; its 19-node graph, all eight decisions, nine endings, condensed prose, and eight illustrations are retained. Graph and image bytes are unchanged.
 - Title, narrative, decisions, endings, replay and language controls share a cinematic identity. Narrative and UI data remain separate.
 - [M1 QA results and desktop/mobile screenshots](../experiences/graphic-novel/docs/QA.md). See the current report for exact counts and limitations, rather than treating archive-era QA as current evidence.
-- [M2 verification and before/after screenshots](../experiences/graphic-novel/docs/M2_QA.md). M2 functional checks are distinct from the unresolved sphere-art criterion.
-- Prior checkpoint: `c8420a7`; source preserved at `8dc6b03`. Accepted M1 implementation/evidence: `9b01058`; owner M2 brief: `fc18b9a`; M2 interim implementation: `7d18d9f`. The subsequent M2 evidence/handoff checkpoint on this branch is the continuation point; verify its full SHA with Git before continuing.
+- [M2 verification and before/after screenshots](../experiences/graphic-novel/docs/M2_QA.md). QA results and screenshots are preserved; the dated owner acceptance addendum distinguishes interim acceptance from final artwork approval. The accurate city illustration is deferred production art, not an immediate blocker.
+- Prior checkpoint: `c8420a7`; source preserved at `8dc6b03`. Accepted M1 implementation/evidence: `9b01058`; owner M2 brief: `fc18b9a`; M2 interim implementation: `7d18d9f`. M2 QA/evidence checkpoint: `9a1a154`. The subsequent documentation-only owner-acceptance checkpoint records the current decision; verify its full SHA with Git before continuing.
 
-## Remaining limits and next action
-- Owner accepted the M1 prototype on 2026-11-05; final production visual and narrative acceptance remain outstanding.
-- Art and condensed prose remain provisional. Full authoritative screenplay and asset-generation/license provenance were not in the ZIP. The original tower reference resembles a ring rather than the canonical sphere; Ending C now excludes it with a crop and labeled temporary cards. Other M1 endings remain unchanged. See source notes for other mismatches.
-- Physical-device touch, screen-reader usability and independent first-time player review remain unverified.
-- M2 is owner-authorized and implemented as a three-beat Ending C presentation, pending review. See [beat sheet, rejected sphere study and precise alternative](M2_ENDING_C_BEATS.md). Integrated sphere artwork remains unresolved; the shipped activation/boundary cards explicitly say illustration pending. The accepted M1 foundation and complete story graph remain unchanged.
-- Keep authorized continuation on the existing development branch with safe checkpoints; no merge, deployment, paid services, or Possibility changes.
+## Acceptance boundaries and deferred work
+- Keep the accepted M1 foundation and M2 three-beat, text-led Ending C. Do not rebuild the accepted experience without a specific reason.
+- The rejected sphere composite remains rejected and absent from the runtime. Preserve the [M2 QA evidence](../experiences/graphic-novel/docs/M2_QA.md), including its rejected-study record. Do not initiate another sphere experiment or expand visual production.
+- The accurate city illustration remains a **deferred production-art requirement**, not a blocker for the accepted interim presentation or the next proposed narrative cycle. The [existing art brief](M2_ENDING_C_BEATS.md) is retained for later reference, not immediate execution authority.
+- Art and condensed prose remain provisional production inputs. The full authoritative screenplay and asset-generation/license provenance were not in the archive. Interim presentation acceptance does not promote the condensed adaptation to the complete canonical screenplay.
+- Physical-device touch, screen-reader usability, independent first-time player review, and the documented image-overlay contrast manual assessment remain unverified or incomplete as recorded in QA.
+
+## Next proposed cycle — M3: Narrative Consolidation
+
+**Proposed; not started.** Establish a complete canonical screenplay and consistent branch identifiers that future Zero Sum adaptations can share, without changing the currently accepted playable experience. Recover the owner-approved full screenplay, distinguish approved canon from condensed adaptation, and map stable narrative identifiers to the existing runtime nodes and endings. Do not invent missing screenplay content or rename current runtime identifiers as a side effect. No M3 script consolidation or identifier changes were initiated by this acceptance record.
+
+Keep development lightweight and reversible on the existing development branch. No merge, deployment, paid services, visual-production expansion, or Possibility changes.
