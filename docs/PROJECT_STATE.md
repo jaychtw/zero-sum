@@ -2,7 +2,9 @@
 Updated: 2026-11-05
 
 ## Current phase
-**2026-11-06 screenplay revision:** [Complete English screenplay v0.2](../screenplay/ZERO_SUM_SCREENPLAY_DRAFT_EN_V0.2.md) now exists, responding to [Round 1 review](EDITORIAL_REVIEW_ROUND_1.md); [editorial change record](EDITORIAL_REVISION_V02.md). All nine endings and eight choice points remain; v0.1 retained. Newly authored dialogue and transfer staging require owner approval; Traditional Chinese manuscript not yet authored. No runtime/code/asset changes.
+**2026-11-06 bilingual screenplay stage:** Owner approved English screenplay v0.2. [Traditional Chinese dramatic adaptation v0.2](../screenplay/ZERO_SUM_SCREENPLAY_DRAFT_ZH-TW_V0.2.md) has been committed and is **pending owner editorial review**. [Structural bilingual verification and editorial ledger](BILINGUAL_SCREENPLAY_REVIEW_V02.md) confirms corresponding 10 non-ending scene sections, eight decision points and nine endings. Neither version has been integrated into the existing playable experience; no deployment or merge.
+
+**2026-11-06 screenplay revision:** [Complete English screenplay v0.2](../screenplay/ZERO_SUM_SCREENPLAY_DRAFT_EN_V0.2.md) now exists, responding to [Round 1 review](EDITORIAL_REVIEW_ROUND_1.md); [editorial change record](EDITORIAL_REVISION_V02.md). All nine endings and eight choice points remain; v0.1 retained. English v0.2 dialogue and transfer staging were approved by owner on 2026-11-06; Traditional Chinese v0.2 has since been authored, with its dramatic phrasing still awaiting review. No runtime/code/asset changes.
 
 **2026-11-06 editorial review:** [Round 1 findings](EDITORIAL_REVIEW_ROUND_1.md) are recorded. Screenplay v0.1 is structurally faithful but needs a targeted v0.2 revision (two-vehicle opening, distinguish catastrophic endings, character depth and implicit moral delivery). Draft v0.1 and accepted runtime remain unchanged; dialogue is not yet owner-approved.
 
