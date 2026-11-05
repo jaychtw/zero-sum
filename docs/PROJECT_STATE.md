@@ -2,6 +2,8 @@
 Updated: 2026-11-05
 
 ## Current phase
+**2026-11-06 editorial review:** [Round 1 findings](EDITORIAL_REVIEW_ROUND_1.md) are recorded. Screenplay v0.1 is structurally faithful but needs a targeted v0.2 revision (two-vehicle opening, distinguish catastrophic endings, character depth and implicit moral delivery). Draft v0.1 and accepted runtime remain unchanged; dialogue is not yet owner-approved.
+
 **2026-11-06 transition:** The bounded engineering-preparation workstream is closed for planning purposes; the owner authorized a creative screenplay-adaptation phase. See [engineering closure and creative handoff](ENGINEERING_PREPARATION_CLOSURE.md). [Nine-ending English screenplay draft v0.1](../screenplay/ZERO_SUM_SCREENPLAY_DRAFT_EN_V0.1.md) has been authored and is **pending owner editorial review**; new dialogue is not final canon or integrated into the playable experience. No merge/release.
 
 M1 is **accepted as a working prototype**. M2’s **three-beat, text-led Ending C is accepted by the owner as the interim presentation** on 2026-11-05, on `dev/graphic-novel-foundation`. This accepts the current playable presentation, not final artwork, the complete canonical screenplay, accessibility certification, or release. No merge, public release, deployment, or portal changes.
