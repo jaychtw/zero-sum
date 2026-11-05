@@ -1,30 +1,15 @@
-# Zero Sum — First Bounded Implementation Handoff
+# Zero Sum — M1 recovery handoff
 
-**Commitment:** Owner approved a low-friction, GitHub-based foundation and first interactive graphic novel experiment. Separate authorization is required for merge, deployment, catalog changes and material design changes.
+Read [project state](PROJECT_STATE.md), [owner M1 brief](M1_BRIEF.md), [visual identity](VISUAL_IDENTITY.md), [canon](ZERO_SUM_CANON.md), and the pinned UGDS/AICP references in project state before continuing.
 
-## Objective
-Import and evaluate the locally prepared first prototype `zero-sum-graphic-novel-prototype.zip` (provided in ChatGPT's preceding deliverable) into `experiences/graphic-novel/`, after checking its contents and repository state. It is a static site using `index.html`, `app.js`, `style.css`, `story.js`, local images and a story-graph test. Preserve its provisional status.
+## Recover and reproduce
 
-## Guardrails
-- Read and pin UGDS and AICP from `jaychtw/game-development-standards`; follow current project instructions.
-- Do not replace the approved story with a generic adventure, nor treat the condensed prototype dialogue as final screenplay.
-- Keep graphic-novel presentation separable from story data for later visual-novel/motion-comic/anime experiments.
-- No paid services, remote AI API dependency, backend, account login, or unapproved framework.
-- Live English/zh-TW switching, keyboard/touch, reduced motion where applicable.
-- Preserve meaningful Git checkpoints on the working branch; do not merge or deploy.
-- If unable to access the prototype archive, explicitly report the missing source instead of inventing assets.
+Use the existing checkout on `dev/graphic-novel-foundation`; do not create a worktree unless the owner requests one. Verify local/remote HEAD and preserve any user changes. Starting checkpoint was `c8420a7`; source import is preserved at `8dc6b03`, followed by the M1 implementation/evidence checkpoint. Inspect actual files and [current QA](../experiences/graphic-novel/docs/QA.md) before trusting status claims.
 
-## Checks
-1. Validate all nine endings reachable and eight decisions correctly linked.
-2. Validate no broken narrative edges and replay/restart works.
-3. Exercise a complete route in a real browser, desktop and mobile widths; check both languages and keyboard.
-4. Run accessibility checks and visually inspect composed panels.
-5. Document reproducible commands, evidence, limitations and asset provenance.
-6. Stop after the bounded prototype review; request owner acceptance before broad art expansion.
+The ZIP has now been recovered and imported under `experiences/graphic-novel/`. [Source provenance](../experiences/graphic-novel/docs/SOURCE_ARCHIVE.md) records the archive hash, reused content and art limitations. Original `story.js` prose and all graph edges are unchanged. Do not replace the canon with condensed prototype text.
 
-## Current handoff boundary
-The ZIP archive is in the ChatGPT conversation, not yet in this GitHub repository. This branch only records verified project decisions and this bounded task. Import is not complete.
+From `experiences/graphic-novel/`, run `npm test`, then `python3 -m http.server 8000 --bind 127.0.0.1`. Services must be started again after workspace restoration. No dependency install/build is required for the application. See the experience README for pinned external QA tools and browser commands; no browser runtime dependency is bundled with the application.
 
-## M1 continuation (2026-11-05)
+## Next authorized boundary
 
-Read the [owner brief](M1_BRIEF.md), [visual identity](VISUAL_IDENTITY.md), and current [project state](PROJECT_STATE.md) before continuing. The original prototype ZIP remains missing; implementation and visual evidence have not begun. Use the standards commit pinned in project state. Once the source is supplied, inspect before importing, preserve the canon, and execute the already-authorized bounded M1 scope. Safely commit and push intermediate/final work to `dev/graphic-novel-foundation`; do not merge or deploy.
+M1 implementation and review evidence are prepared, not aesthetically accepted or publicly released. Ask the owner to judge the composed experience before scaling art production. Preserve all nine endings, bilingual live switching, accessibility and reduced motion. Subsequent implementation should follow the owner's review; do not infer permission for other adaptations, narrative redesign, merge, deployment, paid services, or portal changes. Safely commit/push meaningful authorized development checkpoints; a push does not imply acceptance or deployment.
