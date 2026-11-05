@@ -27,8 +27,10 @@ M1 is **accepted as a working prototype**. M2’s **three-beat, text-led Ending 
 - Art and condensed prose remain provisional production inputs. The full authoritative screenplay and asset-generation/license provenance were not in the archive. Interim presentation acceptance does not promote the condensed adaptation to the complete canonical screenplay.
 - Physical-device touch, screen-reader usability, independent first-time player review, and the documented image-overlay contrast manual assessment remain unverified or incomplete as recorded in QA.
 
-## Next proposed cycle — M3: Narrative Consolidation
+## Next authorized workstream — M3 through pre-release readiness
 
-**Proposed; not started.** Establish a complete canonical screenplay and consistent branch identifiers that future Zero Sum adaptations can share, without changing the currently accepted playable experience. Recover the owner-approved full screenplay, distinguish approved canon from condensed adaptation, and map stable narrative identifiers to the existing runtime nodes and endings. Do not invent missing screenplay content or rename current runtime identifiers as a side effect. No M3 script consolidation or identifier changes were initiated by this acceptance record.
+**Authorized for bounded autonomous Codex continuation on 2026-11-05.** See [project-local mandate](AUTONOMOUS_CONTINUATION.md). Work has not yet been performed under this mandate. Establish a complete canonical screenplay and consistent branch identifiers that future Zero Sum adaptations can share, without changing the currently accepted playable experience. Recover the owner-approved full screenplay, distinguish approved canon from condensed adaptation, and map stable narrative identifiers to the existing runtime nodes and endings. Do not invent missing screenplay content or rename current runtime identifiers as a side effect. No M3 script consolidation or identifier changes were initiated by this acceptance record.
+
+Codex may proceed through known-canon consolidation, stable identifier mapping, gap documentation, targeted experience hardening, verification and a consolidated owner-review package without intermediate owner signoffs. Missing full screenplay and deferred sphere art must not be invented or treated as approved production work.
 
 Keep development lightweight and reversible on the existing development branch. No merge, deployment, paid services, visual-production expansion, or Possibility changes.
