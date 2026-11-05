@@ -2,7 +2,7 @@
 Updated: 2026-11-05
 
 ## Current phase
-M1 Interactive Graphic Novel implemented for owner review on `dev/graphic-novel-foundation`. No merge, public release, deployment, or portal changes. Functional verification and visual acceptance are separate; the owner's aesthetic approval remains outstanding.
+M1 Interactive Graphic Novel **accepted by owner as a working prototype** on `dev/graphic-novel-foundation`. No merge, public release, deployment, or portal changes. Owner reports no issues in the M1 experience. This is prototype acceptance, not final artwork, screenplay, accessibility certification, or release acceptance.
 
 ## Approved intent and sources
 - [M1 brief](M1_BRIEF.md), [visual identity](VISUAL_IDENTITY.md), [canon](ZERO_SUM_CANON.md).
@@ -20,8 +20,8 @@ M1 Interactive Graphic Novel implemented for owner review on `dev/graphic-novel-
 - Prior checkpoint: `c8420a7`; source preserved at `8dc6b03`. The subsequent M1 implementation/evidence commit on this branch is the recovery point; verify its full SHA with Git before continuing.
 
 ## Remaining limits and next action
-- Owner review of the composed experience is pending; no final visual or narrative acceptance is claimed.
+- Owner accepted the M1 prototype on 2026-11-05; final production visual and narrative acceptance remain outstanding.
 - Art and condensed prose remain provisional. Full authoritative screenplay and asset-generation/license provenance were not in the ZIP. The tower reference resembles a ring rather than the canonical sphere; the approach uses a labeled temporary panel. See source notes for other mismatches.
 - Physical-device touch, screen-reader usability and independent first-time player review remain unverified.
-- Next smallest improvement: obtain owner feedback on the supplied title/scene/decision/ending screenshots, then refine one Ending C panel with approved art that accurately depicts the bounded annihilation sphere. Do not expand into a broad art campaign or other adaptations.
+- Next bounded cycle proposed in [M2 Ending C brief](M2_ENDING_C_BRIEF.md): improve the causal beat sheet and one canonical white-sphere visual treatment, with no broad art campaign or other adaptations.
 - Keep authorized continuation on the existing development branch with safe checkpoints; no merge, deployment, paid services, or Possibility changes.
