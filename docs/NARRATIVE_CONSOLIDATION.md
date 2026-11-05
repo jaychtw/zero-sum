@@ -1,5 +1,7 @@
 # M3 known-canon consolidation and screenplay gap register
 
+**M4 update (2026-11-06):** The inventory below records the evidence-first M3 state. Both newly authored screenplay v0.2 languages are now approved and integrated, with source traces and stable scene mapping in [M4 mapping](M4_INTEGRATION_MAPPING.md). The historical original verbatim screenplay is still not recovered; the approved authored adaptation is no longer a missing runtime input. Preserve this earlier gap record as history, not authority over v0.2.
+
 Scope: Phase A of the [autonomous mandate](AUTONOMOUS_CONTINUATION.md), baseline `dd1f133`. This inventories recovered evidence; **the complete original screenplay is NOT RECOVERED**. No dialogue, shot sequence, character motivation or new outcome has been invented. The accepted runtime prose, graph and M2 presentation are not rewritten.
 
 ## Sources, authority and confidence

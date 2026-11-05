@@ -1,0 +1,74 @@
+[
+  {
+    "ending": "A",
+    "panels": 22,
+    "compactPanels": 6,
+    "englishWords": 1149,
+    "compactEnglishWords": 192,
+    "chineseCharacters": 2261
+  },
+  {
+    "ending": "B",
+    "panels": 23,
+    "compactPanels": 7,
+    "englishWords": 1148,
+    "compactEnglishWords": 223,
+    "chineseCharacters": 2315
+  },
+  {
+    "ending": "C",
+    "panels": 25,
+    "compactPanels": 9,
+    "englishWords": 1284,
+    "compactEnglishWords": 269,
+    "chineseCharacters": 2577
+  },
+  {
+    "ending": "D",
+    "panels": 18,
+    "compactPanels": 5,
+    "englishWords": 1006,
+    "compactEnglishWords": 163,
+    "chineseCharacters": 1996
+  },
+  {
+    "ending": "E",
+    "panels": 18,
+    "compactPanels": 5,
+    "englishWords": 871,
+    "compactEnglishWords": 152,
+    "chineseCharacters": 1733
+  },
+  {
+    "ending": "F",
+    "panels": 18,
+    "compactPanels": 5,
+    "englishWords": 886,
+    "compactEnglishWords": 145,
+    "chineseCharacters": 1769
+  },
+  {
+    "ending": "G",
+    "panels": 19,
+    "compactPanels": 5,
+    "englishWords": 985,
+    "compactEnglishWords": 161,
+    "chineseCharacters": 1908
+  },
+  {
+    "ending": "H",
+    "panels": 22,
+    "compactPanels": 5,
+    "englishWords": 1071,
+    "compactEnglishWords": 155,
+    "chineseCharacters": 2076
+  },
+  {
+    "ending": "I",
+    "panels": 20,
+    "compactPanels": 5,
+    "englishWords": 1085,
+    "compactEnglishWords": 171,
+    "chineseCharacters": 2144
+  }
+]

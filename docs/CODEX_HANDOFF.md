@@ -1,27 +1,20 @@
-# Zero Sum — recovery handoff
+# Zero Sum — current recovery handoff
 
-Read [project state](PROJECT_STATE.md), [owner M1 brief](M1_BRIEF.md), [visual identity](VISUAL_IDENTITY.md), [canon](ZERO_SUM_CANON.md), and the pinned UGDS/AICP references in project state before continuing.
+Start with [project state](PROJECT_STATE.md), [M4 owner-preview package](M4_OWNER_PREVIEW.md), [M4 mandate](M4_BILINGUAL_SCREENPLAY_INTEGRATION.md) and [bilingual approval ledger](BILINGUAL_SCREENPLAY_REVIEW_V02.md). Both v0.2 languages are approved; do not restore compact prototype text as editorial authority. Manuscript preambles with old draft warnings are superseded by the ledger/owner authorization, not silently rewritten.
 
-## Recover and reproduce
+## Recover and run
 
-Use the existing checkout on `dev/graphic-novel-foundation`; do not create a worktree unless the owner requests one. Verify local/remote HEAD and preserve any user changes. Starting checkpoint was `c8420a7`; source import is preserved at `8dc6b03`, followed by the M1 implementation/evidence checkpoint. Inspect actual files and [current QA](../experiences/graphic-novel/docs/QA.md) before trusting status claims.
+Use the existing checkout on `dev/graphic-novel-foundation`; do not create a worktree unless requested. Preserve user changes, verify local/remote SHA. Baseline `4ed8b9c` preserves the compact app. `b0a0d13` records M4's initial mapping; `a0a3d76` is the integrated code/dataset checkpoint; `7cd8124` applies the final scoped typography correction; `80be7ac` adds bounded case verification and matching-runtime aggregation; the subsequent M4 evidence/handoff commit is the review point.
 
-The ZIP has now been recovered and imported under `experiences/graphic-novel/`. [Source provenance](../experiences/graphic-novel/docs/SOURCE_ARCHIVE.md) records the archive hash, reused content and art limitations. Original `story.js` prose and all graph edges are unchanged. Do not replace the canon with condensed prototype text.
+The committed static app needs no install/build. From `experiences/graphic-novel/`: `npm test`, then `python3 -m http.server 8000 --bind 127.0.0.1`. Services/temporary external QA tools must be restarted in a fresh environment. See the experience README for exact browser commands. Current reports are in `docs/m4-evidence/`; keep previous M1/M2/readiness evidence intact. Independent reconstruction/subdirectory verification is in the M4 package.
 
-From `experiences/graphic-novel/`, run `npm test`, then `python3 -m http.server 8000 --bind 127.0.0.1`. Services must be started again after workspace restoration. No dependency install/build is required for the application. See the experience README for pinned external QA tools and browser commands; no browser runtime dependency is bundled with the application.
+## Implementation boundaries
 
-## Current accepted baseline and boundary
+- Active text: generated `manuscript.js` from both locked v0.2 Markdown sources plus `narrative/panel-plan.v1.json`. `node scripts/build-screenplay.mjs --check` verifies freshness; `node scripts/screenplay.test.mjs` verifies source hashes, coverage, choice topology, text and panel navigation. Regenerate only after authorized source/composition edits.
+- All 19 runtime IDs and stable scene/branch identities remain unchanged. `session.current`/`depth` remain; `panel`, `advance()` and final-panel transition guards implement reader pacing. Previous panel restores a prior decision's last panel; no story-save persistence was added.
+- Compact `story.js` and `ending-c.js` remain historical fixtures, not active renderer text. M4 updates C to v0.2 dialogue in three phases/five panels without reviving the rejected art. Base styles and eight image bytes are unchanged; supplemental manuscript CSS supports attribution and compact text-led frames.
+- [Composition record](M4_INTEGRATION_MAPPING.md) documents the split transfer paragraph and single C activation ordering adjustment; no silent wording changes. Do not invent further dialogue or art.
 
-The owner accepted M1 as a working prototype and, on 2026-11-05, accepted M2’s three-beat, text-led Ending C as the interim presentation. Keep both; this is not final artwork, complete screenplay, accessibility certification, or release approval. Preserve all nine endings, bilingual live switching, accessibility, reduced motion, and current playable behavior.
+## Pause point
 
-Read [M2 beat sheet](M2_ENDING_C_BEATS.md) and [M2 QA / owner acceptance addendum](../experiences/graphic-novel/docs/M2_QA.md). The rejected sphere study remains rejected and evidence-only. The accurate city illustration is deferred production art, not an immediate blocker. Do not start another sphere experiment or broaden visual production. The old art brief is retained for future reference only.
-
-M2 implementation: `7d18d9f`; preserved QA and before/after evidence: `9a1a154`; the following documentation-only checkpoint records owner interim acceptance. The original story graph, artwork bytes, and accepted playable code are unchanged by that record. `npm test` runs graph/session/localization checks; browser QA commands in the experience README write `docs/m2-evidence/`. Historical QA claims are not new test runs.
-
-## Autonomous continuation recovery
-
-The subsequent [autonomous mandate](AUTONOMOUS_CONTINUATION.md) at `dd1f133` authorized M3-through-pre-release preparation without milestone signoffs. Feasible work is now completed: [single review package](PRE_RELEASE_REVIEW.md), [known-canon consolidation](NARRATIVE_CONSOLIDATION.md), and [registry compatibility policy](../narrative/README.md). The original complete screenplay remains NOT RECOVERED; do not fabricate it or treat the accepted condensed adaptation as the full source.
-
-Checkpoints: `f4bbae0` narrative/identity inventory; `88117dc` localized image-failure recovery and verification tools; subsequent consolidated evidence/handoff commit. Verify remote HEAD and current package before continuing. Restore using the existing checkout; run `node scripts/narrative.test.mjs` from root and the experience README's application/browser commands. Startup processes and temporary external QA tools must not be assumed to survive a fresh environment. Independent source reconstruction was verified; see evidence.
-
-Three bounded passes were used: inventory; targeted recovery fix/review; final verification. No cosmetic or art iteration remains active. The owner-facing next input is an accessible original approved screenplay for final narrative consolidation. M1 and M2 interim acceptance stand. Preserve all screenshot/QA directories, rejected-study status, runtime IDs and art deferral. Never merge, deploy, change Possibility, spend money or declare production acceptance under this mandate.
+Owner approved screenplay language, not yet the new panel composition. Integration and feasible verification are complete; await owner preview of M4. Final art/provenance, manual overlay contrast and real-device/assistive-technology limits remain documented. M1/M2 acceptance stands as historical baseline; M4 source intentionally supersedes condensed prose. No merge, deployment, paid services, new artwork, other adaptation, sphere experiment or Possibility change.

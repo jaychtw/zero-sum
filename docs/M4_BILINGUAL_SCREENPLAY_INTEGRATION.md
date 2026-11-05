@@ -1,9 +1,12 @@
 # Zero Sum — M4 Bilingual Screenplay Integration Mandate
 
 **Owner authorization:** 2026-11-06, after approving both the English and Traditional Chinese v0.2 dramatic screenplays.  
-**Status:** AUTHORIZED for bounded Codex implementation, **not yet executed**.  
+**Status at authorization:** AUTHORIZED for bounded Codex implementation, **not yet executed**.
+
 **Working branch:** `dev/graphic-novel-foundation`; keep draft PR #1 open.  
 **Source baseline:** PR HEAD `1679b33` before this mandate; verify current head at task start.
+
+**Execution update (2026-11-06):** Full integration is implemented. See [M4 owner-preview package](M4_OWNER_PREVIEW.md) for the current code/evidence and remaining limits. New panel composition awaits owner preview; no merge/deployment. The mandate below is retained as the authorized scope.
 
 ## Purpose
 Adapt the **entire approved bilingual branching screenplay** into the existing **interactive graphic novel** as a readable, dramatic, scene-paced experience—without losing nine endings, choices or the accepted interface identity. This is **content integration**, not a demand for a video/anime production pipeline.

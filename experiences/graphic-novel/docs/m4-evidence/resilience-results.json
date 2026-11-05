@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "routes": 12,
+  "audits": 12,
+  "expectedMissingAssets": [
+    "chase.webp",
+    "hospital.webp",
+    "jacque.webp",
+    "misaki.webp",
+    "sniper.webp",
+    "tackle.webp",
+    "wmd.webp"
+  ],
+  "errors": []
+}

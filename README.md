@@ -2,6 +2,10 @@
 
 One note creates branches, and branches spawn new nodes.
 
-The first playable expression is the [M1 Interactive Graphic Novel](experiences/graphic-novel/README.md): a lightweight, static English/Traditional Chinese prototype with nine endings. See [project state](docs/PROJECT_STATE.md) for the approved scope, verification evidence, and provisional limits. No public deployment has been made.
+The Interactive Graphic Novel now presents the owner-approved English and Traditional Chinese screenplay v0.2 in 70 reader-paced panels, with eight decisions and nine endings.
 
-Current consolidated evidence and remaining content limitations: [owner-preview review package](docs/PRE_RELEASE_REVIEW.md).
+- [M4 consolidated owner-preview package and screenshots](docs/M4_OWNER_PREVIEW.md)
+- [Run, source generation and verification](experiences/graphic-novel/README.md)
+- [Current project state](docs/PROJECT_STATE.md)
+
+M1/M2 evidence and earlier manuscripts remain preserved. New panelization awaits owner preview; no public deployment or merge has occurred.
