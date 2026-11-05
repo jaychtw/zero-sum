@@ -2,6 +2,8 @@
 Updated: 2026-11-05
 
 ## Current phase
+**2026-11-06 screenplay revision:** [Complete English screenplay v0.2](../screenplay/ZERO_SUM_SCREENPLAY_DRAFT_EN_V0.2.md) now exists, responding to [Round 1 review](EDITORIAL_REVIEW_ROUND_1.md); [editorial change record](EDITORIAL_REVISION_V02.md). All nine endings and eight choice points remain; v0.1 retained. Newly authored dialogue and transfer staging require owner approval; Traditional Chinese manuscript not yet authored. No runtime/code/asset changes.
+
 **2026-11-06 editorial review:** [Round 1 findings](EDITORIAL_REVIEW_ROUND_1.md) are recorded. Screenplay v0.1 is structurally faithful but needs a targeted v0.2 revision (two-vehicle opening, distinguish catastrophic endings, character depth and implicit moral delivery). Draft v0.1 and accepted runtime remain unchanged; dialogue is not yet owner-approved.
 
 **2026-11-06 transition:** The bounded engineering-preparation workstream is closed for planning purposes; the owner authorized a creative screenplay-adaptation phase. See [engineering closure and creative handoff](ENGINEERING_PREPARATION_CLOSURE.md). [Nine-ending English screenplay draft v0.1](../screenplay/ZERO_SUM_SCREENPLAY_DRAFT_EN_V0.1.md) has been authored and is **pending owner editorial review**; new dialogue is not final canon or integrated into the playable experience. No merge/release.
