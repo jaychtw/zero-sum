@@ -35,4 +35,6 @@ Targeted hardening adds localized missing-illustration recovery; no normal-path 
 
 The [single owner-review package](PRE_RELEASE_REVIEW.md) is the current entry point for exact test results, desktop/mobile evidence, reproduction and remaining limitations. Historical M1/M2 QA remains preserved. The package recommends owner preview only; missing full screenplay, art rights/provenance and deferred final art still limit production readiness.
 
+Additional source recovered on 2026-11-06: [detailed conversation-derived narrative treatment](DETAILED_NARRATIVE_TREATMENT.md) preserves all nine branches with character motivation, staging, and story-world distinctions beyond the condensed runtime. This is **not** the original verbatim dialogue or timed shooting screenplay; those remain NOT RECOVERED. Keep the runtime unchanged pending a separate editorial adaptation/reconciliation.
+
 Next owner input for final narrative consolidation: an accessible copy of the original approved full screenplay. Do not invent missing content, restart sphere experiments, or expand visual production while waiting. All independent authorized tasks are completed or explicitly limited in the package. No merge, deployment, paid services or Possibility changes.
