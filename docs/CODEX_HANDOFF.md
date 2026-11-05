@@ -24,3 +24,7 @@ Import and evaluate the locally prepared first prototype `zero-sum-graphic-novel
 
 ## Current handoff boundary
 The ZIP archive is in the ChatGPT conversation, not yet in this GitHub repository. This branch only records verified project decisions and this bounded task. Import is not complete.
+
+## M1 continuation (2026-11-05)
+
+Read the [owner brief](M1_BRIEF.md), [visual identity](VISUAL_IDENTITY.md), and current [project state](PROJECT_STATE.md) before continuing. The original prototype ZIP remains missing; implementation and visual evidence have not begun. Use the standards commit pinned in project state. Once the source is supplied, inspect before importing, preserve the canon, and execute the already-authorized bounded M1 scope. Safely commit and push intermediate/final work to `dev/graphic-novel-foundation`; do not merge or deploy.
