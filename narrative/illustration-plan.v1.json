@@ -1,0 +1,786 @@
+{
+  "schemaVersion": 1,
+  "baseline": "4c9ee3a",
+  "categories": {
+    "unique": "Unique illustration recommended",
+    "reuse": "Can reuse an existing illustration",
+    "crop": "Can use a derived crop / alternate framing",
+    "text": "Can remain text-led without harming the experience"
+  },
+  "categoryNote": "Reuse/crop rows identify whether their source exists today or is a planned master. A planned source is not an existing file. Unique marks one anchor per new master, not every panel dependent on new art.",
+  "globalSpecification": {
+    "style": "Original classic 1980s–1990s cel-anime characters in painterly cinematic cyberpunk environments; accepted ink/paper/coral/cyan interface palette. Illustrations support dramatic action without UI baked into art.",
+    "delivery": "Landscape 16:9 local WebP. Prefer 2560×1440 master if the chosen method supports it; 1280×720 is acceptable with looser crops. No paid upscaling assumed. Keep source master and provenance/rights receipt. No asset may be activated just because a specification exists.",
+    "cropGate": "Crop is a spatial subset, never new pose/expression/time. No mirroring, repainting or multi-time montage. Review native pixel dimensions and bilingual desktop/mobile framing before activation. If a required ROI is too small, loosen the detail or keep text-led rather than enlarge blindly.",
+    "continuity": "Approved EN/zh-TW screenplay v0.2 and canon prevail. No extra dialogue, casualties, fates, moral ranking or other-timeline knowledge. Existing references are provisional with undocumented rights.",
+    "overlay": "All bilingual dialogue and UI remain HTML below art. No baked lettering. Reserve quiet lower-right for the localized provisional art caption; check contrast manually.",
+    "characterReferences": "Use local provisional reference bytes as visual continuity guides: Alex = chase foreground driver / hospital right / wmd accepted left crop; Misaki = chase violet-haired passenger / hospital patient; Jacque = chase blond passenger / jacque hanging figure; Pete = chase cap-and-goggles figure far left; Karl = sniper distant light-coated figure and tackle pinned figure. These are not approved production model sheets. Do not use the chase dashboard portrait as a separate new Karl design or resolve conflicting exploratory details silently. Keep wardrobe/likeness coherent and show unresolved differences at later art review."
+  },
+  "panels": [
+    {
+      "panelId": "ZS-S001.P01",
+      "category": "unique",
+      "asset": "OPEN",
+      "variant": "full",
+      "reason": "Establish the canonical two-car pursuit; the existing four-person cabin is contradictory."
+    },
+    {
+      "panelId": "ZS-S001.P02",
+      "category": "reuse",
+      "asset": "OPEN",
+      "variant": "full",
+      "reason": "Same pursuit geography; shooting and road danger are supported by the shared wide frame."
+    },
+    {
+      "panelId": "ZS-S001.P03",
+      "category": "crop",
+      "asset": "OPEN",
+      "variant": "following-cabin",
+      "reason": "Introduce Pete and Jacque in the following car without a new moment or changed pose."
+    },
+    {
+      "panelId": "ZS-S001.P04",
+      "category": "crop",
+      "asset": "OPEN",
+      "variant": "lead-cabin",
+      "reason": "Focus Alex and Misaki in the lead car; retain their established positions."
+    },
+    {
+      "panelId": "ZS-S001.P05",
+      "category": "unique",
+      "asset": "FORK",
+      "variant": "ramp-approach",
+      "reason": "Route geometry changes; a ramp-only detail can introduce the split before the stopped transfer-bay wide."
+    },
+    {
+      "panelId": "ZS-S002.P01",
+      "category": "reuse",
+      "asset": "FORK",
+      "variant": "full",
+      "reason": "Both original crews pause at the transfer bay; neither choice has yet occurred."
+    },
+    {
+      "panelId": "ZS-S002.P02",
+      "category": "crop",
+      "asset": "FORK",
+      "variant": "lead-cabin",
+      "reason": "A tighter view supports deliberation; do not show the optional completed swap."
+    },
+    {
+      "panelId": "ZS-S002.P03",
+      "category": "reuse",
+      "asset": "FORK",
+      "variant": "full",
+      "reason": "Hold both routes in view while the player chooses; avoid preselecting a branch."
+    },
+    {
+      "panelId": "ZS-S003.P01",
+      "category": "text",
+      "asset": null,
+      "variant": null,
+      "reason": "The transfer/autopilot confirmation is a short continuity pause; do not repeat the incorrect four-person cabin."
+    },
+    {
+      "panelId": "ZS-S003.P02",
+      "category": "crop",
+      "asset": "JETPACK",
+      "variant": "airborne",
+      "reason": "Jetpack launch detail can exclude the shoulder launcher and later impact without altering the pose."
+    },
+    {
+      "panelId": "ZS-S003.P03",
+      "category": "unique",
+      "asset": "JETPACK",
+      "variant": "full",
+      "reason": "Karl firing shoulder rockets is a distinct action beat, absent from the hanging aftermath image."
+    },
+    {
+      "panelId": "ZS-S003.P04",
+      "category": "reuse",
+      "asset": "jacque",
+      "variant": "full",
+      "reason": "Existing hanging-bridge composition supports the rescue dilemma; keep visible equipment provisional."
+    },
+    {
+      "panelId": "ZS-S004.P01",
+      "category": "text",
+      "asset": null,
+      "variant": null,
+      "reason": "The fall, mirror and radio static deserve a silent visual break; no image of a surviving Jacque."
+    },
+    {
+      "panelId": "ZS-S004.P02",
+      "category": "crop",
+      "asset": "chase",
+      "variant": "alex-alone",
+      "reason": "Isolate Alex only for his hand tremor; no living companions from the source cabin. Candidate, not activated."
+    },
+    {
+      "panelId": "ZS-S004.P03",
+      "category": "crop",
+      "asset": "sniper",
+      "variant": "hangar-landmark",
+      "reason": "Architecture-only detail establishes the hangar without prematurely showing the shooting outcome."
+    },
+    {
+      "panelId": "ZS-S005.P01",
+      "category": "reuse",
+      "asset": "sniper",
+      "variant": "full",
+      "reason": "The existing civilian standoff is the appropriate wide; no casualties have occurred yet."
+    },
+    {
+      "panelId": "ZS-S005.P02",
+      "category": "crop",
+      "asset": "sniper",
+      "variant": "restraint",
+      "reason": "Alex and the rifle support the withheld breath; leave the outcome unresolved."
+    },
+    {
+      "panelId": "ZS-S005.P03",
+      "category": "reuse",
+      "asset": "sniper",
+      "variant": "full",
+      "reason": "Return to the same standoff for the decision; meaningful repetition maintains the tension."
+    },
+    {
+      "panelId": "ZS-S006.P01",
+      "category": "unique",
+      "asset": "TOWER",
+      "variant": "full",
+      "reason": "Disabled lifts and access geometry need an architectural establishing image."
+    },
+    {
+      "panelId": "ZS-S006.P02",
+      "category": "reuse",
+      "asset": "TOWER",
+      "variant": "full",
+      "reason": "The unchanged architecture holds the stairs-versus-exterior choice without depicting both outcomes."
+    },
+    {
+      "panelId": "ZS-S007.P01",
+      "category": "reuse",
+      "asset": "jacque",
+      "variant": "full",
+      "reason": "Existing rescue reference supports Alex reaching Jacque; no new base needed for this provisional beat."
+    },
+    {
+      "panelId": "ZS-S007.P02",
+      "category": "reuse",
+      "asset": "TOWER",
+      "variant": "full",
+      "reason": "Architecture-only tower access can recur after evacuation without implying who survived."
+    },
+    {
+      "panelId": "ZS-S007.P03",
+      "category": "text",
+      "asset": null,
+      "variant": null,
+      "reason": "The farewell and order to stay alive need a pause before the ascent decision, rather than invented action."
+    },
+    {
+      "panelId": "ZS-S008.P01",
+      "category": "crop",
+      "asset": "OPEN",
+      "variant": "lead-cabin",
+      "reason": "Healthy Misaki navigating belongs in the lead cabin; the wounded-car image is too early. Exclude following car after separation."
+    },
+    {
+      "panelId": "ZS-S008.P02",
+      "category": "text",
+      "asset": null,
+      "variant": null,
+      "reason": "Pete dying over the radio is an offscreen shock; avoid depicting him alive or inventing his death scene."
+    },
+    {
+      "panelId": "ZS-S008.P03",
+      "category": "reuse",
+      "asset": "misaki",
+      "variant": "full",
+      "reason": "The existing wounded-Misaki wreck image matches the RPG aftermath."
+    },
+    {
+      "panelId": "ZS-S008.P04",
+      "category": "reuse",
+      "asset": "misaki",
+      "variant": "full",
+      "reason": "Hold the wreck and extraction stakes for Alex’s decision rather than create near-duplicate action art."
+    },
+    {
+      "panelId": "ZS-S010.P03",
+      "category": "unique",
+      "asset": "CBD-BATTLE",
+      "variant": "full",
+      "reason": "CBD marksman combat needs local cover and civilians; the tower hangar cannot stand in for the square."
+    },
+    {
+      "panelId": "ZS-S010.P01",
+      "category": "reuse",
+      "asset": "misaki",
+      "variant": "full",
+      "reason": "The wreck can support the carry-to-hospital aftermath; exact extraction motion stays in text."
+    },
+    {
+      "panelId": "ZS-S010.P02",
+      "category": "text",
+      "asset": null,
+      "variant": null,
+      "reason": "The slowing convoy on Jacque’s radio is an ominous sound-led interruption, not a literal invented cutaway."
+    },
+    {
+      "panelId": "ZS-S009.P01",
+      "category": "crop",
+      "asset": "hospital",
+      "variant": "clinical",
+      "reason": "Staff and IV detail establishes clinical care without imposing the later handholding reconciliation."
+    },
+    {
+      "panelId": "ZS-S009.P02",
+      "category": "text",
+      "asset": null,
+      "variant": null,
+      "reason": "Gratitude and anger coexist; leave the ambivalence in the approved dialogue instead of forcing a romantic pose."
+    },
+    {
+      "panelId": "ZS-S009.P03",
+      "category": "crop",
+      "asset": "hospital",
+      "variant": "alex-portrait",
+      "reason": "A restrained Alex-only detail supports his decision without claiming Misaki has already reconciled."
+    },
+    {
+      "panelId": "ZS-S011.P01",
+      "category": "unique",
+      "asset": "SHOT-COST",
+      "variant": "full",
+      "reason": "The current upright-civilian standoff does not show the shot’s cost; two fallen civilians require a distinct aftermath."
+    },
+    {
+      "panelId": "ZS-S011.P02",
+      "category": "unique",
+      "asset": "PROTEST",
+      "variant": "full",
+      "reason": "A divided ceremony with protest differs materially from the quieter honors route."
+    },
+    {
+      "panelId": "ZS-S011.P03",
+      "category": "crop",
+      "asset": "HONORS",
+      "variant": "couple-edge",
+      "reason": "Pete and Misaki’s quiet tenderness can share the edge of the civic gathering; exclude route-specific central action."
+    },
+    {
+      "panelId": "ZS-S011.P04",
+      "category": "crop",
+      "asset": "GRAVE",
+      "variant": "medal-alone",
+      "reason": "The medal and empty headstone detail can imply Alex has walked away; exclude his seated body."
+    },
+    {
+      "panelId": "ZS-S012.P01",
+      "category": "unique",
+      "asset": "STAIR",
+      "variant": "lower-stair",
+      "reason": "The stair approach needs a new spatial composition. Begin with a lower-stair detail outside the white boundary."
+    },
+    {
+      "panelId": "ZS-S012.P02",
+      "category": "reuse",
+      "asset": "STAIR",
+      "variant": "full",
+      "reason": "The full stair frame reveals the approaching boundary; Alex is just outside it, never visibly surviving inside."
+    },
+    {
+      "panelId": "ZS-S012.P03",
+      "category": "unique",
+      "asset": "CITY",
+      "variant": "full",
+      "reason": "One impartial city-wide boundary composition can serve the common result across these routes."
+    },
+    {
+      "panelId": "ZS-S013.P01",
+      "category": "crop",
+      "asset": "wmd",
+      "variant": "ascent-left",
+      "reason": "Preserve the accepted left-side ascent crop; the right-hand ring must remain excluded."
+    },
+    {
+      "panelId": "ZS-S013.P02",
+      "category": "unique",
+      "asset": "SUMMIT",
+      "variant": "full",
+      "reason": "Physical confrontation and ideological tension require the summit relationship, not the ascent crop."
+    },
+    {
+      "panelId": "ZS-S013.P03",
+      "category": "crop",
+      "asset": "SUMMIT",
+      "variant": "karl-resolve",
+      "reason": "Karl’s face and device hand can hold his answer before activation; no visible active field."
+    },
+    {
+      "panelId": "ZS-S013.P04",
+      "category": "unique",
+      "asset": "ERASURE",
+      "variant": "full",
+      "reason": "A sharply bounded opaque white volume erases Karl and the summit; neither ring nor explosion is acceptable. Specification only."
+    },
+    {
+      "panelId": "ZS-S013.P05",
+      "category": "reuse",
+      "asset": "CITY",
+      "variant": "full",
+      "reason": "The impartial city view carries the irreversible limit without adding a survivor viewpoint."
+    },
+    {
+      "panelId": "ZS-S014.P01",
+      "category": "reuse",
+      "asset": "tackle",
+      "variant": "full",
+      "reason": "The existing restraint/device composition fits the successful stop; preserve the provisional status."
+    },
+    {
+      "panelId": "ZS-S014.P02",
+      "category": "unique",
+      "asset": "HONORS",
+      "variant": "full",
+      "reason": "A muted civic gathering, separate from A’s protest, supports this route’s honors and private loss."
+    },
+    {
+      "panelId": "ZS-S014.P03",
+      "category": "unique",
+      "asset": "GRAVE",
+      "variant": "full",
+      "reason": "Alex beside Jacque’s grave is a new private grief scene; no reuse for routes where Jacque survives."
+    },
+    {
+      "panelId": "ZS-S015.P01",
+      "category": "reuse",
+      "asset": "STAIR",
+      "variant": "full",
+      "reason": "The same Alex-only stair geometry works after rescue; keep Jacque entirely off-frame."
+    },
+    {
+      "panelId": "ZS-S015.P02",
+      "category": "reuse",
+      "asset": "CITY",
+      "variant": "full",
+      "reason": "The city boundary is a common outcome; no route-specific people in the master."
+    },
+    {
+      "panelId": "ZS-S015.P03",
+      "category": "unique",
+      "asset": "EVAC",
+      "variant": "full",
+      "reason": "Jacque alive, injured and trying to rise needs a safe Downtown ambulance composition."
+    },
+    {
+      "panelId": "ZS-S016.P01",
+      "category": "crop",
+      "asset": "wmd",
+      "variant": "ascent-left",
+      "reason": "Preserve the accepted ascent crop excluding the ring; it depicts the route before activation."
+    },
+    {
+      "panelId": "ZS-S016.P02",
+      "category": "reuse",
+      "asset": "ERASURE",
+      "variant": "full",
+      "reason": "The same unobservable erasure endpoint can serve F; never depict Alex alive inside the white volume."
+    },
+    {
+      "panelId": "ZS-S016.P03",
+      "category": "crop",
+      "asset": "EVAC",
+      "variant": "radio-gaze",
+      "reason": "Jacque in the open ambulance, radio and gaze detail supports this aftermath without inventing a new location."
+    },
+    {
+      "panelId": "ZS-S017.P01",
+      "category": "reuse",
+      "asset": "hospital",
+      "variant": "full",
+      "reason": "The original hospital handholding fits this explicit intimate reconciliation beat."
+    },
+    {
+      "panelId": "ZS-S017.P02",
+      "category": "crop",
+      "asset": "CITY",
+      "variant": "downtown-limit",
+      "reason": "A city insert expresses Downtown spared; it is narrator geography, not a literal hospital-window viewpoint."
+    },
+    {
+      "panelId": "ZS-S017.P03",
+      "category": "unique",
+      "asset": "ROOF-COUPLE",
+      "variant": "full",
+      "reason": "Days-later intimacy on the roof is emotionally distinct from H’s isolated search before activation."
+    },
+    {
+      "panelId": "ZS-S017.P04",
+      "category": "crop",
+      "asset": "ROOF-COUPLE",
+      "variant": "hands",
+      "reason": "Hands/faces hold the final admission and guilt; no changed expression or invented happier resolution."
+    },
+    {
+      "panelId": "ZS-S018.P01",
+      "category": "text",
+      "asset": null,
+      "variant": null,
+      "reason": "The face closing as Alex leaves the ward is a dramatic rupture; the handholding source contradicts it."
+    },
+    {
+      "panelId": "ZS-S018.P02",
+      "category": "unique",
+      "asset": "ROOF-RADIO",
+      "variant": "full",
+      "reason": "Alex searching alone on a rooftop before activation needs a cold, isolated composition."
+    },
+    {
+      "panelId": "ZS-S018.P03",
+      "category": "reuse",
+      "asset": "CITY",
+      "variant": "full",
+      "reason": "The same city boundary closes the search; avoid adding an observer who sees other timelines."
+    },
+    {
+      "panelId": "ZS-S018.P04",
+      "category": "unique",
+      "asset": "INQUIRY",
+      "variant": "full",
+      "reason": "Official reconstruction and conflicting duties need a new institutional scene, not another battle image."
+    },
+    {
+      "panelId": "ZS-S018.P05",
+      "category": "crop",
+      "asset": "INQUIRY",
+      "variant": "maps-officials",
+      "reason": "Maps and officials sustain the inquiry; the headline remains localized HTML rather than baked text."
+    },
+    {
+      "panelId": "ZS-S018.P06",
+      "category": "text",
+      "asset": null,
+      "variant": null,
+      "reason": "A box and service-door exit are a short quiet dismissal; text carries the institutional finality without another master."
+    },
+    {
+      "panelId": "ZS-S018.P07",
+      "category": "reuse",
+      "asset": "CLINIC",
+      "variant": "full",
+      "reason": "A neutral medical entrance and physical separation can support the later encounter; no romantic handhold."
+    },
+    {
+      "panelId": "ZS-S019.P01",
+      "category": "reuse",
+      "asset": "CITY",
+      "variant": "full",
+      "reason": "The common city result is already covered by the boundary master."
+    },
+    {
+      "panelId": "ZS-S019.P02",
+      "category": "unique",
+      "asset": "MEMORIAL",
+      "variant": "full",
+      "reason": "Surviving CBD citizens and Alex’s discomfort need a distinct civilian memorial, without medals."
+    },
+    {
+      "panelId": "ZS-S019.P03",
+      "category": "unique",
+      "asset": "CLINIC",
+      "variant": "full",
+      "reason": "Recovered Misaki and Alex at a medical doorway require emotional distance, not the bedside reconciliation."
+    },
+    {
+      "panelId": "ZS-S019.P04",
+      "category": "unique",
+      "asset": "APARTMENT",
+      "variant": "full",
+      "reason": "A private apartment, discarded insignia and leads establish the aftermath’s new scale."
+    },
+    {
+      "panelId": "ZS-S019.P05",
+      "category": "unique",
+      "asset": "ALLEY",
+      "variant": "full",
+      "reason": "Alex following a cult remnant into a rain-dark alley is the final spatial and moral beat, not a heroic victory pose."
+    }
+  ],
+  "illustrations": [
+    {
+      "id": "OPEN",
+      "purpose": "Establish the squad and two-car geography.",
+      "characters": "Alex and Misaki in lead car; Pete and Jacque in following car; Karl’s vehicle in pursuit geography.",
+      "environment": "Elevated neon road leading toward the fork.",
+      "mood": "Urgent but legible teamwork.",
+      "critical": "Both cars identifiable in one coherent view; Alex drives lead, Misaki navigates/shoots, Pete drives following, Jacque rides with Pete. No four-person single cabin. Use an external oblique view with two readable cabin windows; no multi-time montage. Healthy Misaki; no early casualties.",
+      "cropSupport": "Lead-cabin and following-cabin detail regions must retain identity at native size. Lead-only detail must exclude the following car for S008.P01; no pose/expression changes.",
+      "orientation": "Landscape 16:9",
+      "bilingualOverlay": "No dialogue/title overlay. EN and zh-TW text, alt and captions stay in HTML. Reserve quiet lower-right for the existing localized provisional caption.",
+      "status": "planning-only",
+      "file": null
+    },
+    {
+      "id": "FORK",
+      "purpose": "Make the transfer choice spatially intelligible.",
+      "characters": "The four squad members remain in their original car assignments; no completed transfer.",
+      "environment": "Stopped cars in a transfer bay, CBD and Tower ramps beyond.",
+      "mood": "Suspended urgency.",
+      "critical": "Two distinct cars, visible doors and a plausible crossing path; legible road geometry without baked route labels. Before player choice, never seat Pete with Misaki and Alex with Jacque unconditionally.",
+      "cropSupport": "Ramp-only opening detail excludes stopped vehicles; lead-cabin decision detail. Master is a stopped-bay view; S001.P05 uses only ramp geometry, not the full stopped view.",
+      "orientation": "Landscape 16:9",
+      "bilingualOverlay": "No dialogue/title overlay. EN and zh-TW text, alt and captions stay in HTML. Reserve quiet lower-right for the existing localized provisional caption.",
+      "status": "planning-only",
+      "file": null
+    },
+    {
+      "id": "JETPACK",
+      "purpose": "Reveal the airborne tactic and Karl’s counterattack.",
+      "characters": "Jacque airborne with jetpack; Karl with shoulder-mounted launcher.",
+      "environment": "Elevated road/bridge, Karl’s vehicle.",
+      "mood": "A brief tactical advantage turning lethal.",
+      "critical": "One coherent moment after launch, before impact. Jacque not yet hanging; launcher attached to Karl’s shoulder, not a hand-held replacement. Avoid introducing additional squad passengers.",
+      "cropSupport": "Airborne detail excludes Karl, rocket impact and aftermath; keep Jacque readable. Full frame reveals Karl firing.",
+      "orientation": "Landscape 16:9",
+      "bilingualOverlay": "No dialogue/title overlay. EN and zh-TW text, alt and captions stay in HTML. Reserve quiet lower-right for the existing localized provisional caption.",
+      "status": "planning-only",
+      "file": null
+    },
+    {
+      "id": "TOWER",
+      "purpose": "Establish the disabled vertical routes.",
+      "characters": "No identifiable people required.",
+      "environment": "Tower lobby/access level: disabled lifts, severed wiring, stair door and exterior access.",
+      "mood": "Obstructed urgency.",
+      "critical": "Architecture-only image stays valid with Jacque dead or rescued. Do not depict both outcomes or suggest repairs. Keep emergency access believable; no baked instructions.",
+      "cropSupport": "Prefer full reuse for all three links; optional stair/access details only if legible.",
+      "orientation": "Landscape 16:9",
+      "bilingualOverlay": "No dialogue/title overlay. EN and zh-TW text, alt and captions stay in HTML. Reserve quiet lower-right for the existing localized provisional caption.",
+      "status": "planning-only",
+      "file": null
+    },
+    {
+      "id": "STAIR",
+      "purpose": "Place Alex at the stair route’s irreversible limit.",
+      "characters": "Alex only, outside the approaching boundary.",
+      "environment": "Tower stairwell, white boundary entering the upper volume.",
+      "mood": "Last-second recognition.",
+      "critical": "Pure opaque white matter-erasure boundary with a sharp curved edge. No fire, debris, pressure wave, ring, transparent interior or visible survivor inside it. Jacque never present because routes differ. Radio detail unobtrusive.",
+      "cropSupport": "Lower-stair approach detail must exclude white edge and not remove body damage. Full frame reveals imminent erasure; death is completed by text/city insert, never a changed-pose composite.",
+      "orientation": "Landscape 16:9",
+      "bilingualOverlay": "No dialogue/title overlay. EN and zh-TW text, alt and captions stay in HTML. Reserve quiet lower-right for the existing localized provisional caption.",
+      "status": "planning-only",
+      "file": null
+    },
+    {
+      "id": "SUMMIT",
+      "purpose": "Give Karl’s argument a face and physical opposition.",
+      "characters": "Alex and Karl.",
+      "environment": "Tower summit before device activation.",
+      "mood": "Conviction against exhausted resistance.",
+      "critical": "Face-off without invented companions. Device is a bounded matter-annihilation instrument, not a portal ring; no active field or blast yet. Do not imply Karl knows other timelines. Alex is still airborne/descending near the summit, not already standing beside Karl; show his jetpack and rifle without inventing a landing. Preserve Karl’s hand on the device for the resolve detail.",
+      "cropSupport": "Karl face/device-hand region for resolve; Alex’s position and equipment must remain consistent with the full frame.",
+      "orientation": "Landscape 16:9",
+      "bilingualOverlay": "No dialogue/title overlay. EN and zh-TW text, alt and captions stay in HTML. Reserve quiet lower-right for the existing localized provisional caption.",
+      "status": "planning-only",
+      "file": null
+    },
+    {
+      "id": "ERASURE",
+      "purpose": "Show the instant normal matter ceases at the summit.",
+      "characters": "Alex at the outside boundary; Karl already absent within the erased volume.",
+      "environment": "Tower summit intersected by an expanding sharply bounded white sphere.",
+      "mood": "Impossible finality, no spectacle of fire.",
+      "critical": "Opaque white filled volume, crisp spherical boundary, no luminous hoop or transparent center. Matter within—including Karl and summit structure—is absent. Show Alex’s upper back/jetpack at the outside boundary, hands outside the frame; C’s forward reach and F’s rifle reach remain distinct in text. He cannot survive within. No conventional explosion, rubble, shockwave or portal. This is a deferred production requirement; M5 must not generate a sphere test.",
+      "cropSupport": "Full reuse for C/F is acceptable as an endpoint insert; no survivor-visible crop from within. Geometry and final artwork require owner review before activation.",
+      "orientation": "Landscape 16:9",
+      "bilingualOverlay": "No dialogue/title overlay. EN and zh-TW text, alt and captions stay in HTML. Reserve quiet lower-right for the existing localized provisional caption.",
+      "status": "planning-only",
+      "file": null
+    },
+    {
+      "id": "CITY",
+      "purpose": "Make the shared destruction boundary comprehensible.",
+      "characters": "No identifiable cast.",
+      "environment": "Wide narrator view from surviving Downtown toward erased Uptown/Tower volume.",
+      "mood": "Terrible, unnaturally clean absence.",
+      "critical": "Bounded opaque white spherical volume; Tower and matter inside absent; Downtown and hospital outside remain intact. No ring, portal, fire, dust cloud or arbitrary numerical radius. The image is a narrator insert, not a route-specific literal window view.",
+      "cropSupport": "Full view for B/C/E/H/I; wider Downtown-limit detail for G retains both intact city and boundary. Do not invent an active-field duration for the later rooftop.",
+      "orientation": "Landscape 16:9",
+      "bilingualOverlay": "No dialogue/title overlay. EN and zh-TW text, alt and captions stay in HTML. Reserve quiet lower-right for the existing localized provisional caption.",
+      "status": "planning-only",
+      "file": null
+    },
+    {
+      "id": "ROOF-RADIO",
+      "purpose": "Hold Alex’s search and lack of a target.",
+      "characters": "Alex alone with radio/rifle.",
+      "environment": "Hospital rooftop before activation; distant Tower intact.",
+      "mood": "Cold isolation and narrowing time.",
+      "critical": "No Misaki at his side, no white field yet, no guaranteed line of fire or invented clear shot. Keep search equipment readable.",
+      "cropSupport": "Full only required; optional radio detail cannot imply successful contact.",
+      "orientation": "Landscape 16:9",
+      "bilingualOverlay": "No dialogue/title overlay. EN and zh-TW text, alt and captions stay in HTML. Reserve quiet lower-right for the existing localized provisional caption.",
+      "status": "planning-only",
+      "file": null
+    },
+    {
+      "id": "ROOF-COUPLE",
+      "purpose": "Hold intimacy beside the irreversible loss.",
+      "characters": "Alex and recovered Misaki.",
+      "environment": "Hospital roof days later, absent Uptown skyline.",
+      "mood": "Warmth complicated by guilt.",
+      "critical": "No active expanding field required; do not invent how long it persisted. Do not show living Pete/Jacque as present. Avoid a triumphant romantic ending pose.",
+      "cropSupport": "Hands/faces detail shares the exact posture/emotion; keep negative space and lost skyline in full view.",
+      "orientation": "Landscape 16:9",
+      "bilingualOverlay": "No dialogue/title overlay. EN and zh-TW text, alt and captions stay in HTML. Reserve quiet lower-right for the existing localized provisional caption.",
+      "status": "planning-only",
+      "file": null
+    },
+    {
+      "id": "CBD-BATTLE",
+      "purpose": "Give the defended CBD its own geography.",
+      "characters": "Alex as marksman, civilians seeking cover, attackers at distance.",
+      "environment": "CBD square, defensible cover and access routes.",
+      "mood": "Concentrated defense under pressure.",
+      "critical": "Not the hangar standoff; no Karl hostage reuse. Civilians remain people being protected, not decorative casualties. Do not invent exact attacker/casualty counts or make a victory spectacle.",
+      "cropSupport": "Full frame required; optional Alex/cover detail, not needed as another job.",
+      "orientation": "Landscape 16:9",
+      "bilingualOverlay": "No dialogue/title overlay. EN and zh-TW text, alt and captions stay in HTML. Reserve quiet lower-right for the existing localized provisional caption.",
+      "status": "planning-only",
+      "file": null
+    },
+    {
+      "id": "MEMORIAL",
+      "purpose": "Contrast public gratitude with Alex’s private uncertainty.",
+      "characters": "Alex and surviving CBD residents.",
+      "environment": "Later CBD candle memorial.",
+      "mood": "Gratitude without absolution.",
+      "critical": "No medal ceremony, no tower-side civilian deaths imported into this route. Modest tributes, no readable baked names or slogans.",
+      "cropSupport": "Full only required; candle/hand detail optional, no extra panel assignment.",
+      "orientation": "Landscape 16:9",
+      "bilingualOverlay": "No dialogue/title overlay. EN and zh-TW text, alt and captions stay in HTML. Reserve quiet lower-right for the existing localized provisional caption.",
+      "status": "planning-only",
+      "file": null
+    },
+    {
+      "id": "HONORS",
+      "purpose": "Stage civic recognition with unresolved private grief.",
+      "characters": "Alex; officials; Pete and Misaki quietly together at the edge.",
+      "environment": "Modest civic gathering after the stopped attack.",
+      "mood": "Formal restraint and absence.",
+      "critical": "No A-specific protest or casualty allegation in this shared source. Medal is an object, not a moral score. Pete/Misaki tenderness at edge must be readable without a celebratory crowd behind them.",
+      "cropSupport": "Couple-edge crop for A excludes central ceremony and any route-specific claim; full used for D only.",
+      "orientation": "Landscape 16:9",
+      "bilingualOverlay": "No dialogue/title overlay. EN and zh-TW text, alt and captions stay in HTML. Reserve quiet lower-right for the existing localized provisional caption.",
+      "status": "planning-only",
+      "file": null
+    },
+    {
+      "id": "PROTEST",
+      "purpose": "Represent the social cost of A’s successful shot.",
+      "characters": "Alex, a city official, protesting survivors or families.",
+      "environment": "A divided public award ceremony.",
+      "mood": "Recognition opposed by grief and anger.",
+      "critical": "Protest relates to CBD losses and the two civilians; avoid invented casualty counts. Do not paint readable dialogue, placards or moral rankings into the image. Cannot be reused for D by cropping away the protest.",
+      "cropSupport": "Full only required; emotional/spatial difference justifies a separate master from HONORS.",
+      "orientation": "Landscape 16:9",
+      "bilingualOverlay": "No dialogue/title overlay. EN and zh-TW text, alt and captions stay in HTML. Reserve quiet lower-right for the existing localized provisional caption.",
+      "status": "planning-only",
+      "file": null
+    },
+    {
+      "id": "SHOT-COST",
+      "purpose": "Show the irreversible civilian cost of the shot.",
+      "characters": "Karl dead, exactly two fallen civilians; Alex lowering rifle and/or responders.",
+      "environment": "Hangar standoff aftermath.",
+      "mood": "Shock and responsibility, non-graphic.",
+      "critical": "Exactly two civilian casualties visible or unmistakably indicated, unopened bag/device, no active white sphere. No triumphant gun pose; no invented additional dead. Match established hangar geography and cast.",
+      "cropSupport": "Full only required; the existing upright-civilian sniper image remains a provisional mismatch until replaced.",
+      "orientation": "Landscape 16:9",
+      "bilingualOverlay": "No dialogue/title overlay. EN and zh-TW text, alt and captions stay in HTML. Reserve quiet lower-right for the existing localized provisional caption.",
+      "status": "planning-only",
+      "file": null
+    },
+    {
+      "id": "GRAVE",
+      "purpose": "Move from public recognition to Jacque’s private absence.",
+      "characters": "Alex seated beside Jacque’s grave.",
+      "environment": "Quiet cemetery, medal placed flat by the headstone.",
+      "mood": "Unanswered grief.",
+      "critical": "No living Jacque, no invented epitaph legibility or implied moral verdict. Use only routes A/D where he died. Keep headstone and medal separate from Alex’s silhouette.",
+      "cropSupport": "Medal-alone crop excludes seated Alex so A’s walked-away ending is possible without repainting; native ROI must show both medal and empty headstone.",
+      "orientation": "Landscape 16:9",
+      "bilingualOverlay": "No dialogue/title overlay. EN and zh-TW text, alt and captions stay in HTML. Reserve quiet lower-right for the existing localized provisional caption.",
+      "status": "planning-only",
+      "file": null
+    },
+    {
+      "id": "INQUIRY",
+      "purpose": "Expose institutional judgement after the failed search.",
+      "characters": "Alex and officials/inquiry staff.",
+      "environment": "Neutral briefing/inquiry room with route maps and evidence.",
+      "mood": "Clinical blame and unresolved competing duties.",
+      "critical": "No omniscient best-choice diagram or alternate timeline knowledge. Headlines/questions are localized HTML, not baked text. No heroic acquittal or invented testimony.",
+      "cropSupport": "Maps-officials detail supports subsequent reconstruction without changing expressions or judgement.",
+      "orientation": "Landscape 16:9",
+      "bilingualOverlay": "No dialogue/title overlay. EN and zh-TW text, alt and captions stay in HTML. Reserve quiet lower-right for the existing localized provisional caption.",
+      "status": "planning-only",
+      "file": null
+    },
+    {
+      "id": "CLINIC",
+      "purpose": "Show a surviving relationship’s distance.",
+      "characters": "Alex and recovered Misaki.",
+      "environment": "Neutral medical doorway and covered exterior, compatible with hospital exit or rehabilitation.",
+      "mood": "Polite separation and unfinished feeling.",
+      "critical": "No touching or reconciliation pose, no fresh wound requiring emergency treatment. Architecture must not assert a newly canonical hospital identity. Both recognisable, natural distance.",
+      "cropSupport": "Full reuse H/I; optional separated portraits only if the physical distance is still communicated in surrounding text.",
+      "orientation": "Landscape 16:9",
+      "bilingualOverlay": "No dialogue/title overlay. EN and zh-TW text, alt and captions stay in HTML. Reserve quiet lower-right for the existing localized provisional caption.",
+      "status": "planning-only",
+      "file": null
+    },
+    {
+      "id": "APARTMENT",
+      "purpose": "Make Alex’s withdrawal and continued pursuit concrete.",
+      "characters": "Alex alone; optional historical photo of Alex, Misaki, Jacque and Pete.",
+      "environment": "Small private apartment, insignia put away, paper leads/maps.",
+      "mood": "Restless solitude.",
+      "critical": "No new uniform/superhero identity. A squad photograph is historical, not proof teammates are alive; Karl is not a squad member. Documents have no baked narrative text or invented conspiracy revelations.",
+      "cropSupport": "Full only required; insignia/map details optional, no new job.",
+      "orientation": "Landscape 16:9",
+      "bilingualOverlay": "No dialogue/title overlay. EN and zh-TW text, alt and captions stay in HTML. Reserve quiet lower-right for the existing localized provisional caption.",
+      "status": "planning-only",
+      "file": null
+    },
+    {
+      "id": "ALLEY",
+      "purpose": "Leave Alex following a lead without a moral resolution.",
+      "characters": "Alex recognisable from behind/three-quarter turn; unnamed cult remnant ahead.",
+      "environment": "Rain-dark street turning into an alley.",
+      "mood": "Determination and uncertainty.",
+      "critical": "No named new villain, victory, execution or guaranteed justice. Keep enough Alex silhouette/wardrobe continuity after the turn. No new superhero costume.",
+      "cropSupport": "Support negative alley space and recognisable pursuit in the same landscape master; no second empty-alley painting required.",
+      "orientation": "Landscape 16:9",
+      "bilingualOverlay": "No dialogue/title overlay. EN and zh-TW text, alt and captions stay in HTML. Reserve quiet lower-right for the existing localized provisional caption.",
+      "status": "planning-only",
+      "file": null
+    },
+    {
+      "id": "EVAC",
+      "purpose": "Keep Jacque alive at a safe distance, unable to intervene.",
+      "characters": "Injured Jacque half-seated on gurney, medic preventing him rising.",
+      "environment": "Open ambulance threshold at a Downtown extraction bay; stretcher extends into the bay with Jacque’s upper body within the vehicle. Broken jetpack lies outside beside the ambulance.",
+      "mood": "Helpless survival and failed contact.",
+      "critical": "One coherent exterior bay view supports E’s stretcher and a tighter vehicle-context crop supports F. Jacque remains half-seated, medic holding him back from the street. Keep the broken jetpack outside beside the ambulance, not inside beside the gurney. Downtown safe; any field only distant Uptown. No surviving Alex figure or false physical access to the tower.",
+      "cropSupport": "Radio-gaze crop keeps Jacque, open door trim and vehicle context, excluding the exterior bay; no posture change between E/F. Full exterior view retains stretcher and medic.",
+      "orientation": "Landscape 16:9",
+      "bilingualOverlay": "No dialogue/title overlay. EN and zh-TW text, alt and captions stay in HTML. Reserve quiet lower-right for the existing localized provisional caption.",
+      "status": "planning-only",
+      "file": null
+    }
+  ]
+}

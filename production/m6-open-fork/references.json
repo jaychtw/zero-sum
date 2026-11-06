@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "policy": "References remain local. No new generator transmission occurred. Source upload does not establish production rights. Negative examples must never be ingested as new art.",
+  "assets": [
+    {
+      "id": "ZS-ART-CHASE",
+      "path": "experiences/graphic-novel/assets/chase.webp",
+      "sha256": "15216234a22c50f6c68c987d03b5b6397d7792edfb5d8c05977d9db181e3541f",
+      "bytes": 164626,
+      "source": "owner-supplied prototype archive; SOURCE_ARCHIVE.md",
+      "rights": "NOT DOCUMENTED; owner review required before public production use",
+      "productionStatus": "PROVISIONAL REFERENCE",
+      "width": 1280,
+      "height": 720,
+      "purpose": "Primary Alex, healthy Misaki, Pete and Jacque face/wardrobe cues; rain, inked cel figures and painterly city palette.",
+      "limits": "Four people in one car contradict the screenplay. Do not copy cabin staging, dashboard text, road labels or convoy layout as a master.",
+      "transmissionAuthorizedForNewProvider": null
+    },
+    {
+      "id": "ZS-ART-JACQUE",
+      "path": "experiences/graphic-novel/assets/jacque.webp",
+      "sha256": "6a9b154d4004c642107976982871ac23d060ed1ef81af1f7ac55fddebe680e3a",
+      "bytes": 131434,
+      "source": "owner-supplied prototype archive; SOURCE_ARCHIVE.md",
+      "rights": "NOT DOCUMENTED; owner review required before public production use",
+      "productionStatus": "PROVISIONAL REFERENCE",
+      "width": 1280,
+      "height": 720,
+      "purpose": "Secondary Jacque identity: blond hair, blue flight suit, gauntlets and jetpack silhouette; Alex red collar.",
+      "limits": "Later hanging/injured state is forbidden in OPEN/FORK. Do not copy destruction, bridge damage or pose.",
+      "transmissionAuthorizedForNewProvider": null
+    },
+    {
+      "id": "ZS-ART-HOSPITAL",
+      "path": "experiences/graphic-novel/assets/hospital.webp",
+      "sha256": "2a896f5fca2de6ed57e446031e1a9c047053d644da8fe405e28d90654483852c",
+      "bytes": 95048,
+      "source": "owner-supplied prototype archive; SOURCE_ARCHIVE.md",
+      "rights": "NOT DOCUMENTED; owner review required before public production use",
+      "productionStatus": "PROVISIONAL REFERENCE",
+      "width": 1280,
+      "height": 720,
+      "purpose": "Secondary Alex and Misaki face reference only.",
+      "limits": "Do not copy bandages, injuries, gown, bedside, handholding or later emotional state.",
+      "transmissionAuthorizedForNewProvider": null
+    },
+    {
+      "id": "ZS-ART-JUNCTION",
+      "path": "experiences/graphic-novel/assets/junction.webp",
+      "sha256": "6b80d8343bfe2676b0b2303b06775a12c75fc0c5ce5587d97eac50a6f6216b3a",
+      "bytes": 131950,
+      "source": "owner-supplied prototype archive; SOURCE_ARCHIVE.md",
+      "rights": "NOT DOCUMENTED; owner review required before public production use",
+      "productionStatus": "PROVISIONAL REFERENCE",
+      "width": 1280,
+      "height": 720,
+      "purpose": "Negative continuity example only; owner-supplied exploratory fork reference.",
+      "limits": "Reject its four-person single cabin, conflicting rear-seat likenesses, baked directional signs and ring-like skyline ornament. Not a source master or cast-design authority.",
+      "transmissionAuthorizedForNewProvider": null
+    }
+  ]
+}

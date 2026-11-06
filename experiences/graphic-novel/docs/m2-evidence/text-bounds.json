@@ -1,0 +1,50 @@
+[
+  {
+    "width": 320,
+    "language": "en",
+    "beat": 1,
+    "allTextVisible": true
+  },
+  {
+    "width": 320,
+    "language": "en",
+    "beat": 2,
+    "allTextVisible": true
+  },
+  {
+    "width": 320,
+    "language": "zh",
+    "beat": 1,
+    "allTextVisible": true
+  },
+  {
+    "width": 320,
+    "language": "zh",
+    "beat": 2,
+    "allTextVisible": true
+  },
+  {
+    "width": 390,
+    "language": "en",
+    "beat": 1,
+    "allTextVisible": true
+  },
+  {
+    "width": 390,
+    "language": "en",
+    "beat": 2,
+    "allTextVisible": true
+  },
+  {
+    "width": 390,
+    "language": "zh",
+    "beat": 1,
+    "allTextVisible": true
+  },
+  {
+    "width": 390,
+    "language": "zh",
+    "beat": 2,
+    "allTextVisible": true
+  }
+]

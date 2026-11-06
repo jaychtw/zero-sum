@@ -1,0 +1,40 @@
+{
+  "browser": "155.0.8059.79",
+  "viewports": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "languages": [
+    "en",
+    "zh-Hant"
+  ],
+  "routes": 72,
+  "audits": 82,
+  "screenshots": [
+    "390-en-title.jpg",
+    "390-en-narrative.jpg",
+    "390-en-decision.jpg",
+    "390-en-ending.jpg",
+    "390-zh-title.jpg",
+    "390-zh-narrative.jpg",
+    "390-zh-decision.jpg",
+    "390-zh-ending.jpg",
+    "1440-en-title.jpg",
+    "1440-en-narrative.jpg",
+    "1440-en-decision.jpg",
+    "1440-en-ending.jpg",
+    "1440-zh-title.jpg",
+    "1440-zh-narrative.jpg",
+    "1440-zh-decision.jpg",
+    "1440-zh-ending.jpg"
+  ],
+  "errors": [],
+  "incompleteAuditRules": [
+    "color-contrast"
+  ],
+  "checks": [
+    "All nine routes at four widths in both languages; replay; live switch; focus; restart confirm/cancel/Escape; back; optional storage; keyboard-only Ending C; reduced motion; image load; overflow; target size."
+  ]
+}

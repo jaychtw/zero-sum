@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "illustrationId": null,
+  "status": "awaiting-source",
+  "source": {
+    "path": null,
+    "sha256": null,
+    "width": null,
+    "height": null,
+    "format": null
+  },
+  "provenance": {
+    "method": null,
+    "toolOrCreator": null,
+    "modelOrVersion": null,
+    "jobOrResponseId": null,
+    "seed": null,
+    "exactPromptFile": null,
+    "referenceAssetHashes": [],
+    "incrementalCost": null,
+    "costEvidence": null,
+    "sourceAndOutputTerms": null,
+    "dataUseEvidence": null,
+    "transformations": []
+  },
+  "review": {
+    "singleSceneOriginal": null,
+    "notCompositeBoard": null,
+    "allFourIdentitiesMatch": null,
+    "crewSeatsCorrect": null,
+    "sameVehiclesAsOtherMaster": null,
+    "momentAndRoadGeometryCorrect": null,
+    "noBakedTextOrUI": null,
+    "cropPixelReviewComplete": null,
+    "captionContrastReviewComplete": null,
+    "reviewer": null,
+    "notes": []
+  },
+  "variants": [],
+  "ownerArtApproval": null,
+  "activationAllowed": false
+}

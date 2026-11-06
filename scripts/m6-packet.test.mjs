@@ -1,0 +1,13 @@
+import assert from'node:assert/strict';import{readFileSync}from'node:fs';import{createHash}from'node:crypto';
+import{manuscript}from'../experiences/graphic-novel/manuscript.js';
+import{resolveIllustration}from'../experiences/graphic-novel/illustration.js';
+const root=new URL('../',import.meta.url),read=p=>JSON.parse(readFileSync(new URL(p,root)));
+const p=read('production/m6-open-fork/pilot.json'),m5=read('narrative/illustration-plan.v1.json'),refs=read('production/m6-open-fork/references.json'),template=read('production/m6-open-fork/intake.template.json');
+assert.equal(p.baseline,'5dc0143ad7f298c66431b4e71506df6f05653467');assert.deepEqual(p.scope,['OPEN','FORK']);assert.equal(p.activationAllowed,false);assert.equal(p.ownerArtApproval,null);assert.deepEqual(p.masters.map(m=>m.id),p.scope);
+const ids=new Set(Object.values(manuscript.scenes).flatMap(s=>s.panels.map(p=>p.id))),mapped=[];
+for(const m of p.masters){const planned=m5.panels.filter(r=>r.asset===m.id).map(r=>({id:r.panelId,variant:r.variant}));assert.deepEqual(m.panels,planned);for(const r of m.panels){assert.ok(ids.has(r.id));assert.equal(resolveIllustration(r.id,'en'),null,'Pilot panels must remain text-led');mapped.push(r.id);}assert.equal(m.variants.length,2);for(const v of m.variants){assert.equal(v.rect,null,'No actual source exists; do not invent crop rectangles');assert.ok(v.mustInclude&&v.mustExclude);}const prompt=readFileSync(new URL('production/m6-open-fork/prompts/'+m.id+'.md',root),'utf8');for(const name of ['Alex','Misaki','Pete','Jacque'])assert.ok(prompt.includes(name));assert.ok(prompt.includes('16:9')&&prompt.includes('Storyboard')&&prompt.includes('Negative instruction'));}
+const excerpts=read('production/m6-open-fork/source-excerpts.json');assert.deepEqual(excerpts.panels,Object.values(manuscript.scenes).flatMap(s=>s.panels).filter(p=>mapped.includes(p.id)));
+assert.equal(mapped.length,9);assert.equal(new Set(mapped).size,9);
+for(const a of refs.assets){assert.equal(createHash('sha256').update(readFileSync(new URL(a.path,root))).digest('hex'),a.sha256);assert.equal(a.transmissionAuthorizedForNewProvider,null);assert.ok(a.purpose&&a.limits&&a.rights.includes('NOT DOCUMENTED'));}
+assert.equal(template.status,'awaiting-source');assert.equal(template.source.path,null);assert.equal(template.source.sha256,null);assert.deepEqual(template.variants,[]);assert.equal(template.ownerArtApproval,null);assert.equal(template.activationAllowed,false);assert.ok(Object.values(template.review).filter(x=>x===null).length>=9);
+console.log('PASS: exact two-master/nine-panel scope, M5 mapping, reference hashes, identity prompts, null source/crops and inactive baseline');

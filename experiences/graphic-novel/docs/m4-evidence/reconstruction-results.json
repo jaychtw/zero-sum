@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "sourceCommit": "7cd8124565fa6e28dffd521ba4ef506bebf9261a",
+  "checks": [
+    "Independent git archive source; screenplay/graph tests passed without app dependency installation",
+    "Actual /zero-sum/experiences/graphic-novel/ HTTP path, complete 25-panel Ending C, live zh-TW at corresponding boundary panel, replay",
+    "Final text-led title computes to 22px at phone width",
+    "No runtime external requests; compact story/old C prose modules not loaded"
+  ],
+  "requests": 12,
+  "errors": []
+}

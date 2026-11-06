@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "archive": "docs/m6-evidence/zero-sum-m6-production-packet.zip",
+  "sha256": "021be30cb80da8636b84f3c714943c9770e24a8efd7bc7221e24a6ee97da2057",
+  "bytes": 596594,
+  "payloadFiles": 25,
+  "referenceImages": 4,
+  "newMasterCount": 0,
+  "activationAllowed": false,
+  "checks": "All ZIP entries CRC checked and payload SHA-256 verified; stable timestamps/order; exact original reference bytes; no source master or numeric actual ROI."
+}

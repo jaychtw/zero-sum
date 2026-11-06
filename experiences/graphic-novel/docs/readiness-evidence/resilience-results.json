@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "routes": 12,
+  "audits": 12,
+  "expected404Assets": [
+    "chase.webp",
+    "hospital.webp",
+    "jacque.webp",
+    "junction.webp",
+    "misaki.webp",
+    "sniper.webp",
+    "tackle.webp",
+    "wmd.webp"
+  ],
+  "errors": [],
+  "checks": [
+    "All 8 illustration failures injected; title/scene/cropped-art fallback; C/D/G complete; both languages at 320/1440px; emulated touch; no retry loops; accessibility; no overflow."
+  ]
+}

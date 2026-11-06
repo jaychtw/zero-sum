@@ -1,0 +1,760 @@
+{
+  "schemaVersion": 1,
+  "approval": "Both v0.2 manuscripts approved 2026-11-06; M4 integration authorized at 4ed8b9c. Stale draft notices inside manuscripts are historical.",
+  "alignmentNotes": [
+    "Junction EN paragraph 7 pairs with zh-TW paragraphs 7 and 8 (one English paragraph translated as two). Neither paragraph is omitted or rewritten.",
+    "Ending C source action paragraph 10 (device activation) is staged after paragraph 11 (BEAT ONE last approach), in phase 2 alongside BEAT TWO. All words retained; explicit phase directions guide this one sequencing adjustment.",
+    "Markdown emphasis delimiters become presentation styles/plain text. Navigation/end markers become controls/status, not repeated narration. All source action and dialogue preserved."
+  ],
+  "scenes": {
+    "opening": {
+      "sceneId": "ZS-S001",
+      "panels": [
+        {
+          "id": "ZS-S001.P01",
+          "blocks": [
+            0,
+            1
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S001.P02",
+          "blocks": [
+            2,
+            3,
+            4
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S001.P03",
+          "blocks": [
+            5,
+            6
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S001.P04",
+          "blocks": [
+            7,
+            8,
+            9,
+            10
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S001.P05",
+          "blocks": [
+            11,
+            12,
+            13,
+            14
+          ],
+          "art": null
+        }
+      ]
+    },
+    "junction": {
+      "sceneId": "ZS-S002",
+      "panels": [
+        {
+          "id": "ZS-S002.P01",
+          "blocks": [
+            0,
+            1,
+            2
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S002.P02",
+          "blocks": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S002.P03",
+          "blocks": [
+            7,
+            8,
+            9
+          ],
+          "art": null
+        }
+      ]
+    },
+    "jacque": {
+      "sceneId": "ZS-S003",
+      "panels": [
+        {
+          "id": "ZS-S003.P01",
+          "blocks": [
+            0,
+            1,
+            2
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S003.P02",
+          "blocks": [
+            3,
+            4,
+            5
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S003.P03",
+          "blocks": [
+            6,
+            7,
+            8
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S003.P04",
+          "blocks": [
+            9,
+            10,
+            11
+          ],
+          "art": "jacque"
+        }
+      ]
+    },
+    "abandon": {
+      "sceneId": "ZS-S004",
+      "panels": [
+        {
+          "id": "ZS-S004.P01",
+          "blocks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S004.P02",
+          "blocks": [
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S004.P03",
+          "blocks": [
+            9,
+            10
+          ],
+          "art": null
+        }
+      ]
+    },
+    "sniper": {
+      "sceneId": "ZS-S005",
+      "panels": [
+        {
+          "id": "ZS-S005.P01",
+          "blocks": [
+            0,
+            1,
+            2
+          ],
+          "art": "sniper"
+        },
+        {
+          "id": "ZS-S005.P02",
+          "blocks": [
+            3,
+            4
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S005.P03",
+          "blocks": [
+            5,
+            6
+          ],
+          "art": "sniper"
+        }
+      ]
+    },
+    "tower": {
+      "sceneId": "ZS-S006",
+      "panels": [
+        {
+          "id": "ZS-S006.P01",
+          "blocks": [
+            0,
+            1,
+            2
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S006.P02",
+          "blocks": [
+            3,
+            4,
+            5
+          ],
+          "art": null
+        }
+      ]
+    },
+    "rescue": {
+      "sceneId": "ZS-S007",
+      "panels": [
+        {
+          "id": "ZS-S007.P01",
+          "blocks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "art": "jacque"
+        },
+        {
+          "id": "ZS-S007.P02",
+          "blocks": [
+            5,
+            6,
+            7
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S007.P03",
+          "blocks": [
+            8,
+            9,
+            10
+          ],
+          "art": null
+        }
+      ]
+    },
+    "misaki": {
+      "sceneId": "ZS-S008",
+      "panels": [
+        {
+          "id": "ZS-S008.P01",
+          "blocks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S008.P02",
+          "blocks": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S008.P03",
+          "blocks": [
+            8,
+            9
+          ],
+          "art": "misaki"
+        },
+        {
+          "id": "ZS-S008.P04",
+          "blocks": [
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "art": "misaki"
+        }
+      ]
+    },
+    "hospital": {
+      "sceneId": "ZS-S009",
+      "panels": [
+        {
+          "id": "ZS-S009.P01",
+          "blocks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S009.P02",
+          "blocks": [
+            4,
+            5,
+            6
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S009.P03",
+          "blocks": [
+            7,
+            8,
+            9,
+            10
+          ],
+          "art": null
+        }
+      ]
+    },
+    "cbd": {
+      "sceneId": "ZS-S010",
+      "panels": [
+        {
+          "id": "ZS-S010.P01",
+          "blocks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "art": "misaki"
+        },
+        {
+          "id": "ZS-S010.P02",
+          "blocks": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S010.P03",
+          "blocks": [
+            10,
+            11,
+            12
+          ],
+          "art": null
+        }
+      ]
+    },
+    "endingA": {
+      "sceneId": "ZS-S011",
+      "panels": [
+        {
+          "id": "ZS-S011.P01",
+          "blocks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "art": "sniper"
+        },
+        {
+          "id": "ZS-S011.P02",
+          "blocks": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S011.P03",
+          "blocks": [
+            8
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S011.P04",
+          "blocks": [
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "art": null
+        }
+      ]
+    },
+    "endingB": {
+      "sceneId": "ZS-S012",
+      "panels": [
+        {
+          "id": "ZS-S012.P01",
+          "blocks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S012.P02",
+          "blocks": [
+            4
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S012.P03",
+          "blocks": [
+            5,
+            6,
+            7
+          ],
+          "art": null
+        }
+      ]
+    },
+    "endingC": {
+      "sceneId": "ZS-S013",
+      "panels": [
+        {
+          "id": "ZS-S013.P01",
+          "blocks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "art": "ascent",
+          "phase": 1
+        },
+        {
+          "id": "ZS-S013.P02",
+          "blocks": [
+            5,
+            6,
+            7
+          ],
+          "art": "ascent",
+          "phase": 1
+        },
+        {
+          "id": "ZS-S013.P03",
+          "blocks": [
+            8,
+            9,
+            11
+          ],
+          "art": "ascent",
+          "phase": 1
+        },
+        {
+          "id": "ZS-S013.P04",
+          "blocks": [
+            10,
+            12
+          ],
+          "art": null,
+          "phase": 2
+        },
+        {
+          "id": "ZS-S013.P05",
+          "blocks": [
+            13,
+            14
+          ],
+          "art": null,
+          "phase": 3
+        }
+      ]
+    },
+    "endingD": {
+      "sceneId": "ZS-S014",
+      "panels": [
+        {
+          "id": "ZS-S014.P01",
+          "blocks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "art": "tackle"
+        },
+        {
+          "id": "ZS-S014.P02",
+          "blocks": [
+            5,
+            6,
+            7
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S014.P03",
+          "blocks": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "art": null
+        }
+      ]
+    },
+    "endingE": {
+      "sceneId": "ZS-S015",
+      "panels": [
+        {
+          "id": "ZS-S015.P01",
+          "blocks": [
+            0,
+            1
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S015.P02",
+          "blocks": [
+            2,
+            3
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S015.P03",
+          "blocks": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "art": null
+        }
+      ]
+    },
+    "endingF": {
+      "sceneId": "ZS-S016",
+      "panels": [
+        {
+          "id": "ZS-S016.P01",
+          "blocks": [
+            0,
+            1
+          ],
+          "art": "ascent"
+        },
+        {
+          "id": "ZS-S016.P02",
+          "blocks": [
+            2
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S016.P03",
+          "blocks": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "art": null
+        }
+      ]
+    },
+    "endingG": {
+      "sceneId": "ZS-S017",
+      "panels": [
+        {
+          "id": "ZS-S017.P01",
+          "blocks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "art": "hospital"
+        },
+        {
+          "id": "ZS-S017.P02",
+          "blocks": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S017.P03",
+          "blocks": [
+            10,
+            11
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S017.P04",
+          "blocks": [
+            12,
+            13,
+            14,
+            15
+          ],
+          "art": null
+        }
+      ]
+    },
+    "endingH": {
+      "sceneId": "ZS-S018",
+      "panels": [
+        {
+          "id": "ZS-S018.P01",
+          "blocks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S018.P02",
+          "blocks": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S018.P03",
+          "blocks": [
+            8
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S018.P04",
+          "blocks": [
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S018.P05",
+          "blocks": [
+            14,
+            15
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S018.P06",
+          "blocks": [
+            16,
+            17
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S018.P07",
+          "blocks": [
+            18,
+            19,
+            20,
+            21,
+            22
+          ],
+          "art": null
+        }
+      ]
+    },
+    "endingI": {
+      "sceneId": "ZS-S019",
+      "panels": [
+        {
+          "id": "ZS-S019.P01",
+          "blocks": [
+            0,
+            1
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S019.P02",
+          "blocks": [
+            2,
+            3
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S019.P03",
+          "blocks": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S019.P04",
+          "blocks": [
+            8,
+            9,
+            10
+          ],
+          "art": null
+        },
+        {
+          "id": "ZS-S019.P05",
+          "blocks": [
+            11,
+            12,
+            13,
+            14
+          ],
+          "art": null
+        }
+      ]
+    }
+  }
+}

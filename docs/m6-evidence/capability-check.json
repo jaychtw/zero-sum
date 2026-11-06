@@ -1,0 +1,52 @@
+{
+  "baseline": "5dc0143ad7f298c66431b4e71506df6f05653467",
+  "date": "2026-11-06",
+  "timezone": "Asia/Taipei",
+  "status": "generation-eligibility-unverified",
+  "localProbe": {
+    "executables": {
+      "game-dev": null,
+      "nvidia-smi": null,
+      "chromium": "/usr/bin/chromium",
+      "node": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "python3": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "cwebp": null,
+      "blender": "/usr/bin/blender"
+    },
+    "pythonModules": {
+      "torch": false,
+      "diffusers": false,
+      "PIL": true
+    },
+    "pillowWebPSupported": true,
+    "limits": "These are bounded PATH/module probes, not an exhaustive search of every possible installation. No generator/model was installed or downloaded."
+  },
+  "hostNative": {
+    "tool": "image_gen.imagegen",
+    "listedAndCallable": true,
+    "generationInvocations": 0,
+    "exposedParameters": [
+      "prompt",
+      "referenced_image_paths",
+      "num_last_images_to_include",
+      "transparent_background"
+    ],
+    "exposedReturnFields": [
+      "image_url",
+      "output_hint"
+    ],
+    "incrementalCostEvidence": null,
+    "sourceAndOutputTermsEvidence": null,
+    "referenceDataUseEvidence": null,
+    "original16by9Control": "No explicit width/height/aspect/seed parameter in this interface; actual output must be inspected, not assumed.",
+    "finding": "Tool availability is verified; eligibility under the M6 verified-$0/reference-data requirement is not. No statement that image generation is unavailable, no paid request and no claim of a failed source."
+  },
+  "externalProviders": {
+    "invocations": 0,
+    "finding": "No paid provider used or substituted; game-dev CLI absent in checked PATH. No keys requested, read or configured."
+  },
+  "nextInput": "Confirm native-tool $0 inclusion and permitted reference handling under account terms, or supply independently created original OPEN/FORK files with provenance. Continue only inside the brief; no automatic activation.",
+  "newMasters": 0,
+  "newStudies": 0,
+  "activationAllowed": false
+}

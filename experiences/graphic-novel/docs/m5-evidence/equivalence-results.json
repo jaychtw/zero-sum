@@ -1,0 +1,81 @@
+{
+  "status": "passed",
+  "baseline": "4c9ee3a",
+  "sourceBundleSha256": "75491201eb07419d905b4a807a45f72040aa083bfdb2ea6e3d8a9250bc4652d6",
+  "browser": "155.0.8059.79",
+  "method": "Same-browser JPEG byte equality at identical viewport, reduced motion, fonts/images settled and pointer away",
+  "cases": [
+    {
+      "width": 390,
+      "language": "en",
+      "state": "title",
+      "before": "equivalence-390-en-title-before.jpg",
+      "after": "equivalence-390-en-title-after.jpg",
+      "sha256": "e2067da73e94970bf7da092a30d3d71364d91935ab1b24d242d448dc1e0cd74f",
+      "equal": true
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "state": "text-led",
+      "before": "equivalence-390-en-text-led-before.jpg",
+      "after": "equivalence-390-en-text-led-after.jpg",
+      "sha256": "678821fa0a582eb6d030218bbc04cc6eea77fc9f1705aca19017618506c4d9e0",
+      "equal": true
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "state": "full-art",
+      "before": "equivalence-390-en-full-art-before.jpg",
+      "after": "equivalence-390-en-full-art-after.jpg",
+      "sha256": "f113540c8a619f779fe5117fe552d33cd73843a1cf23163ee91c1e36665e0a81",
+      "equal": true
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "state": "ascent-crop",
+      "before": "equivalence-390-en-ascent-crop-before.jpg",
+      "after": "equivalence-390-en-ascent-crop-after.jpg",
+      "sha256": "b5bd1a7e25e598bbf4d3da26987af3b80b1cf13dd7ec9885923e8d03eade9b98",
+      "equal": true
+    },
+    {
+      "width": 1440,
+      "language": "zh",
+      "state": "title",
+      "before": "equivalence-1440-zh-title-before.jpg",
+      "after": "equivalence-1440-zh-title-after.jpg",
+      "sha256": "8b8533960cfed5e1b5b148c4fa9bbdf97862fadcc7df08e9021b636a85f56798",
+      "equal": true
+    },
+    {
+      "width": 1440,
+      "language": "zh",
+      "state": "text-led",
+      "before": "equivalence-1440-zh-text-led-before.jpg",
+      "after": "equivalence-1440-zh-text-led-after.jpg",
+      "sha256": "5140536fc080c23ab71cd4841aefcb212a7682af6ddd6bb3ada43544c38ae163",
+      "equal": true
+    },
+    {
+      "width": 1440,
+      "language": "zh",
+      "state": "full-art",
+      "before": "equivalence-1440-zh-full-art-before.jpg",
+      "after": "equivalence-1440-zh-full-art-after.jpg",
+      "sha256": "213916afd1228999292ca73d29523397e4c440d6d3cb121a222f0e474210e756",
+      "equal": true
+    },
+    {
+      "width": 1440,
+      "language": "zh",
+      "state": "ascent-crop",
+      "before": "equivalence-1440-zh-ascent-crop-before.jpg",
+      "after": "equivalence-1440-zh-ascent-crop-after.jpg",
+      "sha256": "bcfe193a0641165f55473630924b4651167fe557f687f17f0f044ed60d78f5f3",
+      "equal": true
+    }
+  ]
+}

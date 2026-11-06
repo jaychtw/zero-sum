@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "sourceCommit": "88117dc",
+  "source": "git archive HEAD exported without node_modules or retained setup files",
+  "checks": [
+    "Narrative and graph tests pass in reconstructed source",
+    "Actual subdirectory HTTP playthrough Ending C, live zh-TW, replay",
+    "All resource requests stay within local application subdirectory; no runtime CDN/API"
+  ],
+  "requestCount": 13,
+  "errors": []
+}

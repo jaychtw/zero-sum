@@ -1,0 +1,25 @@
+/* Isolated M2 experiment. The rejected sphere composite is not shipped. */
+.ending-c-frame {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+/* Reframe the existing ascent illustration; exclude the right-hand ring. */
+.ending-c-frame.ascent .ending-c-crop {
+  position: absolute;
+  height: auto;
+  max-width: none;
+  width: 170%;
+  left: 0;
+  top: 0;
+}
+.ending-c-title {
+  font: 900 clamp(24px, 4.5vw, 64px)/1.2 Impact, 'Arial Narrow', sans-serif;
+  letter-spacing: .04em;
+  margin: 20px 0;
+}
+.ending-c-progress {
+  color: var(--cyan);
+  font: 11px/1.6 'Courier New', monospace;
+  letter-spacing: .06em;
+  margin: 0 0 12px;
+}

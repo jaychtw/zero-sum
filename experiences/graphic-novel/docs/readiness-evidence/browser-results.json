@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "suite": "autonomous-readiness-1",
+  "browser": "155.0.8059.79",
+  "viewports": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "languages": [
+    "en",
+    "zh-Hant"
+  ],
+  "routes": 72,
+  "audits": 90,
+  "appearanceComparisons": 14,
+  "screenshots": [
+    "390-en-title.jpg",
+    "390-en-ending-A.jpg",
+    "390-en-ending-B.jpg",
+    "390-en-ending-C.jpg",
+    "390-en-ending-D.jpg",
+    "390-en-ending-E.jpg",
+    "390-en-ending-F.jpg",
+    "390-en-ending-G.jpg",
+    "390-en-ending-H.jpg",
+    "390-en-ending-I.jpg",
+    "390-en-narrative.jpg",
+    "390-en-decision.jpg",
+    "after-390-en-beat1.jpg",
+    "after-390-en-beat2.jpg",
+    "after-390-en-beat3.jpg",
+    "390-zh-title.jpg",
+    "390-zh-narrative.jpg",
+    "390-zh-decision.jpg",
+    "after-390-zh-beat1.jpg",
+    "after-390-zh-beat2.jpg",
+    "after-390-zh-beat3.jpg",
+    "1440-en-title.jpg",
+    "1440-en-narrative.jpg",
+    "1440-en-decision.jpg",
+    "after-1440-en-beat1.jpg",
+    "after-1440-en-beat2.jpg",
+    "after-1440-en-beat3.jpg",
+    "1440-zh-title.jpg",
+    "1440-zh-narrative.jpg",
+    "1440-zh-decision.jpg",
+    "after-1440-zh-beat1.jpg",
+    "after-1440-zh-beat2.jpg",
+    "after-1440-zh-beat3.jpg"
+  ],
+  "errors": [],
+  "incompleteAuditRules": [
+    "color-contrast"
+  ],
+  "checks": [
+    "All nine routes at four widths in both languages; replay; live switch; focus; restart confirm/cancel/Escape; back; optional storage; keyboard-only Ending C; Ending C beat back/advance, live beat switching and reduced-motion pixel parity; image load; overflow; target size."
+  ]
+}

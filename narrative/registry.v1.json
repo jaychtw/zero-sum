@@ -1,0 +1,860 @@
+{
+  "schemaVersion": 1,
+  "idNamespace": "ZS",
+  "idPolicy": "Append new identifiers; never renumber or reuse retired IDs. Identifiers are technical assignments, not approval of new canon. Runtime keys stay unchanged.",
+  "baseline": "dd1f133",
+  "sources": {
+    "canon-summary": {
+      "path": "docs/ZERO_SUM_CANON.md",
+      "status": "OWNER-APPROVED SUMMARY; NOT FULL SCREENPLAY"
+    },
+    "condensed-runtime": {
+      "path": "experiences/graphic-novel/story.js",
+      "status": "ACCEPTED PROTOTYPE; PROVISIONAL PROSE"
+    },
+    "ending-c-interim": {
+      "path": "experiences/graphic-novel/ending-c.js",
+      "status": "OWNER-ACCEPTED INTERIM PRESENTATION; NOT FINAL SCREENPLAY"
+    }
+  },
+  "screenplayStatus": "NOT RECOVERED",
+  "characters": [
+    {
+      "id": "ZS-CH-ALEX",
+      "name": "Alex",
+      "source": "canon-summary"
+    },
+    {
+      "id": "ZS-CH-MISAKI",
+      "name": "Misaki",
+      "source": "canon-summary"
+    },
+    {
+      "id": "ZS-CH-JACQUE",
+      "name": "Jacque",
+      "source": "canon-summary"
+    },
+    {
+      "id": "ZS-CH-PETE",
+      "name": "Pete",
+      "source": "canon-summary"
+    },
+    {
+      "id": "ZS-CH-KARL",
+      "name": "Karl",
+      "source": "canon-summary"
+    }
+  ],
+  "geography": [
+    {
+      "id": "ZS-LOC-UPTOWN",
+      "name": "Uptown",
+      "facts": [
+        "Galaxical Tower",
+        "Much of Uptown erased inside the field"
+      ],
+      "source": "canon-summary"
+    },
+    {
+      "id": "ZS-LOC-DOWNTOWN",
+      "name": "Downtown",
+      "facts": [
+        "CBD",
+        "Hospital",
+        "Outside the field"
+      ],
+      "source": "canon-summary"
+    },
+    {
+      "id": "ZS-LOC-MIDTOWN",
+      "name": "Midtown junction",
+      "facts": [
+        "Runtime scene label only; exact canonical location not recovered"
+      ],
+      "source": "condensed-runtime"
+    }
+  ],
+  "moralConstraints": [
+    "No prescribed best ending or moral score.",
+    "Alex cannot know alternative timelines.",
+    "A defensible decision does not guarantee success.",
+    "Every choice sacrifices possibilities."
+  ],
+  "worldConstraints": [
+    "Sharply bounded expanding white matter-annihilation sphere; not a portal, ring or conventional explosion.",
+    "The field does not reach Downtown.",
+    "Radius deliberately unspecified."
+  ],
+  "scenes": [
+    {
+      "id": "ZS-S001",
+      "runtimeNode": "opening",
+      "ending": null,
+      "beats": [
+        {
+          "id": "ZS-T001",
+          "summary": "Alex leads a four-person squad pursuing Karl and his portable annihilation device.",
+          "source": "canon-summary",
+          "confidence": "confirmed-summary"
+        }
+      ],
+      "runtimeProse": {
+        "source": "condensed-runtime",
+        "status": "PROVISIONAL ADAPTATION"
+      },
+      "screenplay": {
+        "preciseDialogue": "NOT RECOVERED",
+        "shotSequence": "NOT RECOVERED"
+      }
+    },
+    {
+      "id": "ZS-S002",
+      "runtimeNode": "junction",
+      "ending": null,
+      "beats": [
+        {
+          "id": "ZS-T002",
+          "summary": "Karl heads for Galaxical Tower in Uptown; the assault team heads toward the Downtown CBD.",
+          "source": "canon-summary",
+          "confidence": "confirmed-summary"
+        },
+        {
+          "id": "ZS-T003",
+          "summary": "Alex chooses Jacque against Karl or Misaki against the assault team.",
+          "source": "canon-summary",
+          "confidence": "confirmed-summary"
+        }
+      ],
+      "runtimeProse": {
+        "source": "condensed-runtime",
+        "status": "PROVISIONAL ADAPTATION"
+      },
+      "screenplay": {
+        "preciseDialogue": "NOT RECOVERED",
+        "shotSequence": "NOT RECOVERED"
+      }
+    },
+    {
+      "id": "ZS-S003",
+      "runtimeNode": "jacque",
+      "ending": null,
+      "beats": [
+        {
+          "id": "ZS-T004",
+          "summary": "Karl uses shoulder-mounted mini-rockets; Jacque falls and clings to the bridge.",
+          "source": "canon-summary",
+          "confidence": "confirmed-summary"
+        }
+      ],
+      "runtimeProse": {
+        "source": "condensed-runtime",
+        "status": "PROVISIONAL ADAPTATION"
+      },
+      "screenplay": {
+        "preciseDialogue": "NOT RECOVERED",
+        "shotSequence": "NOT RECOVERED"
+      }
+    },
+    {
+      "id": "ZS-S004",
+      "runtimeNode": "abandon",
+      "ending": null,
+      "beats": [
+        {
+          "id": "ZS-T005",
+          "summary": "Alex leaves Jacque and continues after Karl.",
+          "source": "canon-summary",
+          "confidence": "confirmed-summary"
+        },
+        {
+          "id": "ZS-T006",
+          "summary": "Pete survives this pursuit branch and takes injured Misaki to the Downtown hospital.",
+          "source": "condensed-runtime",
+          "confidence": "provisional-runtime"
+        }
+      ],
+      "runtimeProse": {
+        "source": "condensed-runtime",
+        "status": "PROVISIONAL ADAPTATION"
+      },
+      "screenplay": {
+        "preciseDialogue": "NOT RECOVERED",
+        "shotSequence": "NOT RECOVERED"
+      }
+    },
+    {
+      "id": "ZS-S005",
+      "runtimeNode": "sniper",
+      "ending": null,
+      "beats": [
+        {
+          "id": "ZS-T007",
+          "summary": "Alex can kill Karl by firing through civilians or wait for a clean shot.",
+          "source": "canon-summary",
+          "confidence": "confirmed-summary"
+        }
+      ],
+      "runtimeProse": {
+        "source": "condensed-runtime",
+        "status": "PROVISIONAL ADAPTATION"
+      },
+      "screenplay": {
+        "preciseDialogue": "NOT RECOVERED",
+        "shotSequence": "NOT RECOVERED"
+      }
+    },
+    {
+      "id": "ZS-S006",
+      "runtimeNode": "tower",
+      "ending": null,
+      "beats": [
+        {
+          "id": "ZS-T008",
+          "summary": "Waiting spares the civilians from Alex’s shot, but Karl escapes into the tower.",
+          "source": "canon-summary",
+          "confidence": "confirmed-summary"
+        },
+        {
+          "id": "ZS-T009",
+          "summary": "Alex chooses stairs or exterior jetpack ascent.",
+          "source": "canon-summary",
+          "confidence": "confirmed-summary"
+        }
+      ],
+      "runtimeProse": {
+        "source": "condensed-runtime",
+        "status": "PROVISIONAL ADAPTATION"
+      },
+      "screenplay": {
+        "preciseDialogue": "NOT RECOVERED",
+        "shotSequence": "NOT RECOVERED"
+      }
+    },
+    {
+      "id": "ZS-S007",
+      "runtimeNode": "rescue",
+      "ending": null,
+      "beats": [
+        {
+          "id": "ZS-T010",
+          "summary": "Alex rescues Jacque; Karl escapes.",
+          "source": "canon-summary",
+          "confidence": "confirmed-summary"
+        },
+        {
+          "id": "ZS-T011",
+          "summary": "Alex chooses stairs or exterior jetpack ascent.",
+          "source": "canon-summary",
+          "confidence": "confirmed-summary"
+        }
+      ],
+      "runtimeProse": {
+        "source": "condensed-runtime",
+        "status": "PROVISIONAL ADAPTATION"
+      },
+      "screenplay": {
+        "preciseDialogue": "NOT RECOVERED",
+        "shotSequence": "NOT RECOVERED"
+      }
+    },
+    {
+      "id": "ZS-S008",
+      "runtimeNode": "misaki",
+      "ending": null,
+      "beats": [
+        {
+          "id": "ZS-T012",
+          "summary": "Alex pursues the CBD assault team with Misaki; Pete dies pursuing Karl.",
+          "source": "canon-summary",
+          "confidence": "confirmed-summary"
+        },
+        {
+          "id": "ZS-T013",
+          "summary": "Misaki is injured and urges Alex to continue; leaving her also causes emotional hurt.",
+          "source": "canon-summary",
+          "confidence": "confirmed-summary"
+        }
+      ],
+      "runtimeProse": {
+        "source": "condensed-runtime",
+        "status": "PROVISIONAL ADAPTATION"
+      },
+      "screenplay": {
+        "preciseDialogue": "NOT RECOVERED",
+        "shotSequence": "NOT RECOVERED"
+      }
+    },
+    {
+      "id": "ZS-S009",
+      "runtimeNode": "hospital",
+      "ending": null,
+      "beats": [
+        {
+          "id": "ZS-T014",
+          "summary": "The hospital is Downtown, outside the annihilation field.",
+          "source": "canon-summary",
+          "confidence": "confirmed-summary"
+        },
+        {
+          "id": "ZS-T015",
+          "summary": "Alex can stay in the ward or go to the rooftop to contact Jacque.",
+          "source": "canon-summary",
+          "confidence": "confirmed-summary"
+        }
+      ],
+      "runtimeProse": {
+        "source": "condensed-runtime",
+        "status": "PROVISIONAL ADAPTATION"
+      },
+      "screenplay": {
+        "preciseDialogue": "NOT RECOVERED",
+        "shotSequence": "NOT RECOVERED"
+      }
+    },
+    {
+      "id": "ZS-S010",
+      "runtimeNode": "cbd",
+      "ending": null,
+      "beats": [
+        {
+          "id": "ZS-T016",
+          "summary": "Alex arranges backup for Misaki and continues to stop the CBD attackers.",
+          "source": "canon-summary",
+          "confidence": "confirmed-summary"
+        }
+      ],
+      "runtimeProse": {
+        "source": "condensed-runtime",
+        "status": "PROVISIONAL ADAPTATION"
+      },
+      "screenplay": {
+        "preciseDialogue": "NOT RECOVERED",
+        "shotSequence": "NOT RECOVERED"
+      }
+    },
+    {
+      "id": "ZS-S011",
+      "runtimeNode": "endingA",
+      "ending": "A",
+      "beats": [
+        {
+          "id": "ZS-T017",
+          "summary": "Karl and two civilians die; the city is saved and Jacque is dead.",
+          "source": "canon-summary",
+          "confidence": "confirmed-summary"
+        },
+        {
+          "id": "ZS-T018",
+          "summary": "Public honors and protest coexist; Alex leaves his medal at Jacque’s grave.",
+          "source": "canon-summary",
+          "confidence": "confirmed-summary"
+        }
+      ],
+      "runtimeProse": {
+        "source": "condensed-runtime",
+        "status": "PROVISIONAL ADAPTATION"
+      },
+      "screenplay": {
+        "preciseDialogue": "NOT RECOVERED",
+        "shotSequence": "NOT RECOVERED"
+      }
+    },
+    {
+      "id": "ZS-S012",
+      "runtimeNode": "endingB",
+      "ending": "B",
+      "beats": [
+        {
+          "id": "ZS-T019",
+          "summary": "Alex takes the stairs after leaving Jacque; Alex dies in the Uptown annihilation.",
+          "source": "canon-summary",
+          "confidence": "confirmed-summary"
+        },
+        {
+          "id": "ZS-T020",
+          "summary": "The sharply bounded field stops before Downtown.",
+          "source": "canon-summary",
+          "confidence": "confirmed-summary"
+        }
+      ],
+      "runtimeProse": {
+        "source": "condensed-runtime",
+        "status": "PROVISIONAL ADAPTATION"
+      },
+      "screenplay": {
+        "preciseDialogue": "NOT RECOVERED",
+        "shotSequence": "NOT RECOVERED"
+      }
+    },
+    {
+      "id": "ZS-S013",
+      "runtimeNode": "endingC",
+      "ending": "C",
+      "beats": [
+        {
+          "id": "ZS-T021",
+          "summary": "Alex ascends the exterior after leaving Jacque and waiting for a clean shot.",
+          "source": "canon-summary",
+          "confidence": "confirmed-summary"
+        },
+        {
+          "id": "ZS-T022",
+          "summary": "Karl activates the device; his cause, not bodily survival, is his commitment.",
+          "source": "canon-summary",
+          "confidence": "confirmed-summary"
+        },
+        {
+          "id": "ZS-T023",
+          "summary": "The sharply bounded white sphere erases Alex, Karl and much of Uptown; Downtown survives.",
+          "source": "canon-summary",
+          "confidence": "confirmed-summary"
+        }
+      ],
+      "runtimeProse": {
+        "source": "condensed-runtime",
+        "status": "PROVISIONAL ADAPTATION"
+      },
+      "screenplay": {
+        "preciseDialogue": "NOT RECOVERED",
+        "shotSequence": "NOT RECOVERED"
+      }
+    },
+    {
+      "id": "ZS-S014",
+      "runtimeNode": "endingD",
+      "ending": "D",
+      "beats": [
+        {
+          "id": "ZS-T024",
+          "summary": "Karl is captured by the vehicle tackle and the city survives; Jacque is dead.",
+          "source": "canon-summary",
+          "confidence": "confirmed-summary"
+        },
+        {
+          "id": "ZS-T025",
+          "summary": "Pete and Misaki become lovers; Alex leaves his medal on Jacque’s grave.",
+          "source": "canon-summary",
+          "confidence": "confirmed-summary"
+        }
+      ],
+      "runtimeProse": {
+        "source": "condensed-runtime",
+        "status": "PROVISIONAL ADAPTATION"
+      },
+      "screenplay": {
+        "preciseDialogue": "NOT RECOVERED",
+        "shotSequence": "NOT RECOVERED"
+      }
+    },
+    {
+      "id": "ZS-S015",
+      "runtimeNode": "endingE",
+      "ending": "E",
+      "beats": [
+        {
+          "id": "ZS-T026",
+          "summary": "Jacque was rescued; Alex takes the stairs and dies in the Uptown annihilation.",
+          "source": "canon-summary",
+          "confidence": "confirmed-summary"
+        }
+      ],
+      "runtimeProse": {
+        "source": "condensed-runtime",
+        "status": "PROVISIONAL ADAPTATION"
+      },
+      "screenplay": {
+        "preciseDialogue": "NOT RECOVERED",
+        "shotSequence": "NOT RECOVERED"
+      }
+    },
+    {
+      "id": "ZS-S016",
+      "runtimeNode": "endingF",
+      "ending": "F",
+      "beats": [
+        {
+          "id": "ZS-T027",
+          "summary": "Jacque was rescued; Alex ascends outside and dies in the Uptown annihilation.",
+          "source": "canon-summary",
+          "confidence": "confirmed-summary"
+        }
+      ],
+      "runtimeProse": {
+        "source": "condensed-runtime",
+        "status": "PROVISIONAL ADAPTATION"
+      },
+      "screenplay": {
+        "preciseDialogue": "NOT RECOVERED",
+        "shotSequence": "NOT RECOVERED"
+      }
+    },
+    {
+      "id": "ZS-S017",
+      "runtimeNode": "endingG",
+      "ending": "G",
+      "beats": [
+        {
+          "id": "ZS-T028",
+          "summary": "Alex and Misaki survive in the Downtown hospital and later find love amid guilt.",
+          "source": "canon-summary",
+          "confidence": "confirmed-summary"
+        }
+      ],
+      "runtimeProse": {
+        "source": "condensed-runtime",
+        "status": "PROVISIONAL ADAPTATION"
+      },
+      "screenplay": {
+        "preciseDialogue": "NOT RECOVERED",
+        "shotSequence": "NOT RECOVERED"
+      }
+    },
+    {
+      "id": "ZS-S018",
+      "runtimeNode": "endingH",
+      "ending": "H",
+      "beats": [
+        {
+          "id": "ZS-T029",
+          "summary": "Alex contacts Jacque from the hospital rooftop and hears his apology.",
+          "source": "canon-summary",
+          "confidence": "confirmed-summary"
+        },
+        {
+          "id": "ZS-T030",
+          "summary": "Alex survives, witnesses the annihilation, loses his career; the relationship remains uncertain.",
+          "source": "canon-summary",
+          "confidence": "confirmed-summary"
+        }
+      ],
+      "runtimeProse": {
+        "source": "condensed-runtime",
+        "status": "PROVISIONAL ADAPTATION"
+      },
+      "screenplay": {
+        "preciseDialogue": "NOT RECOVERED",
+        "shotSequence": "NOT RECOVERED"
+      }
+    },
+    {
+      "id": "ZS-S019",
+      "runtimeNode": "endingI",
+      "ending": "I",
+      "beats": [
+        {
+          "id": "ZS-T031",
+          "summary": "Alex stops the CBD attackers and watches Uptown erased.",
+          "source": "canon-summary",
+          "confidence": "confirmed-summary"
+        },
+        {
+          "id": "ZS-T032",
+          "summary": "He later becomes an unnamed vigilante against surviving cultists; Misaki remains emotionally distant.",
+          "source": "canon-summary",
+          "confidence": "confirmed-summary"
+        }
+      ],
+      "runtimeProse": {
+        "source": "condensed-runtime",
+        "status": "PROVISIONAL ADAPTATION"
+      },
+      "screenplay": {
+        "preciseDialogue": "NOT RECOVERED",
+        "shotSequence": "NOT RECOVERED"
+      }
+    }
+  ],
+  "branches": [
+    {
+      "id": "ZS-B001",
+      "from": "ZS-S002",
+      "to": "ZS-S003",
+      "runtimeChoiceIndex": 0,
+      "source": "canon-summary",
+      "labelSource": "experiences/graphic-novel/story.js#junction"
+    },
+    {
+      "id": "ZS-B002",
+      "from": "ZS-S002",
+      "to": "ZS-S008",
+      "runtimeChoiceIndex": 1,
+      "source": "canon-summary",
+      "labelSource": "experiences/graphic-novel/story.js#junction"
+    },
+    {
+      "id": "ZS-B003",
+      "from": "ZS-S003",
+      "to": "ZS-S004",
+      "runtimeChoiceIndex": 0,
+      "source": "canon-summary",
+      "labelSource": "experiences/graphic-novel/story.js#jacque"
+    },
+    {
+      "id": "ZS-B004",
+      "from": "ZS-S003",
+      "to": "ZS-S007",
+      "runtimeChoiceIndex": 1,
+      "source": "canon-summary",
+      "labelSource": "experiences/graphic-novel/story.js#jacque"
+    },
+    {
+      "id": "ZS-B005",
+      "from": "ZS-S004",
+      "to": "ZS-S005",
+      "runtimeChoiceIndex": 0,
+      "source": "canon-summary",
+      "labelSource": "experiences/graphic-novel/story.js#abandon"
+    },
+    {
+      "id": "ZS-B006",
+      "from": "ZS-S004",
+      "to": "ZS-S014",
+      "runtimeChoiceIndex": 1,
+      "source": "canon-summary",
+      "labelSource": "experiences/graphic-novel/story.js#abandon"
+    },
+    {
+      "id": "ZS-B007",
+      "from": "ZS-S005",
+      "to": "ZS-S011",
+      "runtimeChoiceIndex": 0,
+      "source": "canon-summary",
+      "labelSource": "experiences/graphic-novel/story.js#sniper"
+    },
+    {
+      "id": "ZS-B008",
+      "from": "ZS-S005",
+      "to": "ZS-S006",
+      "runtimeChoiceIndex": 1,
+      "source": "canon-summary",
+      "labelSource": "experiences/graphic-novel/story.js#sniper"
+    },
+    {
+      "id": "ZS-B009",
+      "from": "ZS-S006",
+      "to": "ZS-S012",
+      "runtimeChoiceIndex": 0,
+      "source": "canon-summary",
+      "labelSource": "experiences/graphic-novel/story.js#tower"
+    },
+    {
+      "id": "ZS-B010",
+      "from": "ZS-S006",
+      "to": "ZS-S013",
+      "runtimeChoiceIndex": 1,
+      "source": "canon-summary",
+      "labelSource": "experiences/graphic-novel/story.js#tower"
+    },
+    {
+      "id": "ZS-B011",
+      "from": "ZS-S007",
+      "to": "ZS-S015",
+      "runtimeChoiceIndex": 0,
+      "source": "canon-summary",
+      "labelSource": "experiences/graphic-novel/story.js#rescue"
+    },
+    {
+      "id": "ZS-B012",
+      "from": "ZS-S007",
+      "to": "ZS-S016",
+      "runtimeChoiceIndex": 1,
+      "source": "canon-summary",
+      "labelSource": "experiences/graphic-novel/story.js#rescue"
+    },
+    {
+      "id": "ZS-B013",
+      "from": "ZS-S008",
+      "to": "ZS-S009",
+      "runtimeChoiceIndex": 0,
+      "source": "canon-summary",
+      "labelSource": "experiences/graphic-novel/story.js#misaki"
+    },
+    {
+      "id": "ZS-B014",
+      "from": "ZS-S008",
+      "to": "ZS-S010",
+      "runtimeChoiceIndex": 1,
+      "source": "canon-summary",
+      "labelSource": "experiences/graphic-novel/story.js#misaki"
+    },
+    {
+      "id": "ZS-B015",
+      "from": "ZS-S009",
+      "to": "ZS-S017",
+      "runtimeChoiceIndex": 0,
+      "source": "canon-summary",
+      "labelSource": "experiences/graphic-novel/story.js#hospital"
+    },
+    {
+      "id": "ZS-B016",
+      "from": "ZS-S009",
+      "to": "ZS-S018",
+      "runtimeChoiceIndex": 1,
+      "source": "canon-summary",
+      "labelSource": "experiences/graphic-novel/story.js#hospital"
+    }
+  ],
+  "automaticEdges": [
+    {
+      "from": "ZS-S001",
+      "to": "ZS-S002"
+    },
+    {
+      "from": "ZS-S010",
+      "to": "ZS-S019"
+    }
+  ],
+  "routes": [
+    {
+      "id": "ZS-R-A",
+      "ending": "A",
+      "scenes": [
+        "ZS-S001",
+        "ZS-S002",
+        "ZS-S003",
+        "ZS-S004",
+        "ZS-S005",
+        "ZS-S011"
+      ],
+      "preciseDialogue": "NOT RECOVERED",
+      "shotSequence": "NOT RECOVERED",
+      "source": "canon-summary"
+    },
+    {
+      "id": "ZS-R-B",
+      "ending": "B",
+      "scenes": [
+        "ZS-S001",
+        "ZS-S002",
+        "ZS-S003",
+        "ZS-S004",
+        "ZS-S005",
+        "ZS-S006",
+        "ZS-S012"
+      ],
+      "preciseDialogue": "NOT RECOVERED",
+      "shotSequence": "NOT RECOVERED",
+      "source": "canon-summary"
+    },
+    {
+      "id": "ZS-R-C",
+      "ending": "C",
+      "scenes": [
+        "ZS-S001",
+        "ZS-S002",
+        "ZS-S003",
+        "ZS-S004",
+        "ZS-S005",
+        "ZS-S006",
+        "ZS-S013"
+      ],
+      "preciseDialogue": "NOT RECOVERED",
+      "shotSequence": "NOT RECOVERED",
+      "source": "canon-summary"
+    },
+    {
+      "id": "ZS-R-D",
+      "ending": "D",
+      "scenes": [
+        "ZS-S001",
+        "ZS-S002",
+        "ZS-S003",
+        "ZS-S004",
+        "ZS-S014"
+      ],
+      "preciseDialogue": "NOT RECOVERED",
+      "shotSequence": "NOT RECOVERED",
+      "source": "canon-summary"
+    },
+    {
+      "id": "ZS-R-E",
+      "ending": "E",
+      "scenes": [
+        "ZS-S001",
+        "ZS-S002",
+        "ZS-S003",
+        "ZS-S007",
+        "ZS-S015"
+      ],
+      "preciseDialogue": "NOT RECOVERED",
+      "shotSequence": "NOT RECOVERED",
+      "source": "canon-summary"
+    },
+    {
+      "id": "ZS-R-F",
+      "ending": "F",
+      "scenes": [
+        "ZS-S001",
+        "ZS-S002",
+        "ZS-S003",
+        "ZS-S007",
+        "ZS-S016"
+      ],
+      "preciseDialogue": "NOT RECOVERED",
+      "shotSequence": "NOT RECOVERED",
+      "source": "canon-summary"
+    },
+    {
+      "id": "ZS-R-G",
+      "ending": "G",
+      "scenes": [
+        "ZS-S001",
+        "ZS-S002",
+        "ZS-S008",
+        "ZS-S009",
+        "ZS-S017"
+      ],
+      "preciseDialogue": "NOT RECOVERED",
+      "shotSequence": "NOT RECOVERED",
+      "source": "canon-summary"
+    },
+    {
+      "id": "ZS-R-H",
+      "ending": "H",
+      "scenes": [
+        "ZS-S001",
+        "ZS-S002",
+        "ZS-S008",
+        "ZS-S009",
+        "ZS-S018"
+      ],
+      "preciseDialogue": "NOT RECOVERED",
+      "shotSequence": "NOT RECOVERED",
+      "source": "canon-summary"
+    },
+    {
+      "id": "ZS-R-I",
+      "ending": "I",
+      "scenes": [
+        "ZS-S001",
+        "ZS-S002",
+        "ZS-S008",
+        "ZS-S010",
+        "ZS-S019"
+      ],
+      "preciseDialogue": "NOT RECOVERED",
+      "shotSequence": "NOT RECOVERED",
+      "source": "canon-summary"
+    }
+  ],
+  "presentationLinks": [
+    {
+      "source": "ending-c-interim",
+      "runtimeNode": "endingC",
+      "panelIndex": 0,
+      "beatId": "ZS-T021"
+    },
+    {
+      "source": "ending-c-interim",
+      "runtimeNode": "endingC",
+      "panelIndex": 1,
+      "beatId": "ZS-T022"
+    },
+    {
+      "source": "ending-c-interim",
+      "runtimeNode": "endingC",
+      "panelIndex": 2,
+      "beatId": "ZS-T023"
+    }
+  ]
+}

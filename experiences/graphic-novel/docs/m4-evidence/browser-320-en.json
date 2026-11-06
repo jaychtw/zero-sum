@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "runGroup": "m4-final-7cd8124",
+  "sourceBundleSha256": "7eba8794f6823d871ceb963af61b16d44ac0288e63018014fefd404dd2a8b0fa",
+  "screenplayVersion": "0.2",
+  "browser": "155.0.8059.79",
+  "widths": [
+    320
+  ],
+  "languages": [
+    "en"
+  ],
+  "routes": 9,
+  "panelsChecked": 70,
+  "audits": 0,
+  "languageSwitches": 70,
+  "screenshots": [],
+  "errors": [],
+  "incompleteAuditRules": [],
+  "checks": [
+    "All 70 paired panels exact source text/attribution and live switch at every width/language; all choices/routes; within/cross-scene back; alternate branch revisit; replay/reset/dialog; keyboard-only C; storage denied; reduced motion/static C boundary; image loads; 44px controls; no overflow."
+  ]
+}

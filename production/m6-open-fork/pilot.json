@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "baseline": "5dc0143ad7f298c66431b4e71506df6f05653467",
+  "scope": [
+    "OPEN",
+    "FORK"
+  ],
+  "status": "packet-ready-generation-eligibility-unverified",
+  "activationAllowed": false,
+  "ownerArtApproval": null,
+  "common": {
+    "artDirection": "Original classic 1980s–1990s cel-anime characters, confident inked silhouettes and restrained cel shading against a painterly cinematic cyberpunk city. Wet neon reflections, deep ink/navy, ivory light, muted cyan and restrained coral. Illustration is the scene, not a designed report.",
+    "composition": "One continuous external oblique landscape camera view of one physical moment. Both squad cabins are large enough to identify both people through separate windshields/windows. No cutaway panels, insets, duplicated people or explanatory board. Keep glass reflections away from faces. Keep the lower-right quiet enough for the existing HTML provisional caption.",
+    "vehicleContinuity": {
+      "status": "Proposed pilot-only visual design locks, not added screenplay facts; owner judges delivered art.",
+      "lead": "Low graphite pursuit coupe, one slim muted-cyan nose accent, broad clear windshield, Alex/Misaki only.",
+      "following": "Distinct slate-blue pursuit coupe, paired pale headlamp blocks, broad clear windshield, Pete/Jacque only.",
+      "steering": "Use left-hand drive in both masters as a reversible technical continuity choice. Driver sits in vehicle-left (viewer-right in a frontal view); assess vehicle axes in an oblique view. Do not mirror one painting or swap seats to fit the page.",
+      "state": "Same car bodies, colors, glass, lights and seat assignments in OPEN and FORK. OPEN moving; FORK stopped. No character is duplicated in background or reflections. Karl’s black armored vehicle belongs ahead in OPEN, visually distinct from the two squad coupes."
+    },
+    "dimensions": {
+      "preferred": [
+        2560,
+        1440
+      ],
+      "minimum": [
+        1280,
+        720
+      ],
+      "aspectRatio": "16:9 native original; width*9 == height*16",
+      "reject": "Letterboxed/poster/board composition or a 3:2 output reframed and called an original 16:9 master. Retain actual source dimensions; no blind upscale."
+    },
+    "delivery": "Retain original lossless source if supplied. No delivery conversion before explicit owner approval. Later local WebP only after approval; no external image URL in app.",
+    "overlay": "No bilingual text space is needed for dialogue; EN and zh-TW narrative, UI, alt and captions stay HTML. No baked words, route labels, signs, title, watermark, caption box, HUD, diagram, border or panel divider.",
+    "cropPolicy": "Actual source bytes are required before any numeric ROI is entered. Every crop must be an unchanged subset of the same moment, with actual-image bilingual alt. Do not change pose, expression, time, seat or companion survival by cropping. Require square normalized width/height for the current 16:9 source/frame. Inspect at native pixel size, 390px phone and 1440px desktop. Prefer a looser detail or text-led fallback over enlargement. A source subset narrower than its intended CSS width fails that width unless explicitly capped as an inset.",
+    "rights": "Record source creator/tool, model/job if exposed, exact prompt and references, incremental-cost evidence, data-use terms, source/output rights evidence and unresolved limits. Do not invent a license, seed, model version or unrestricted use grant."
+  },
+  "characters": [
+    {
+      "id": "ZS-CH-ALEX",
+      "name": {
+        "en": "Alex",
+        "zh": "艾力克斯"
+      },
+      "visualAnchor": "Dark tousled hair, red high collar/jacket, dark harness and gloves; cheek scar visible in chase. Chase foreground driver is primary.",
+      "seat": "Lead car driver only."
+    },
+    {
+      "id": "ZS-CH-MISAKI",
+      "name": {
+        "en": "Misaki",
+        "zh": "美咲"
+      },
+      "visualAnchor": "Violet ponytail, grey-violet tactical outfit; healthy and alert. Use chase, not the patient gown/bandages.",
+      "seat": "Lead car front passenger only."
+    },
+    {
+      "id": "ZS-CH-PETE",
+      "name": {
+        "en": "Pete",
+        "zh": "彼得"
+      },
+      "visualAnchor": "Chase far-left cap-and-goggles, moustached figure in olive tactical layers. Do not merge him with the blond man or junction rear-seat redesigns.",
+      "seat": "Following car driver only."
+    },
+    {
+      "id": "ZS-CH-JACQUE",
+      "name": {
+        "en": "Jacque",
+        "zh": "賈克"
+      },
+      "visualAnchor": "Blond hair, blue flight suit and bulky jetpack/gauntlet cues from jacque. Healthy; no bridge-hanging injuries.",
+      "seat": "Following car front passenger only."
+    }
+  ],
+  "masters": [
+    {
+      "id": "OPEN",
+      "specification": "docs/M5_ILLUSTRATION_SPECS.md#open",
+      "purpose": "Make the canonical two-car squad pursuit legible and emotionally immediate.",
+      "moment": "Both cars in motion on a rain-slick elevated roadway; Alex drives lead with healthy Misaki navigating, Pete drives following with Jacque braced beside him. Karl’s black armored transport is farther ahead. Select one clear pursuit instant; do not combine later actions in one montage.",
+      "camera": "One external tracking view from slightly above and in front of the cars’ left sides, with their travel direction consistently across the frame. Lead car is near and ahead; following car is close and staggered enough for two readable windshields. Karl’s black armored vehicle, if visible, is farther along that same road toward the outgoing frame edge, never behind the squad or mistaken for its third car. Do not make it a tiny car placed ahead only by a label. All vehicle axes must agree with the road.",
+      "newSpatialBeat": "Moving convoy; no transfer bay or already exchanged occupants.",
+      "panels": [
+        {
+          "id": "ZS-S001.P01",
+          "variant": "full"
+        },
+        {
+          "id": "ZS-S001.P02",
+          "variant": "full"
+        },
+        {
+          "id": "ZS-S001.P03",
+          "variant": "following-cabin"
+        },
+        {
+          "id": "ZS-S001.P04",
+          "variant": "lead-cabin"
+        },
+        {
+          "id": "ZS-S008.P01",
+          "variant": "lead-cabin"
+        }
+      ],
+      "variants": [
+        {
+          "id": "following-cabin",
+          "rect": null,
+          "mustInclude": "Pete at wheel and Jacque in passenger seat, enough following-car structure to read a separate cabin.",
+          "mustExclude": "Lead-car figures, inset borders, extra people."
+        },
+        {
+          "id": "lead-cabin",
+          "rect": null,
+          "mustInclude": "Alex at wheel, healthy Misaki, legible navigator relationship and lead-car interior edges.",
+          "mustExclude": "Following car and Pete/Jacque for later S008.P01; tower-only landmarks that contradict the Downtown approach."
+        }
+      ],
+      "failureAlternatives": "If following faces are too small, recompose the two cars closer/staggered within one single scene at the same original resolution. If the lead detail cannot exclude following/tower context for S008.P01, keep that panel text-led; do not crop a new third image out of a board."
+    },
+    {
+      "id": "FORK",
+      "specification": "docs/M5_ILLUSTRATION_SPECS.md#fork",
+      "purpose": "Show a physically possible pause and transfer decision without deciding it for the player.",
+      "moment": "Two squad cars have stopped at a rain-slick emergency transfer bay immediately before the two outgoing ramps. Original assignments remain: Alex/Misaki in lead; Pete/Jacque in following. No completed exchange, no people standing in a swap path already selected.",
+      "camera": "A different external oblique view in the same city. Foreground/near midground shows both stopped cars with readable cabins and unobstructed doors/walking gap. The connected divergent ramps occupy a large continuous unobstructed region beyond/alongside the bay, with no cars or their reflections in the required ramp-only subset. Both routes visibly connect to the same interchange; do not paint unrelated skylines in separate panels.",
+      "newSpatialBeat": "Stopped bay and suspended urgency; separate master from OPEN, not an edit that merely freezes wheel blur.",
+      "panels": [
+        {
+          "id": "ZS-S001.P05",
+          "variant": "ramp-approach"
+        },
+        {
+          "id": "ZS-S002.P01",
+          "variant": "full"
+        },
+        {
+          "id": "ZS-S002.P02",
+          "variant": "lead-cabin"
+        },
+        {
+          "id": "ZS-S002.P03",
+          "variant": "full"
+        }
+      ],
+      "variants": [
+        {
+          "id": "ramp-approach",
+          "rect": null,
+          "mustInclude": "Two connected diverging ramps and believable road geometry toward the two districts.",
+          "mustExclude": "Both stopped squad cars, all crew and stopped-car reflections; no baked direction labels."
+        },
+        {
+          "id": "lead-cabin",
+          "rect": null,
+          "mustInclude": "Alex at wheel and Misaki actively making her professional case, same seats and wardrobe as OPEN.",
+          "mustExclude": "Completed Alex/Pete exchange, romantic embrace, other crew in that cabin."
+        }
+      ],
+      "failureAlternatives": "If the ramp-only region is too small or the roads do not connect, recompose the original single scene rather than paste a second view. If faces cannot also remain legible, loosen the crop or retain the current text-led panel. Do not invent numeric ROIs before source pixels exist."
+    }
+  ]
+}
