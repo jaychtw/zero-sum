@@ -27,7 +27,7 @@ Prepare Zero Sum for a proper illustrated Graphic Novel phase.
 
 The current state is a strong narrative prototype, but not yet a fully illustrated graphic novel. M5 should create a **practical visual-coverage system and production package** so future artwork can be created and integrated efficiently.
 
-This is **not** permission to invent a large amount of new artwork, and **not** a request to rebuild the app.  
+This is **not** permission to invent a large amount of new artwork, and **not** a request to rebuild the app.
 The goal is to reduce future art burden while improving the project’s readiness for visual completion.
 
 ## Core principle
