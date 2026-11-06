@@ -20,3 +20,6 @@
   .dialogue { padding-left:14px; }
 }
 .manuscript-frame .temporary-copy .manuscript-card-title { color:var(--paper); font-size:clamp(22px,3.3vw,40px); }
+
+/* Normalized 16:9 subsets; source files and narrative remain independent. */
+.manuscript-frame .illustration-crop {position:absolute;height:auto;max-width:none;}

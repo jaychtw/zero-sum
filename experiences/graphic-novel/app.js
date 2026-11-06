@@ -1,6 +1,7 @@
 import { manuscript } from './manuscript.js';
 import { createSession } from './session.js';
 import { ui } from './presentation.js';
+import { resolveIllustration } from './illustration.js';
 const $ = id => document.getElementById(id);
 const session = createSession();
 let language = 'en';
@@ -58,12 +59,19 @@ function render(focus = false) {
     const progress = el('span','',`${t.panel} ${session.panel+1} / ${scene.panels.length}`); progress.id = 'panel-progress';
     strip.append(progress,el('span','',scene.title[language]));
     const frame = el('figure','frame manuscript-frame');
-    if (panel.art) {
-      const ascent = panel.art === 'ascent';
-      if (ascent) frame.classList.add('ending-c-frame','ascent');
-      const image = el('img',ascent?'ending-c-crop':'scene-art');
-      image.src = `assets/${ascent?'wmd':panel.art}.webp`; image.alt = ascent ? t.ascentAlt : t.alts[panel.art];
-      image.width = 1280; image.height = 720; watchIllustration(image,frame,t); frame.append(image,el('figcaption','art-label',t.art));
+    const illustration = resolveIllustration(panel.id, language);
+    if (illustration) {
+      if (illustration.maxDisplayWidth) { frame.style.maxWidth = `${illustration.maxDisplayWidth}px`; frame.style.marginInline = 'auto'; }
+      if (illustration.cropped) frame.classList.add('ending-c-frame');
+      if (illustration.variant === 'ascent-left') frame.classList.add('ascent');
+      const image = el('img',illustration.cropped?'ending-c-crop illustration-crop':'scene-art');
+      if (illustration.cropped) {
+        const [x,y,w,h] = illustration.rect;
+        image.style.width = `${100/w}%`; image.style.left = `${-100*x/w}%`; image.style.top = `${-100*y/h}%`;
+      }
+      image.src = illustration.src; image.alt = illustration.alt;
+      image.width = illustration.width; image.height = illustration.height;
+      watchIllustration(image,frame,t); frame.append(image,el('figcaption','art-label',illustration.caption));
     } else {
       frame.classList.add('temporary','text-led');
       const card = el('div','temporary-copy');

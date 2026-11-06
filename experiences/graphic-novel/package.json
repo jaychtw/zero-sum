@@ -8,6 +8,7 @@
     "test:browser": "node tests/browser.test.js",
     "test:narrative": "node ../../scripts/narrative.test.mjs",
     "test:resilience": "node tests/resilience.test.js",
-    "build:screenplay": "node ../../scripts/build-screenplay.mjs"
+    "build:screenplay": "node ../../scripts/build-screenplay.mjs",
+    "test:illustrations": "node ../../scripts/build-illustrations.mjs --check && node ../../scripts/build-illustration-docs.mjs --check && node ../../scripts/illustrations.test.mjs"
   }
 }
