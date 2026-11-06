@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "baseline": "5dc0143",
+  "sourceBundleSha256": "75491201eb07419d905b4a807a45f72040aa083bfdb2ea6e3d8a9250bc4652d6",
+  "browser": "155.0.8059.79",
+  "newMasters": 0,
+  "activationAllowed": false,
+  "cases": [
+    {
+      "width": 390,
+      "language": "zh",
+      "state": "OPEN-baseline",
+      "before": "390-zh-OPEN-baseline-before.jpg",
+      "after": "390-zh-OPEN-baseline-after.jpg",
+      "sha256": "88d4351de980a283240a17f9c624b9932e04f801963ff6969ffe2cd3cabd742a",
+      "equal": true
+    },
+    {
+      "width": 390,
+      "language": "zh",
+      "state": "FORK-baseline",
+      "before": "390-zh-FORK-baseline-before.jpg",
+      "after": "390-zh-FORK-baseline-after.jpg",
+      "sha256": "ac1da1adccf791237def3641066da77b440ee040dc9a03e9911da6fefd5c0455",
+      "equal": true
+    },
+    {
+      "width": 1440,
+      "language": "en",
+      "state": "OPEN-baseline",
+      "before": "1440-en-OPEN-baseline-before.jpg",
+      "after": "1440-en-OPEN-baseline-after.jpg",
+      "sha256": "c2605944882e85696545ff01ca3d9be19975b46a1596244cfe04b33b28edc271",
+      "equal": true
+    },
+    {
+      "width": 1440,
+      "language": "en",
+      "state": "FORK-baseline",
+      "before": "1440-en-FORK-baseline-before.jpg",
+      "after": "1440-en-FORK-baseline-after.jpg",
+      "sha256": "069c68eeb48ed08d828c01eb56fb806758ec35bf0c307803963ed21607d43fe5",
+      "equal": true
+    }
+  ]
+}

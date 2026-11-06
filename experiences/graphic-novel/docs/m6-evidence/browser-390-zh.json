@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "runGroup": "m6-5dc0143",
+  "sourceBundleSha256": "75491201eb07419d905b4a807a45f72040aa083bfdb2ea6e3d8a9250bc4652d6",
+  "screenplayVersion": "0.2",
+  "browser": "155.0.8059.79",
+  "widths": [
+    390
+  ],
+  "languages": [
+    "zh-Hant"
+  ],
+  "routes": 9,
+  "panelsChecked": 70,
+  "audits": 72,
+  "languageSwitches": 70,
+  "screenshots": [
+    "390-zh-title.jpg",
+    "390-zh-opening.jpg",
+    "390-zh-two-vehicles.jpg",
+    "390-zh-dialogue.jpg",
+    "390-zh-first-fork-transfer.jpg",
+    "390-zh-ending-A.jpg",
+    "390-zh-ending-B.jpg",
+    "390-zh-ending-C-phase1.jpg",
+    "390-zh-ending-C-phase2.jpg",
+    "390-zh-ending-C.jpg",
+    "390-zh-ending-D.jpg",
+    "390-zh-ending-E.jpg",
+    "390-zh-ending-F.jpg",
+    "390-zh-ending-G.jpg",
+    "390-zh-ending-H-inquiry.jpg",
+    "390-zh-ending-H.jpg",
+    "390-zh-ending-I-rehabilitation.jpg",
+    "390-zh-ending-I.jpg"
+  ],
+  "errors": [],
+  "incompleteAuditRules": [
+    "color-contrast"
+  ],
+  "checks": [
+    "All 70 paired panels exact source text/attribution and live switch at every width/language; all choices/routes; within/cross-scene back; alternate branch revisit; replay/reset/dialog; keyboard-only C; storage denied; reduced motion/static C boundary; image loads; 44px controls; no overflow."
+  ]
+}

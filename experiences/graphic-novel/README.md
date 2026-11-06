@@ -69,3 +69,9 @@ The approved bilingual experience is unchanged. See the [M5 owner package](../..
 Run `npm run test:illustrations` here to check the 70-row plan, planning/live separation, exact baseline bindings, bilingual metadata and original image hashes. After editing the live source, regenerate with `node ../../scripts/build-illustrations.mjs`; after editing the plan, regenerate docs with `node ../../scripts/build-illustration-docs.mjs`. Both accept `--check`.
 
 For new M5 browser evidence, set `EVIDENCE_DIR=../docs/m5-evidence/` on both `npm run test:browser` and `npm run test:resilience`. Prior evidence folders are historical snapshots. M5 source hashes include both illustration runtime modules. The current reader remains a static application requiring no build step or installed runtime packages.
+
+### M6 OPEN/FORK production pilot
+
+[M6 owner review](../../docs/M6_OWNER_REVIEW.md), [production-input packet](../../production/m6-open-fork/README.md) and [QA](../../docs/M6_QA.md) preserve the active baseline. No candidate master/crop is approved or active. Native generation is listed, but its verified-$0/reference-data eligibility remains unresolved; the packet records that precise blocker and does not claim an absent tool or a failed image. No paid provider or Larch work is part of this pilot.
+
+New evidence uses `EVIDENCE_DIR=../docs/m6-evidence/`. The standalone packet/intake commands and deterministic ZIP export are documented in the M6 package. They do not modify runtime content or substitute reference images as new masters. Explicit owner artwork acceptance remains necessary before any binding change.

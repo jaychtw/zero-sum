@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "sourceBundleSha256": "75491201eb07419d905b4a807a45f72040aa083bfdb2ea6e3d8a9250bc4652d6",
+  "routes": 12,
+  "audits": 12,
+  "expectedMissingAssets": [
+    "chase.webp",
+    "hospital.webp",
+    "jacque.webp",
+    "misaki.webp",
+    "sniper.webp",
+    "tackle.webp",
+    "wmd.webp"
+  ],
+  "errors": []
+}

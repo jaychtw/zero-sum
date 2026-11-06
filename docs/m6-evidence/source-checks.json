@@ -1,0 +1,114 @@
+{
+  "status": "passed",
+  "baseline": "5dc0143",
+  "sourceBundleSha256": "75491201eb07419d905b4a807a45f72040aa083bfdb2ea6e3d8a9250bc4652d6",
+  "commands": [
+    "node scripts/build-screenplay.mjs --check",
+    "npm test --prefix experiences/graphic-novel",
+    "npm run test:narrative --prefix experiences/graphic-novel",
+    "npm run test:illustrations --prefix experiences/graphic-novel",
+    "node scripts/m6-packet.test.mjs",
+    "python3 scripts/m6-intake.test.py"
+  ],
+  "results": {
+    "panels": 70,
+    "sourceParagraphs": 459,
+    "endings": 9,
+    "originalAssetHashes": 8,
+    "liveBindings": 14,
+    "pilotMastersSpecified": 2,
+    "pilotPanelSlots": 9,
+    "newImageSources": 0,
+    "actualCropRectangles": 0,
+    "ownerArtworkApprovals": 0,
+    "negativeIntakeConditions": 14,
+    "activationAllowed": false
+  },
+  "preserved": [
+    {
+      "path": "experiences/graphic-novel/index.html",
+      "sha256": "5e7babb1adc9a314b45cb410bf3032769c1f8fc0a9e2fc907934bbf17bd000be",
+      "unchanged": true
+    },
+    {
+      "path": "experiences/graphic-novel/app.js",
+      "sha256": "6067053ec961a18a246a485bbb33566120057ac0014a9ab31a7dd00482246e1f",
+      "unchanged": true
+    },
+    {
+      "path": "experiences/graphic-novel/session.js",
+      "sha256": "e5bec6b39d9d7b1772167eba74d37fe9f290b6b7dddfeaefb6599af8503ed0a6",
+      "unchanged": true
+    },
+    {
+      "path": "experiences/graphic-novel/manuscript.js",
+      "sha256": "982b66f5e48cc7f93dfe9bae76a0285bcc4c6e1789d3b7d86ab12e8d9bcc8dc1",
+      "unchanged": true
+    },
+    {
+      "path": "experiences/graphic-novel/presentation.js",
+      "sha256": "3f90712f294dc408751a7c38479c9865dd7a0f55c6ad2bc394319f284315b328",
+      "unchanged": true
+    },
+    {
+      "path": "experiences/graphic-novel/style.css",
+      "sha256": "5dcd71032376d804ebbd3e7be0d40c1d9e0c166c53dca86ac534c1434a46caa3",
+      "unchanged": true
+    },
+    {
+      "path": "experiences/graphic-novel/ending-c.css",
+      "sha256": "b45d6922fd3420a9c2e59be70ab9295a6058aefecb5b4069cf42bdc8d812ef81",
+      "unchanged": true
+    },
+    {
+      "path": "experiences/graphic-novel/manuscript.css",
+      "sha256": "c54380fe1842900d9c8c318e43585ff36638513f5bcd7c937b9eb9ef2c5c4215",
+      "unchanged": true
+    },
+    {
+      "path": "experiences/graphic-novel/illustration.js",
+      "sha256": "067952a44c2746819b364ce002d48e0c2a903e1dc60534dd22bc4baa2bb9beab",
+      "unchanged": true
+    },
+    {
+      "path": "experiences/graphic-novel/illustrations.js",
+      "sha256": "71ccbc22df75de947e0032a783857a65ce1522a176b9cc515c1578f046338a9d",
+      "unchanged": true
+    },
+    {
+      "path": "narrative/illustrations.v1.json",
+      "sha256": "aef37521ede59aa9ab6a012cec40a8c6f62e192f1e97c6444127c616248fcb20",
+      "unchanged": true
+    },
+    {
+      "path": "narrative/illustration-plan.v1.json",
+      "sha256": "0529684908aa15832a772255056159335c20d19dfd2582622006c7dcc85332e9",
+      "unchanged": true
+    },
+    {
+      "path": "narrative/registry.v1.json",
+      "sha256": "8b45a0bcedaa8d7a13b4983131e8953d4bb56036bf7613b2b7c29e0bbbe93527",
+      "unchanged": true
+    },
+    {
+      "path": "narrative/assets.v1.json",
+      "sha256": "9842257bd5eedc0e71c6d6bbe8088b040375dcdfe05dda78273e75cc5bf60bdb",
+      "unchanged": true
+    },
+    {
+      "path": "narrative/panel-plan.v1.json",
+      "sha256": "ef32baf387d7a19c190f9b6cdc0bc3517eaec7481a873a50a0f4c0e8cef1f518",
+      "unchanged": true
+    },
+    {
+      "path": "screenplay/ZERO_SUM_SCREENPLAY_DRAFT_EN_V0.2.md",
+      "sha256": "b6e9ef475d9cba2ecf4bc4e07bd6414503fd4ea28cbf68a6db640f82845a0d75",
+      "unchanged": true
+    },
+    {
+      "path": "screenplay/ZERO_SUM_SCREENPLAY_DRAFT_ZH-TW_V0.2.md",
+      "sha256": "ace66fe6c879441d705b14f8324126a2d8a94bb915d99af2bf33a947289673f1",
+      "unchanged": true
+    }
+  ]
+}

@@ -42,3 +42,7 @@ Run from repository root. The inspector writes JSON only to stdout and never cha
 ## Remaining input
 
 Supply either an eligible native/no-cost generation method with evidenced terms/reference handling, or actual separately created OPEN/FORK originals with the same provenance and cost evidence. The native tool’s billing/data eligibility question remains unresolved at this checkpoint. Until resolved, the reproducible $0 work completed here is **local preparation, integrity checks and QA**; no validated $0 generation method or usable master is claimed. Larch and the remaining 19 illustrations are outside this packet.
+
+## Archive reproduction
+
+`python3 scripts/m6-export-packet.py` from the full repository writes the local ZIP at `docs/m6-evidence/zero-sum-m6-production-packet.zip` and its integrity receipt. It bundles this packet, exact source excerpts/approved screenplay and approval ledger, original reference bytes and source hash inventory, relevant briefs, and the read-only inspector. Stable entry order/timestamps make identical inputs reproduce the same ZIP SHA. It creates no image source or live binding. The archive contains its own per-file SHA manifest; repository-history/QA links remain links into the full repository.
