@@ -3,6 +3,8 @@ Updated: 2026-11-06
 
 ## Current phase
 
+**M6 OPEN/FORK pilot authorized (2026-11-06):** Owner accepted the M5 direction and approved a **bounded two-master illustration-production pilot** within the original static pipeline. [M6 implementation and art acceptance brief](M6_OPEN_FORK_PILOT_BRIEF.md) defines single-scene masters, casting/cropping gates, rejection of composite/storyboard exploratory generations, $0 method limits, and required owner visual approval before any activation. **No production illustration accepted or deployed yet.** Codex implementation not initiated by writing this file; preserve M5 runtime baseline.
+
 **M5 illustration coverage planning and integration preparation complete; pause for owner review and production-method choice.** The owner accepted M4 as an overall working bilingual prototype at `4c9ee3a`, while identifying insufficient visual coverage. The approved experience remains 70 paired panels, 19 runtime scenes, eight decisions and nine endings, currently 14 illustrated / 56 text-led. See the [consolidated M5 package](M5_OWNER_REVIEW.md), [coverage audit](M5_VISUAL_COVERAGE.md), [21 production specifications](M5_ILLUSTRATION_SPECS.md) and [M5 QA](M5_QA.md). No artwork production, merge, deployment, release or Possibility change.
 
 Current authorization: [M5 mandate](M5_ILLUSTRATION_COVERAGE_BRIEF.md), starting at `4c9ee3a`. Prior integration authorization: [M4 mandate](M4_BILINGUAL_SCREENPLAY_INTEGRATION.md), starting at `4ed8b9c`; [bilingual approval ledger](BILINGUAL_SCREENPLAY_REVIEW_V02.md). Stale draft warnings inside the approved manuscript files are historical; the ledger and explicit owner authorization supersede them. The source files themselves remain unchanged.
