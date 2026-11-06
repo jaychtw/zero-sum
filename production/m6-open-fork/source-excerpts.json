@@ -1,0 +1,831 @@
+{
+  "source": "Unchanged approved bilingual screenplay v0.2 via manuscript.js; planning extract only, not a new narrative version",
+  "screenplayLock": {
+    "version": "0.2",
+    "approvalDate": "2026-11-06",
+    "authority": "docs/BILINGUAL_SCREENPLAY_REVIEW_V02.md and docs/M4_BILINGUAL_SCREENPLAY_INTEGRATION.md at 4ed8b9c",
+    "sources": {
+      "en": {
+        "path": "screenplay/ZERO_SUM_SCREENPLAY_DRAFT_EN_V0.2.md",
+        "sha256": "b6e9ef475d9cba2ecf4bc4e07bd6414503fd4ea28cbf68a6db640f82845a0d75"
+      },
+      "zh": {
+        "path": "screenplay/ZERO_SUM_SCREENPLAY_DRAFT_ZH-TW_V0.2.md",
+        "sha256": "ace66fe6c879441d705b14f8324126a2d8a94bb915d99af2bf33a947289673f1"
+      }
+    }
+  },
+  "panels": [
+    {
+      "id": "ZS-S001.P01",
+      "blocks": [
+        0,
+        1
+      ],
+      "art": null,
+      "context": {
+        "en": "EXT. MEGACITY EXPRESSWAYS — NIGHT",
+        "zh": "外景．巨型都市高架道路——夜"
+      },
+      "content": [
+        {
+          "en": [
+            {
+              "kind": "stage",
+              "text": "EXT. MEGACITY EXPRESSWAYS — NIGHT",
+              "source": {
+                "start": 27,
+                "end": 27
+              }
+            }
+          ],
+          "zh": [
+            {
+              "kind": "stage",
+              "text": "外景．巨型都市高架道路——夜",
+              "source": {
+                "start": 23,
+                "end": 23
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "kind": "action",
+              "text": "Neon bleeds across the wet highway. The heavy traffic below continues its ordinary life, unaware of the convoy weaving above it. A black armored vehicle shoulders between two escort motorcycles. Beyond the rain, Galaxical Tower cuts a needle-shaped silhouette through Uptown's luminous haze.",
+              "source": {
+                "start": 29,
+                "end": 29
+              }
+            }
+          ],
+          "zh": [
+            {
+              "kind": "action",
+              "text": "霓虹映在濕漉漉的高速公路上，渲染成一道道流動的顏色。下方車流依舊忙著各自的生活，對頭頂那支穿梭中的車隊毫無所覺。一輛黑色裝甲車從兩部護衛機車之間硬生生切進去。雨幕後方，銀河塔像一根利針，刺穿上城區迷濛的光霧。",
+              "source": {
+                "start": 25,
+                "end": 25
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ZS-S001.P02",
+      "blocks": [
+        2,
+        3,
+        4
+      ],
+      "art": null,
+      "context": {
+        "en": "EXT. MEGACITY EXPRESSWAYS — NIGHT",
+        "zh": "外景．巨型都市高架道路——夜"
+      },
+      "content": [
+        {
+          "en": [
+            {
+              "kind": "action",
+              "text": "Two pursuit cars thread through traffic, linked by a short-range squad channel. In the lead car, Alex drives while Misaki plots the exits from the passenger seat. In the following car, Jacque braces beside Pete, who is driving with one eye on fleeing civilian traffic. The four can see one another intermittently through the rain.",
+              "source": {
+                "start": 31,
+                "end": 31
+              }
+            }
+          ],
+          "zh": [
+            {
+              "kind": "action",
+              "text": "兩輛追擊車一前一後穿越車流，透過短程隊內頻道保持聯繫。前車由艾力克斯駕駛，美咲坐在副駕駛座，緊盯路線圖；後車由彼得開車，賈克坐在旁邊戒備。雨勢時大時小，四人偶爾能隔著擋風玻璃看見彼此。",
+              "source": {
+                "start": 27,
+                "end": 27
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "kind": "dialogue",
+              "speaker": "PETE (radio)",
+              "text": "Civilians on the eastbound lane. I'll draw the escorts off them.",
+              "source": {
+                "start": 33,
+                "end": 33
+              }
+            }
+          ],
+          "zh": [
+            {
+              "kind": "dialogue",
+              "speaker": "彼得（無線電）",
+              "text": "東向車道還有平民。我去把護衛引開。",
+              "source": {
+                "start": 29,
+                "end": 29
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "kind": "action",
+              "text": "Pete angles his car into the path of a cult motorcycle, opening a gap for a frightened driver to escape. Jacque fires from the moving passenger side, disabling the escort without hitting the civilian.",
+              "source": {
+                "start": 35,
+                "end": 35
+              }
+            }
+          ],
+          "zh": [
+            {
+              "kind": "action",
+              "text": "彼得調整車身，擋住一輛邪教機車的去路，替受驚的駕駛騰出逃生空隙。賈克從副駕駛座開火，讓護衛失去行動能力，沒有擊中平民。",
+              "source": {
+                "start": 31,
+                "end": 31
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ZS-S001.P03",
+      "blocks": [
+        5,
+        6
+      ],
+      "art": null,
+      "context": {
+        "en": "EXT. MEGACITY EXPRESSWAYS — NIGHT",
+        "zh": "外景．巨型都市高架道路——夜"
+      },
+      "content": [
+        {
+          "en": [
+            {
+              "kind": "dialogue",
+              "speaker": "JACQUE",
+              "text": "You always pick the difficult lane.",
+              "source": {
+                "start": 37,
+                "end": 37
+              }
+            }
+          ],
+          "zh": [
+            {
+              "kind": "dialogue",
+              "speaker": "賈克",
+              "text": "你每次都挑最麻煩的那條路。",
+              "source": {
+                "start": 33,
+                "end": 33
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "kind": "dialogue",
+              "speaker": "PETE",
+              "text": "It had someone in it.",
+              "source": {
+                "start": 39,
+                "end": 39
+              }
+            }
+          ],
+          "zh": [
+            {
+              "kind": "dialogue",
+              "speaker": "彼得",
+              "text": "因為那條路上有人。",
+              "source": {
+                "start": 35,
+                "end": 35
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ZS-S001.P04",
+      "blocks": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "art": null,
+      "context": {
+        "en": "EXT. MEGACITY EXPRESSWAYS — NIGHT",
+        "zh": "外景．巨型都市高架道路——夜"
+      },
+      "content": [
+        {
+          "en": [
+            {
+              "kind": "action",
+              "text": "A cult escort swings across the lead lane. Alex corrects the wheel by inches. A round sparks off the barrier. Misaki puts her palm against the dash, then immediately resumes tracking the convoy.",
+              "source": {
+                "start": 41,
+                "end": 41
+              }
+            }
+          ],
+          "zh": [
+            {
+              "kind": "action",
+              "text": "一輛護衛車橫切到前車車道。艾力克斯微微轉動方向盤，差了幾吋便會撞上。子彈打在護欄上，迸出火星。美咲伸手撐住儀表板，隨即繼續追蹤車隊。",
+              "source": {
+                "start": 37,
+                "end": 37
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "kind": "dialogue",
+              "speaker": "ALEX",
+              "text": "You all right?",
+              "source": {
+                "start": 43,
+                "end": 43
+              }
+            }
+          ],
+          "zh": [
+            {
+              "kind": "dialogue",
+              "speaker": "艾力克斯",
+              "text": "還好嗎？",
+              "source": {
+                "start": 39,
+                "end": 39
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "kind": "dialogue",
+              "speaker": "MISAKI",
+              "text": "Eyes ahead, commander. I've got the exits.",
+              "source": {
+                "start": 45,
+                "end": 45
+              }
+            }
+          ],
+          "zh": [
+            {
+              "kind": "dialogue",
+              "speaker": "美咲",
+              "text": "看前面，指揮官。出口交給我。",
+              "source": {
+                "start": 41,
+                "end": 41
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "kind": "action",
+              "text": "She gives him a quick look: the concern registers on both sides but neither has time to acknowledge it.",
+              "source": {
+                "start": 47,
+                "end": 47
+              }
+            }
+          ],
+          "zh": [
+            {
+              "kind": "action",
+              "text": "她迅速瞥了他一眼。兩人的關切都被對方察覺，卻沒有時間說破。",
+              "source": {
+                "start": 43,
+                "end": 43
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ZS-S001.P05",
+      "blocks": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "art": null,
+      "context": {
+        "en": "EXT. MEGACITY EXPRESSWAYS — NIGHT",
+        "zh": "外景．巨型都市高架道路——夜"
+      },
+      "content": [
+        {
+          "en": [
+            {
+              "kind": "dialogue",
+              "speaker": "ALEX",
+              "text": "Stay on the device. Don't get distracted by the escorts.",
+              "source": {
+                "start": 49,
+                "end": 49
+              }
+            }
+          ],
+          "zh": [
+            {
+              "kind": "dialogue",
+              "speaker": "艾力克斯",
+              "text": "盯住那個裝置，別讓護衛分散注意力。",
+              "source": {
+                "start": 45,
+                "end": 45
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "kind": "dialogue",
+              "speaker": "MISAKI",
+              "text": "It's not one convoy anymore.",
+              "source": {
+                "start": 51,
+                "end": 51
+              }
+            }
+          ],
+          "zh": [
+            {
+              "kind": "dialogue",
+              "speaker": "美咲",
+              "text": "他們已經不只是一支車隊了。",
+              "source": {
+                "start": 47,
+                "end": 47
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "kind": "action",
+              "text": "At the center interchange, the tail vehicles split. A group with heavier weapons turns toward the Downtown CBD. Karl's smaller convoy rises toward Uptown. The two exits diverge like an opening pair of scissors.",
+              "source": {
+                "start": 53,
+                "end": 53
+              }
+            }
+          ],
+          "zh": [
+            {
+              "kind": "action",
+              "text": "在中央交流道，尾端車輛忽然分流。一組載著重型武器的隊伍朝下城區商業區駛去；卡爾的較小車隊則往上城區爬升。兩個出口分別岔開，像一把正在張開的剪刀。",
+              "source": {
+                "start": 49,
+                "end": 49
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "kind": "action",
+              "text": "CUT TO Alex's hands on the wheel; the road sign's reflection moves across his eyes.",
+              "source": {
+                "start": 55,
+                "end": 55
+              }
+            }
+          ],
+          "zh": [
+            {
+              "kind": "action",
+              "text": "切至艾力克斯緊握方向盤的雙手；路牌的倒影掠過他的雙眼。",
+              "source": {
+                "start": 51,
+                "end": 51
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ZS-S002.P01",
+      "blocks": [
+        0,
+        1,
+        2
+      ],
+      "art": null,
+      "context": {
+        "en": "INT. TWO PURSUIT VEHICLES / MIDTOWN INTERCHANGE — CONTINUOUS",
+        "zh": "內景．兩輛追擊車／中城交流道——連續"
+      },
+      "content": [
+        {
+          "en": [
+            {
+              "kind": "stage",
+              "text": "INT. TWO PURSUIT VEHICLES / MIDTOWN INTERCHANGE — CONTINUOUS",
+              "source": {
+                "start": 61,
+                "end": 61
+              }
+            }
+          ],
+          "zh": [
+            {
+              "kind": "stage",
+              "text": "內景．兩輛追擊車／中城交流道——連續",
+              "source": {
+                "start": 57,
+                "end": 57
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "kind": "action",
+              "text": "Maps flicker in both cars. Galaxical Tower rises above one branch of the highway; the Downtown CBD lies beyond the other. Two danger areas. One commander.",
+              "source": {
+                "start": 63,
+                "end": 63
+              }
+            }
+          ],
+          "zh": [
+            {
+              "kind": "action",
+              "text": "兩車的地圖同時閃爍。銀河塔立在其中一條匝道上方；另一條通向下城區商業區。兩處危機，只有一位指揮官。",
+              "source": {
+                "start": 59,
+                "end": 59
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "kind": "dialogue",
+              "speaker": "MISAKI",
+              "text": "The Downtown group has the heavy weapons. Your rifle can stop them before they reach the square.",
+              "source": {
+                "start": 65,
+                "end": 65
+              }
+            }
+          ],
+          "zh": [
+            {
+              "kind": "dialogue",
+              "speaker": "美咲",
+              "text": "往下城區去的那群人帶著重火力。你的槍法能在他們進入廣場前制止他們。",
+              "source": {
+                "start": 61,
+                "end": 61
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ZS-S002.P02",
+      "blocks": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "art": null,
+      "context": {
+        "en": "INT. TWO PURSUIT VEHICLES / MIDTOWN INTERCHANGE — CONTINUOUS",
+        "zh": "內景．兩輛追擊車／中城交流道——連續"
+      },
+      "content": [
+        {
+          "en": [
+            {
+              "kind": "dialogue",
+              "speaker": "JACQUE (radio)",
+              "text": "Pete and I can take Karl. I've got the mobility.",
+              "source": {
+                "start": 67,
+                "end": 67
+              }
+            }
+          ],
+          "zh": [
+            {
+              "kind": "dialogue",
+              "speaker": "賈克（無線電）",
+              "text": "卡爾交給我和彼得。我有機動優勢。",
+              "source": {
+                "start": 63,
+                "end": 63
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "kind": "dialogue",
+              "speaker": "PETE (radio)",
+              "text": "The signal's dropping. Whichever way we go, don't wait on the radio.",
+              "source": {
+                "start": 69,
+                "end": 69
+              }
+            }
+          ],
+          "zh": [
+            {
+              "kind": "dialogue",
+              "speaker": "彼得（無線電）",
+              "text": "訊號越來越差了。不管走哪邊，別指望隨時聯絡得上。",
+              "source": {
+                "start": 65,
+                "end": 65
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "kind": "dialogue",
+              "speaker": "ALEX",
+              "text": "And the device?",
+              "source": {
+                "start": 71,
+                "end": 71
+              }
+            }
+          ],
+          "zh": [
+            {
+              "kind": "dialogue",
+              "speaker": "艾力克斯",
+              "text": "那個裝置呢？",
+              "source": {
+                "start": 67,
+                "end": 67
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "kind": "dialogue",
+              "speaker": "MISAKI",
+              "text": "I know what's at stake. That's why I'm asking you to come with me.",
+              "source": {
+                "start": 73,
+                "end": 73
+              }
+            }
+          ],
+          "zh": [
+            {
+              "kind": "dialogue",
+              "speaker": "美咲",
+              "text": "我知道那代表什麼。正因為如此，我才希望你跟我走。",
+              "source": {
+                "start": 69,
+                "end": 69
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ZS-S002.P03",
+      "blocks": [
+        7,
+        8,
+        9
+      ],
+      "art": null,
+      "context": {
+        "en": "INT. TWO PURSUIT VEHICLES / MIDTOWN INTERCHANGE — CONTINUOUS",
+        "zh": "內景．兩輛追擊車／中城交流道——連續"
+      },
+      "content": [
+        {
+          "en": [
+            {
+              "kind": "action",
+              "text": "An empty emergency transfer bay lies just before the fork. Both cars brake there for a few breaths. If Alex joins Misaki, he remains in the lead car and Jacque and Pete pursue Karl in the second. If he joins Jacque, Alex and Pete exchange vehicles: Pete takes the wheel beside Misaki toward Downtown; Alex joins Jacque in the other car toward Uptown. It is a rapid, visible transfer, not a mid-chase teleport.",
+              "source": {
+                "start": 75,
+                "end": 75
+              }
+            }
+          ],
+          "zh": [
+            {
+              "kind": "action",
+              "text": "分岔點之前，有一處淨空的緊急車輛轉接區。兩輛車短暫煞停，只有幾個呼吸的時間讓隊伍重新編組。",
+              "source": {
+                "start": 71,
+                "end": 71
+              }
+            },
+            {
+              "kind": "action",
+              "text": "若艾力克斯選擇跟美咲走，他留在前車，賈克和彼得駕駛後車追擊卡爾；若艾力克斯選擇追卡爾，他便與彼得交換車輛：彼得接手美咲所在的前車，朝下城區前進；艾力克斯上了賈克的車，直奔上城區。換車確實發生在眼前，不是追逐途中憑空變換座位。",
+              "source": {
+                "start": 73,
+                "end": 73
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "kind": "action",
+              "text": "Misaki and Alex meet eyes as the squad rearranges. Her recommendation is professional, not a plea for his companionship.",
+              "source": {
+                "start": 77,
+                "end": 77
+              }
+            }
+          ],
+          "zh": [
+            {
+              "kind": "action",
+              "text": "編組的短短片刻，美咲與艾力克斯目光交會。她提出的是專業判斷，不是要求他陪伴自己的私心。",
+              "source": {
+                "start": 75,
+                "end": 75
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "kind": "action",
+              "text": "Both ramps are open. Neither will remain open.",
+              "source": {
+                "start": 79,
+                "end": 79
+              }
+            }
+          ],
+          "zh": [
+            {
+              "kind": "action",
+              "text": "兩條匝道此刻都還暢通。但很快就不是了。",
+              "source": {
+                "start": 77,
+                "end": 77
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ZS-S008.P01",
+      "blocks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "art": null,
+      "context": {
+        "en": "EXT. DOWNTOWN APPROACH — NIGHT",
+        "zh": "外景．下城區引道——夜"
+      },
+      "content": [
+        {
+          "en": [
+            {
+              "kind": "stage",
+              "text": "EXT. DOWNTOWN APPROACH — NIGHT",
+              "source": {
+                "start": 371,
+                "end": 371
+              }
+            }
+          ],
+          "zh": [
+            {
+              "kind": "stage",
+              "text": "外景．下城區引道——夜",
+              "source": {
+                "start": 369,
+                "end": 369
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "kind": "action",
+              "text": "Alex and Misaki move through the cult convoy's heavier vehicles. Alex takes a narrow shot through an opening between civilian cars. Misaki anticipates the next enemy turn before it happens. They work as equals.",
+              "source": {
+                "start": 373,
+                "end": 373
+              }
+            }
+          ],
+          "zh": [
+            {
+              "kind": "action",
+              "text": "艾力克斯與美咲追上邪教車隊裡火力較強的車輛。艾力克斯趁民用車之間出現短暫空隙，精準開槍。美咲則提前預判敵人的下一次轉彎。兩人並肩作戰，互相補位。",
+              "source": {
+                "start": 371,
+                "end": 371
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "kind": "dialogue",
+              "speaker": "MISAKI",
+              "text": "Left. The launcher vehicle's trying to get above us.",
+              "source": {
+                "start": 375,
+                "end": 375
+              }
+            }
+          ],
+          "zh": [
+            {
+              "kind": "dialogue",
+              "speaker": "美咲",
+              "text": "左邊。火箭發射車想繞到我們上方。",
+              "source": {
+                "start": 373,
+                "end": 373
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "kind": "dialogue",
+              "speaker": "ALEX",
+              "text": "I see him.",
+              "source": {
+                "start": 377,
+                "end": 377
+              }
+            }
+          ],
+          "zh": [
+            {
+              "kind": "dialogue",
+              "speaker": "艾力克斯",
+              "text": "看到了。",
+              "source": {
+                "start": 375,
+                "end": 375
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
