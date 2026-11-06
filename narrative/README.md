@@ -11,3 +11,7 @@ This is a presentation-neutral index of **known canon**, not a recovered complet
 Append new IDs; never renumber/recycle assignments. Labels and display order may change independently. Schema-breaking changes require a new version; keep a migration/alias mapping rather than rewriting identities. The existing runtime keys remain the compatibility boundary. Branch IDs represent directed choices, not judgements or names for alternate universes. Scene/beat identifiers can be consumed by later adaptations without importing a renderer or accepting the prototype wording as final.
 
 Run `node scripts/check-narrative.mjs` from the repository root. This checks full runtime coverage, exact edges and routes, source/locale/asset mappings, and stable assignments against a committed identity snapshot. It does not certify screenplay fidelity where source material is missing.
+
+## M5 illustration planning and live metadata
+
+[Coverage audit / composition families](../docs/M5_VISUAL_COVERAGE.md), [21 provider-neutral production specifications](../docs/M5_ILLUSTRATION_SPECS.md) and [integration guide](../docs/M5_INTEGRATION.md) prepare illustrated completion without changing approved content. `illustration-plan.v1.json` is planning-only. `illustrations.v1.json` is the separate live asset/crop/binding source; its generated browser module preserves M4's 14 active frames. Planned masters and candidate detail crops cannot activate themselves. `assets.v1.json` remains the historical source integrity/rights record.

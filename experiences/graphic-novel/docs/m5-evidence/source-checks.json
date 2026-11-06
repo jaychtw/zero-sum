@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "baseline": "4c9ee3a",
+  "sourceBundleSha256": "75491201eb07419d905b4a807a45f72040aa083bfdb2ea6e3d8a9250bc4652d6",
+  "commands": [
+    "node scripts/build-screenplay.mjs --check",
+    "npm test --prefix experiences/graphic-novel",
+    "npm run test:narrative --prefix experiences/graphic-novel",
+    "npm run test:illustrations --prefix experiences/graphic-novel",
+    "git diff --check"
+  ],
+  "results": {
+    "pairedPanels": 70,
+    "sourceParagraphs": 459,
+    "endings": 9,
+    "decisions": 8,
+    "stableSceneIds": 19,
+    "stableBranches": 16,
+    "originalAssetsIntegrityChecked": 8,
+    "negativeNarrativeCasesRejected": 8,
+    "liveIllustrationBindingsUnchanged": 14,
+    "coverageRows": 70,
+    "planningOnlyMasters": 21,
+    "resolverSafeFailureCases": 13
+  },
+  "screenplayLock": {
+    "version": "0.2",
+    "approvalDate": "2026-11-06",
+    "authority": "docs/BILINGUAL_SCREENPLAY_REVIEW_V02.md and docs/M4_BILINGUAL_SCREENPLAY_INTEGRATION.md at 4ed8b9c",
+    "sources": {
+      "en": {
+        "path": "screenplay/ZERO_SUM_SCREENPLAY_DRAFT_EN_V0.2.md",
+        "sha256": "b6e9ef475d9cba2ecf4bc4e07bd6414503fd4ea28cbf68a6db640f82845a0d75"
+      },
+      "zh": {
+        "path": "screenplay/ZERO_SUM_SCREENPLAY_DRAFT_ZH-TW_V0.2.md",
+        "sha256": "ace66fe6c879441d705b14f8324126a2d8a94bb915d99af2bf33a947289673f1"
+      }
+    }
+  },
+  "unchangedFromBaseline": [
+    "approved screenplay source files",
+    "compiled manuscript",
+    "panel plan",
+    "session and legacy story",
+    "original eight images and asset inventory",
+    "narrative registry",
+    "M1/M2/readiness/M4 evidence",
+    "M4 owner preview and pre-release report"
+  ]
+}

@@ -2,9 +2,10 @@ import assert from 'node:assert/strict';
 import {createRequire} from 'node:module';
 import {mkdir,writeFile} from 'node:fs/promises';
 import {manuscript} from '../manuscript.js';
+import {runtimeHash} from '../../../scripts/m4-evidence.mjs';
 const require=createRequire(import.meta.url);let chromium;try{({chromium}=require('playwright'));}catch{({chromium}=require('playwright-core'));}
 const axe=process.env.AXE_PATH||require.resolve('axe-core/axe.min.js'),base=process.env.BASE_URL||'http://127.0.0.1:8000',out=new URL(process.env.EVIDENCE_DIR||'../docs/m4-evidence/',import.meta.url);await mkdir(out,{recursive:true});
-const b=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',args:['--no-sandbox']});const report={status:'failed',routes:0,audits:0,expectedMissingAssets:[],errors:[]};
+const b=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',args:['--no-sandbox']});const report={status:'failed',sourceBundleSha256:runtimeHash(),routes:0,audits:0,expectedMissingAssets:[],errors:[]};
 const paths=[['opening','junction','jacque','abandon','sniper','tower','endingC'],['opening','junction','jacque','abandon','endingD'],['opening','junction','misaki','hospital','endingG']];
 try {
  for(const width of [320,1440])for(const lang of ['en','zh']) {

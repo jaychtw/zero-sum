@@ -3,11 +3,13 @@ Updated: 2026-11-06
 
 ## Current phase
 
-**M4 bilingual screenplay integration implemented; owner preview pending.** Both English and Traditional Chinese screenplay v0.2 were approved by the owner and are now the active graphic-novel content: 70 paired panels, 19 runtime scenes, eight decisions, nine endings. See the [consolidated M4 review package](M4_OWNER_PREVIEW.md) for exact verification, screenshots, reading-length tradeoffs and limits. No merge, deployment, release or Possibility change.
+**M5 illustration coverage planning and integration preparation complete; pause for owner review and production-method choice.** The owner accepted M4 as an overall working bilingual prototype at `4c9ee3a`, while identifying insufficient visual coverage. The approved experience remains 70 paired panels, 19 runtime scenes, eight decisions and nine endings, currently 14 illustrated / 56 text-led. See the [consolidated M5 package](M5_OWNER_REVIEW.md), [coverage audit](M5_VISUAL_COVERAGE.md), [21 production specifications](M5_ILLUSTRATION_SPECS.md) and [M5 QA](M5_QA.md). No artwork production, merge, deployment, release or Possibility change.
 
-Authorization: [M4 mandate](M4_BILINGUAL_SCREENPLAY_INTEGRATION.md), starting at `4ed8b9c`; [bilingual approval ledger](BILINGUAL_SCREENPLAY_REVIEW_V02.md). Stale draft warnings inside the approved manuscript files are historical; the ledger and explicit owner authorization supersede them. The source files themselves remain unchanged.
+Current authorization: [M5 mandate](M5_ILLUSTRATION_COVERAGE_BRIEF.md), starting at `4c9ee3a`. Prior integration authorization: [M4 mandate](M4_BILINGUAL_SCREENPLAY_INTEGRATION.md), starting at `4ed8b9c`; [bilingual approval ledger](BILINGUAL_SCREENPLAY_REVIEW_V02.md). Stale draft warnings inside the approved manuscript files are historical; the ledger and explicit owner authorization supersede them. The source files themselves remain unchanged.
 
 ## Current source of truth
+
+- [M5 illustration authoring/integration](M5_INTEGRATION.md), `narrative/illustrations.v1.json`: separate live asset/crop/binding source, generated into `illustrations.js`, preserving all 14 active M4 frames. `narrative/illustration-plan.v1.json` is planning-only: 21 unique anchors, 22 reuse, 19 crop, eight intentional text-led panels. Only 16 reuse/crop panels use currently existing sources; 25 shared follow-ups depend on planned masters. No candidate detail or planned file is active.
 
 - [English v0.2](../screenplay/ZERO_SUM_SCREENPLAY_DRAFT_EN_V0.2.md), [Traditional Chinese v0.2](../screenplay/ZERO_SUM_SCREENPLAY_DRAFT_ZH-TW_V0.2.md): approved dramatic adaptation, not recovered verbatim original dialogue. Their source hashes are locked in `narrative/screenplay-lock.v02.json`.
 - [Canon summary](ZERO_SUM_CANON.md), [detailed treatment](DETAILED_NARRATIVE_TREATMENT.md), [visual identity](VISUAL_IDENTITY.md). No moral ranking, no character knowledge of other timelines; canonical bounded white sphere and Downtown limit retained.
@@ -21,12 +23,14 @@ M1 remains accepted as a working prototype; M2's three-beat text-led Ending C re
 
 Prior work: `9b01058` M1, `9a1a154` M2 evidence, `5e32018` interim acceptance, `896228a` engineering-preparation package. Earlier screenplay/editorial history is retained in [v0.1](../screenplay/ZERO_SUM_SCREENPLAY_DRAFT_EN_V0.1.md), [Round 1 review](EDITORIAL_REVIEW_ROUND_1.md), [v0.2 revision record](EDITORIAL_REVISION_V02.md) and Git. Compact prototype `story.js`/`ending-c.js`, illustrations and all earlier evidence folders remain unchanged; the old renderer/session is recoverable at `4ed8b9c`.
 
+M5 checkpoint: `708decb` coverage/specifications and reversible live-manifest implementation; the subsequent QA/handoff checkpoint contains new M5 evidence and source-equivalence captures. The proposed 21 new masters could support 46 panel slots; together with 16 existing-art candidates the future target is 62 illustrated / eight intentional text-led. This is a plan, not completed coverage or final art approval.
+
 M4 checkpoints: `b0a0d13` source-to-runtime plan; `a0a3d76` complete integrated dataset/renderer/navigation/tests; `7cd8124` scoped card-title typography fix; subsequent evidence/handoff checkpoint contains the consolidated package. Verify the full remote SHA before continuing. [Run, authoring and QA commands](../experiences/graphic-novel/README.md).
 
 ## Remaining limits and pause point
 
-- Newly integrated panelization/pacing awaits owner preview; screenplay language approval is not final in-app composition, artwork, accessibility certification or release approval.
-- 14 illustrated panels and 56 text-led panels reflect genuine asset limits. Opening/fork illustrations would contradict two-car staging; later aftermaths also lack matching art. Original asset source/rights remain undocumented. Art is still provisional.
+- M4 is accepted overall as a narrative prototype; it is not a fully illustrated graphic novel. M5 planning and integration preparation await owner review, not milestone-by-milestone implementation approval. No final artwork, accessibility certification or release approval is implied.
+- 14 illustrated panels and 56 text-led panels reflect genuine asset limits. Existing opening/fork reference wides contradict two-car staging; later aftermaths also lack matching art. Original asset source/rights remain undocumented. Art is still provisional.
 - Title image-overlay contrast requires manual assessment; physical-device, screen-reader, independent first-time-player, other browser-engine and low-end-hardware checks remain outside verified results as documented in M4 QA.
 - Original verbatim historical screenplay remains unrecovered; **the approved authored v0.2 adaptation is present and integrated**. It is no longer a missing input for this workstream.
-- M4's feasible authorized integration is complete. **Pause for owner preview.** No merge, deployment, paid services, new artwork, further sphere experiment or Possibility change.
+- M5’s authorized preparation is complete. **Pause for owner review; the next decision is how to produce illustrations within the $0 boundary.** A later OPEN/FORK two-master pilot is proposed, not initiated. No merge, deployment, paid services, new artwork, further sphere experiment or Possibility change. M4/M2 QA and the rejected composite record remain preserved. Historical M4/pre-release documents retain their original pause/status text; this state and the M5 package record the latest owner acceptance.

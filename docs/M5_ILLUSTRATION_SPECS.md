@@ -9,6 +9,7 @@
 - **cropGate:** Crop is a spatial subset, never new pose/expression/time. No mirroring, repainting or multi-time montage. Review native pixel dimensions and bilingual desktop/mobile framing before activation. If a required ROI is too small, loosen the detail or keep text-led rather than enlarge blindly.
 - **continuity:** Approved EN/zh-TW screenplay v0.2 and canon prevail. No extra dialogue, casualties, fates, moral ranking or other-timeline knowledge. Existing references are provisional with undocumented rights.
 - **overlay:** All bilingual dialogue and UI remain HTML below art. No baked lettering. Reserve quiet lower-right for the localized provisional art caption; check contrast manually.
+- **characterReferences:** Use local provisional reference bytes as visual continuity guides: Alex = chase foreground driver / hospital right / wmd accepted left crop; Misaki = chase violet-haired passenger / hospital patient; Jacque = chase blond passenger / jacque hanging figure; Pete = chase cap-and-goggles figure far left; Karl = sniper distant light-coated figure and tackle pinned figure. These are not approved production model sheets. Do not use the chase dashboard portrait as a separate new Karl design or resolve conflicting exploratory details silently. Keep wardrobe/likeness coherent and show unresolved differences at later art review.
 
 Filenames will be assigned only after artwork review (suggestion: `assets/m5-<id>.webp`). A null planned file is not a broken runtime URL. Before activation: inspect exact staged state against the source paragraphs; verify cast, costume and fates; record source method, rights, original dimensions and SHA-256; author EN/zh-TW alt for the actual delivered image and every active crop; approve normalized crop rectangles at native size; then update the live manifest and run regression/fallback checks. Planning labels are not suitable final alt text.
 
@@ -81,7 +82,7 @@ Each master is a single coherent moment. If a commissioned master cannot support
 - **Characters:** Alex and Karl.
 - **Environment:** Tower summit before device activation.
 - **Emotional tone:** Conviction against exhausted resistance.
-- **Critical visual requirements:** Face-off without invented companions. Device is a bounded matter-annihilation instrument, not a portal ring; no active field or blast yet. Do not imply Karl knows other timelines.
+- **Critical visual requirements:** Face-off without invented companions. Device is a bounded matter-annihilation instrument, not a portal ring; no active field or blast yet. Do not imply Karl knows other timelines. Alex is still airborne/descending near the summit, not already standing beside Karl; show his jetpack and rifle without inventing a landing. Preserve Karl’s hand on the device for the resolve detail.
 - **Bilingual overlay:** No dialogue/title overlay. EN and zh-TW text, alt and captions stay in HTML. Reserve quiet lower-right for the existing localized provisional caption.
 - **Crop support:** Karl face/device-hand region for resolve; Alex’s position and equipment must remain consistent with the full frame.
 - **Orientation / status:** Landscape 16:9; planning-only; file absent.
@@ -93,7 +94,7 @@ Each master is a single coherent moment. If a commissioned master cannot support
 - **Characters:** Alex at the outside boundary; Karl already absent within the erased volume.
 - **Environment:** Tower summit intersected by an expanding sharply bounded white sphere.
 - **Emotional tone:** Impossible finality, no spectacle of fire.
-- **Critical visual requirements:** Opaque white filled volume, crisp spherical boundary, no luminous hoop or transparent center. Matter within—including Karl and summit structure—is absent. Alex reaches from outside and cannot survive within. No conventional explosion, rubble, shockwave or portal. This is a deferred production requirement; M5 must not generate a sphere test.
+- **Critical visual requirements:** Opaque white filled volume, crisp spherical boundary, no luminous hoop or transparent center. Matter within—including Karl and summit structure—is absent. Show Alex’s upper back/jetpack at the outside boundary, hands outside the frame; C’s forward reach and F’s rifle reach remain distinct in text. He cannot survive within. No conventional explosion, rubble, shockwave or portal. This is a deferred production requirement; M5 must not generate a sphere test.
 - **Bilingual overlay:** No dialogue/title overlay. EN and zh-TW text, alt and captions stay in HTML. Reserve quiet lower-right for the existing localized provisional caption.
 - **Crop support:** Full reuse for C/F is acceptable as an endpoint insert; no survivor-visible crop from within. Geometry and final artwork require owner review before activation.
 - **Orientation / status:** Landscape 16:9; planning-only; file absent.
@@ -174,7 +175,7 @@ Each master is a single coherent moment. If a commissioned master cannot support
 
 - **Linked panels:** ZS-S011.P02 (unique, full).
 - **Dramatic purpose:** Represent the social cost of A’s successful shot.
-- **Characters:** Alex, mayor/official, protesting survivors or families.
+- **Characters:** Alex, a city official, protesting survivors or families.
 - **Environment:** A divided public award ceremony.
 - **Emotional tone:** Recognition opposed by grief and anger.
 - **Critical visual requirements:** Protest relates to CBD losses and the two civilians; avoid invented casualty counts. Do not paint readable dialogue, placards or moral rankings into the image. Cannot be reused for D by cropping away the protest.
@@ -259,9 +260,9 @@ Each master is a single coherent moment. If a commissioned master cannot support
 - **Linked panels:** ZS-S015.P03 (unique, full); ZS-S016.P03 (crop, radio-gaze).
 - **Dramatic purpose:** Keep Jacque alive at a safe distance, unable to intervene.
 - **Characters:** Injured Jacque half-seated on gurney, medic preventing him rising.
-- **Environment:** Inside an open ambulance at a Downtown extraction bay; broken jetpack beside him.
+- **Environment:** Open ambulance threshold at a Downtown extraction bay; stretcher extends into the bay with Jacque’s upper body within the vehicle. Broken jetpack lies outside beside the ambulance.
 - **Emotional tone:** Helpless survival and failed contact.
-- **Critical visual requirements:** One compatible stretcher/vehicle setting supports E and F. Downtown safe; any field only distant Uptown. No surviving Alex figure or false physical access to the tower.
+- **Critical visual requirements:** One coherent exterior bay view supports E’s stretcher and a tighter vehicle-context crop supports F. Jacque remains half-seated, medic holding him back from the street. Keep the broken jetpack outside beside the ambulance, not inside beside the gurney. Downtown safe; any field only distant Uptown. No surviving Alex figure or false physical access to the tower.
 - **Bilingual overlay:** No dialogue/title overlay. EN and zh-TW text, alt and captions stay in HTML. Reserve quiet lower-right for the existing localized provisional caption.
-- **Crop support:** Radio-gaze crop keeps Jacque and vehicle context; do not change posture between E/F.
+- **Crop support:** Radio-gaze crop keeps Jacque, open door trim and vehicle context, excluding the exterior bay; no posture change between E/F. Full exterior view retains stretcher and medic.
 - **Orientation / status:** Landscape 16:9; planning-only; file absent.

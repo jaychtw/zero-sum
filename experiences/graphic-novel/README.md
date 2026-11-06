@@ -61,3 +61,11 @@ M4_RUN_GROUP=m4-final-7cd8124 AXE_PATH=/tmp/zero-sum-qa/node_modules/axe-core/ax
 ```
 
 Use widths 320/390/768/1440 and languages en/zh, choosing a fresh unique group name for a new verification run and keeping it consistent across all eight reports. Only 1440/en also runs the keyboard-only C route and static-boundary comparison. From repository root, `node scripts/m4-evidence.mjs m4-final-7cd8124` checks report completeness and matching application hashes before producing the consolidated browser result. Source/text, attribution, focus and navigation assertions remain enabled in every selected case. Run browser cases serially; historical reports/captures must not substitute for an interrupted run.
+
+### M5 illustration preparation
+
+The approved bilingual experience is unchanged. See the [M5 owner package](../../docs/M5_OWNER_REVIEW.md), [coverage audit](../../docs/M5_VISUAL_COVERAGE.md), [production specifications](../../docs/M5_ILLUSTRATION_SPECS.md) and [live-manifest authoring guide](../../docs/M5_INTEGRATION.md). No production method has been chosen and no new artwork is active.
+
+Run `npm run test:illustrations` here to check the 70-row plan, planning/live separation, exact baseline bindings, bilingual metadata and original image hashes. After editing the live source, regenerate with `node ../../scripts/build-illustrations.mjs`; after editing the plan, regenerate docs with `node ../../scripts/build-illustration-docs.mjs`. Both accept `--check`.
+
+For new M5 browser evidence, set `EVIDENCE_DIR=../docs/m5-evidence/` on both `npm run test:browser` and `npm run test:resilience`. Prior evidence folders are historical snapshots. M5 source hashes include both illustration runtime modules. The current reader remains a static application requiring no build step or installed runtime packages.
