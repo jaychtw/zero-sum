@@ -23,3 +23,9 @@
 
 /* Normalized 16:9 subsets; source files and narrative remain independent. */
 .manuscript-frame .illustration-crop {position:absolute;height:auto;max-width:none;}
+
+.visited-decisions { margin: 1rem 0; }
+.visited-decisions summary { width: fit-content; cursor: pointer; padding: .75rem 0; }
+.visited-decisions ol { padding-inline-start: 1.75rem; }
+.visited-decisions li { margin-block: .35rem; }
+.visited-decisions button { min-height: 44px; text-align: start; }
