@@ -20,6 +20,18 @@ export function createSession() {
       if (!this.isLastPanel || !scenes[target] || !targets.includes(target)) throw new Error('Invalid story transition');
       history.push({scene:current, panel}); current = target; panel = 0;
     },
+    get visitedDecisions() {
+      return history.filter(step => scenes[step.scene].choices).map(step => step.scene);
+    },
+    revisit(id) {
+      const index = history.findIndex(step => step.scene === id);
+      if (!scenes[current]?.ending || !this.isLastPanel || index < 0 || !scenes[id]?.choices) return false;
+      const decision = history[index];
+      history.length = index;
+      current = decision.scene;
+      panel = decision.panel;
+      return true;
+    },
     back() {
       if (panel > 0) { panel--; return; }
       const previous = history.pop();

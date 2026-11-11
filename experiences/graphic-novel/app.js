@@ -103,6 +103,20 @@ function render(focus = false) {
       actions.append(button(t.replay,()=>{session.begin();render(true);},'primary replay'));
     } else actions.append(button(t.next,()=>{session.choose(scene.next);render(true);},'primary scene-next'));
     main.append(strip,frame,reader,actions);
+    if (scene.ending && last) {
+      const forks = el('details', 'visited-decisions');
+      forks.append(el('summary', '', t.revisit));
+      const list = el('ol');
+      for (const decision of session.visitedDecisions) {
+        const item = el('li');
+        item.append(button(manuscript.scenes[decision].title[language], () => {
+          if (session.revisit(decision)) render(true);
+        }));
+        list.append(item);
+      }
+      forks.append(list);
+      main.append(forks);
+    }
     if (session.panel > 0 || session.depth) main.append(button(t.back,()=>{session.back();render(true);},'back'));
   }
   if (focus) { main.querySelector('h1').focus({preventScroll:true}); window.scrollTo({top:0,behavior:'instant'}); }

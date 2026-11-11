@@ -31,6 +31,18 @@ for (const path of paths) {
  session.back(); assert.equal(session.current,path.at(-2));
  session.begin(); assert.equal(session.depth,0); assert.equal(session.current,'opening');
  session.reset(); assert.equal(session.current,null);
+ session.begin();
+ for (const id of path.slice(1)) { while(session.advance()) {} session.choose(id); }
+ while(session.advance()) {}
+ const decisions = path.filter(id => scenes[id].choices);
+ assert.deepEqual(session.visitedDecisions, decisions);
+ assert.equal(session.revisit('opening'), false);
+ assert.ok(session.revisit(decisions[0]));
+ assert.equal(session.current, decisions[0]);
+ assert.ok(session.isLastPanel);
+ assert.deepEqual(session.visitedDecisions, []);
+ session.choose(expected[decisions[0]][1]);
+ assert.equal(session.panel, 0);
 }
 for (const [mutate,message] of [
  [d=>d.opening.next='missing','Missing'],
