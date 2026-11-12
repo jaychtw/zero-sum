@@ -2,13 +2,13 @@
 const strip = (en, zh, panels, choices = []) => ({title:[en,zh],panels,choices});
 const stories = {
  start: strip('Midtown junction','中城交流道',[
- ['city1','Karl has the device. Two squad cars follow him into the rain.','卡爾帶著裝置。兩輛警車跟著他駛入雨幕。'],
- ['city3','Jacque · “You always pick the difficult lane.”  Pete · “It had someone in it.”','賈克：「你總是挑最難走的車道。」彼特：「那條車道上有人。」'],
- ['city2','Misaki · “Watch the road. I’ve got the exits.”','美咲：「看著路。出口交給我。」'],
  ['city4','Karl heads uphill. His armed escorts peel off toward the crowded square.','卡爾往上城去，武裝車隊卻轉向人潮密集的廣場。'],
+ ['junction-jacque','Jacque · “Pete and I can take Karl. I’ve got the jetpack.”','賈克：「我跟彼特可以追卡爾。我有噴射背包。」'],
+ ['junction-pete','Pete · “And I can keep him in sight. But the signal’s getting worse. Once we split, don’t wait for a perfect report.”','彼特：「我能盯住他的車。可是訊號越來越差。分頭以後，別等我們把話說完才行動。」'],
  ['city5','Misaki · “I’m asking you to come Downtown because you’re the best shot we have.”','美咲：「我想請你跟我去下城。隊裡你的槍法最好。」']
  ],[['bridge','Ride with Jacque. Follow Karl.','和賈克一起追卡爾。'],['crash','Stay with Misaki. Head Downtown.','跟美咲一起去下城。']]),
  bridge:strip('The broken span','斷橋',[
+ ['city5','Alex trades seats with Pete. Misaki gives him a small nod before their cars part.','艾力克斯和彼特交換座位。兩輛車分開前，美咲朝他輕輕點了頭。'],
  ['city6','Alex · “The car has the road. I’ve got you.”','艾力克斯：「路交給車子。你交給我。」'],
  ['city7','Jacque · “I’m holding on. Not for long.”','賈克：「我還抓得住。撐不了多久。」']
  ],[['rescue','Pull Jacque up.','拉賈克上來。'],['hangar','Keep Karl in sight.','繼續追卡爾。']]),
@@ -29,12 +29,13 @@ const stories = {
  ['echo3','The medics take Jacque Downtown. By the time Alex reaches the tower, Karl is already upstairs.','救護員帶賈克往下城去。艾力克斯趕到塔下時，卡爾已經上樓了。']
  ],[['E','Climb inside.','從塔內上樓。'],['F','Use the jetpack.','用噴射背包升空。']]),
  crash:strip('The square or the ward','廣場與病房',[
+ ['city2','Alex stays at the wheel beside Misaki. In the other car, Pete raises a hand and turns uphill with Jacque.','艾力克斯繼續開車，美咲坐在他身旁。另一輛車裡，彼特舉手示意，載著賈克朝上城開去。'],
  ['echo5','Jacque, over the radio · “Alex. Pete’s down. He’s dead.”','無線電裡傳來賈克的聲音：「艾力克斯。彼特倒下了。他死了。」'],
  ['downtown1','Misaki · “Go. They’re almost at the square.”','美咲：「快去。他們就要到廣場了。」']
  ],[['ward','Take Misaki to hospital.','親自送美咲去醫院。'],['I','Call medics and continue to the square.','叫救護車，繼續趕往廣場。']]),
  ward:strip('The empty chair','空椅子',[
- ['downtown2','Misaki · “Then why are you here?”','美咲：「那你為什麼還在這裡？」'],
- ['downtown3','Alex could get a signal on the roof. Misaki looks at the chair beside her bed.','到屋頂也許能收到訊號。美咲望著床邊的椅子。']
+ ['ward-radio','Alex · “I might get a better signal on the roof.”','艾力克斯：「屋頂的訊號也許好一點。」'],
+ ['downtown3','Misaki · “Do what you think you have to.”','美咲：「你覺得該怎麼做，就去做吧。」']
  ],[['G','Pull up the chair.','把椅子拉過來。'],['H','Try Jacque on the roof.','去屋頂聯絡賈克。']]),
  A:strip('Cost of Victory','勝利的代價',[
  ['tower3','The shot stops Karl. The two people behind him fall too.','那一槍阻止了卡爾。他身後的兩個人也倒下了。'],
@@ -65,4 +66,17 @@ const stories = {
  I:strip('The Unnamed','無名者',[
  ['downtown8','Misaki leaves with the medics. Alex stops the gunmen in the square. He is helping the survivors when the Uptown skyline disappears.','美咲交給救護員。艾力克斯阻止了廣場上的槍手。上城的天際線消失時，他正俯身救人。'],
  ['downtown9','Weeks later he puts his insignia away. A surviving cultist hears footsteps behind him. Alex follows long after the streetlights end.','幾週後，他收起隊徽。一名倖存的教徒聽見身後的腳步聲。過了最後一盞街燈，艾力克斯仍跟著他。']])
+};
+
+// These opening pages precede the decision on the following spread.
+const leadIns = {
+ start: strip('The pursuit','雨夜追擊',[
+ ['city1','Karl carries a device that could erase a district. Two squad cars follow him into the rain.','卡爾帶著足以抹去整個城區的裝置。兩輛警車跟著他駛入雨幕。'],
+ ['city3','Jacque · “You always pick the difficult lane.”  Pete · “It had someone in it.”','賈克：「你總是挑最難走的車道。」彼特：「那條車道上有人。」'],
+ ['city2','Misaki · “Watch the road. I’ve got the exits.”','美咲：「看著路。出口交給我。」']
+ ]),
+ ward: strip('Emergency entrance','急診入口',[
+ ['downtown2','Misaki · “The square. They’re still heading for the square.”  Alex · “I know.”','美咲：「廣場……他們還在往廣場去。」艾力克斯：「我知道。」'],
+ ['ward-question','Misaki · “Then why are you here?”','美咲：「那你為什麼還在這裡？」']
+ ])
 };

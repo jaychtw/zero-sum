@@ -29,3 +29,8 @@ nav a:hover,.action:hover{background:var(--ink);color:var(--paper)}
 aside{margin-top:1.2rem;display:flex;flex-wrap:wrap;gap:1.2rem}
 aside a{color:var(--red);font-family:Arial,sans-serif;font-weight:bold;padding:.6rem 0}
 @media(max-width:540px){.panels{grid-template-columns:1fr}figure.wide img{aspect-ratio:1.6}nav{flex-direction:column}.cover-copy{padding-bottom:1.25rem}}
+
+.revisit{margin-top:1rem;font-family:Arial,sans-serif}
+.revisit summary{cursor:pointer;padding:.8rem 0;width:fit-content;font-weight:bold}
+.revisit a{display:inline-block;padding:.75rem .25rem;color:var(--red)}
+.revisit summary:focus-visible{outline:3px solid #1671bc}
